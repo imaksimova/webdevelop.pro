@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Avenir-Black';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('fonts/Avenir-Black/Avenir-Black.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/Avenir-Black/Avenir-Black.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Avenir-Heavy';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('fonts/Avenir-Heavy/Avenir-Heavy.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/Avenir-Heavy/Avenir-Heavy.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Avenir-Light';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('fonts/Avenir-Light/Avenir-Light.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/Avenir-Light/Avenir-Light.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Avenir-Book';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/Avenir-Book/Avenir-Book.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/Avenir-Book/Avenir-Book.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
