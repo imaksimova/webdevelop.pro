@@ -1,10 +1,8 @@
-.container:not(.fluid) {
-  max-width: 1170px;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.container:not(.fluid).grid-list-lg {
-  padding: 0 15px!important;
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 .container.grid-list-lg .layout .flex {
   padding-top: 0!important;
@@ -30,5 +28,113 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+* {
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+
+*, :after, :before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.application {
+  display: flex;
+  background: #fff;
+  color: $primary;
+  font-family: $font-book;
+  line-height: 28px;
+}
+
+.application--wrap {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  /* -webkit-box-direction: normal; */
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100%;
+  position: relative;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+.is-uppercase-link a:before, a.uppercase-link:before {
+  content: "";
+  background-image: url("/images/arrow-right.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 1px;
+  width: 10px;
+  height: 9px;
+}
+
+.accent {
+  background-color: $accent_color;
+  color: #fff;
+}
+
+.v-btn {
+  padding: 0 40px;
+  font-family: $font-heavy;
+  align-items: center;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  flex: 0 0 auto;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+  min-width: 70px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  text-transform: none;
+  text-decoration: none;
+  transition: .3s cubic-bezier(.25,.8,.5,1),color 1ms;
+  position: relative;
+  user-select: none;
+  box-sizing: border-box;
+  &:hover {
+    color: #fff;
+    opacity: 0.9;
+  }
+  &.sky {
+    background-color: #f2f6ff;
+    &:hover {
+      color: $accent_color;
+    }
+  }
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+.input-control {
+  width: 100%;
+  padding: 8px 0;
+  max-height: 32px;
+  border: 0;
+  border-bottom: 1px solid #9b9b9b;
+  color: $primary;
+  font-size: 17px;
+  line-height: 28px;
+  font-family: $font-book;
+  outline: none;
 }

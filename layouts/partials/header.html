@@ -1,0 +1,44 @@
+{{ with .Site.Params.header }}
+<div class="top-notif">
+  <a href="{{ .top_notif_url | absURL }}" class="top-notif-link">
+    Help Ukraine to stop Russian aggression >>
+  </a>
+</div>
+{{ end }}
+<div class="header">
+  <div class="header-toolbar">
+    <a class="small-logo" href="{{ .Site.BaseURL }}">
+      <img src="{{ "images/favicon.svg" | absURL }}" alt="Webdevelop.pro" />
+    </a>
+    <ul class="header-menu">
+      <li class="logo">
+        <a href="{{ .Site.BaseURL }}">
+          <img src="{{ "images/logo.svg" | absURL }}" alt="Webdevelop.pro" />
+        </a>
+      </li>
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+          <li class="is-submenu {{ if $currentPage.HasMenuCurrent "main" . }}router-link-active{{ end }}">
+            <a href="{{ .URL }}">
+              {{ .Name }}
+            </a>
+            <ul class="dropdown-list submenu">
+              {{ range .Children }}
+                <li class="{{ if $currentPage.IsMenuCurrent "main" . }}router-link-active{{ end }}">
+                  <a href="{{ .URL }}">{{ .Name }}</a>
+                </li>
+              {{ end }}
+            </ul>
+          </li>
+        {{ else }}
+          <li>
+            <a href="{{ .URL }}">
+              {{ .Name }}
+            </a>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+</div>

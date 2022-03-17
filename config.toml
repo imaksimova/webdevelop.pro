@@ -1,42 +1,123 @@
 baseURL       = "http://example.org/"
 languageCode  = "en-us"
-title         = "About Webdevelop Pro"
+title         = "Software Development and Consulting Company | Webdevelop Pro"
 
 # Site Menus
 [menu]
-  # Navbar Menus
-  [[menu.nav]]
-    name    = "Home"
-    url     = ""
+  [[menu.main]]
+    identifier = "how-it-works"
+    name    = "How it works"
+    url     = "/startup-dev-kit"
     weight  = 1
-  [[menu.nav]]
-    name    = "About"
-    url     = "about"
+  [[menu.main]]
+    identifier = "our-devkit"
+    name    = "Our DevKit"
+    url     = "/startup-dev-kit"
+    parent = "how-it-works"
+    weight  = 1
+  [[menu.main]]
+    identifier = "our-workflow"
+    name    = "Our workflow"
+    url     = "/how-we-work"
+    parent = "how-it-works"
     weight  = 2
-  [[menu.nav]]
-    name    = "Portfolio"
-    url     = "portfolio"
+  [[menu.main]]
+    identifier = "our-approach"
+    name    = "Our approach"
+    url     = "/our-approach"
+    parent = "how-it-works"
     weight  = 3
-  [[menu.nav]]
-    name    = "Blog"
-    url     = "blog"
+  [[menu.main]]
+    identifier = "services"
+    name    = "Services"
+    url     = "/services"
+    weight  = 2
+  [[menu.main]]
+    identifier = "ai-ml-development"
+    name    = "AI/ML Development"
+    url     = "services/ai-ml-development"
+    parent = "services"
+    weight  = 1
+  [[menu.main]]
+    identifier = "mvp-development"
+    name    = "MVP Development"
+    url     = "services/build-mvp-webdevelop-pro-devkit"
+    parent = "services"
+    weight  = 2
+  [[menu.main]]
+    identifier = "cto-as-a-service"
+    name    = "CTO As A Service"
+    url     = "services/cto-as-a-service"
+    parent = "services"
+    weight  = 3
+  [[menu.main]]
+    identifier = "dedicated-team"
+    name    = "Dedicated team"
+    url     = "services/building-and-managing-development-team"
+    parent = "services"
     weight  = 4
-  [[menu.nav]]
-    name    = "Get in touch"
-    url     = "contact"
+  [[menu.main]]
+    identifier = "e-commerce"
+    name    = "E-commerce"
+    url     = "services/e-commerce-software"
+    parent = "services"
     weight  = 5
+  [[menu.main]]
+    identifier = "iot-softwaree"
+    name    = "IoT Software"
+    url     = "services/iot-software"
+    parent = "services"
+    weight  = 6
+  [[menu.main]]
+    identifier = "fintech-software"
+    name    = "Fintech Software"
+    url     = "services/fintech-software"
+    parent = "services"
+    weight  = 7
+  [[menu.main]]
+    identifier = "resources"
+    name    = "Resources"
+    url     = "/blog"
+    weight  = 3
+  [[menu.main]]
+    identifier = "company"
+    name    = "Company"
+    url     = "/company/about"
+    weight  = 4
+  [[menu.main]]
+    identifier = "our-team"
+    name    = "Our Team"
+    url     = "/company/about"
+    parent = "company"
+    weight  = 1
+  [[menu.main]]
+    identifier = "contact-us"
+    name    = "Contact Us"
+    url     = "/company/contacts"
+    parent = "company"
+    weight  = 2
+  [[menu.main]]
+    identifier = "careers"
+    name    = "Careers"
+    url     = "/company/careers"
+    parent = "company"
+    weight  = 3
+  
 
 # Site Params
 [params]
   logo = "images/logo.png"
   dateFormat = "26 FEB 1994"
   # Meta data
-  description = "Roxo Hugo themes | Design Agency Template by StaticMania"
-  author = "StaticMania"
+  description = "Webdevelop Pro is the full-stack software development and consulting company that can drive a project from an early stage idea to a stable business."
+  author = "Webdevelop Pro LLC"
   # Google Analitycs
   googleAnalitycsID = "Your ID"
   # We're using formspree.io for form handling, paste your formspree url below
   formspreeFormUrl  = "https://formspree.io/myykjpje"
+
+  [params.header]
+    top_notif_url = "company/help-ukraine"
 
   # Contact Form
   [params.contactForm]

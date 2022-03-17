@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="69px" height="69px" viewBox="0 0 69 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>FullStack service-03</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-main-final" transform="translate(-427.000000, -493.000000)">
+            <g id="Main-page" transform="translate(128.000000, 24.000000)">
+                <g id="icons" transform="translate(26.000000, 469.000000)">
+                    <g id="Fullstack" transform="translate(241.000000, 0.000000)">
+                        <g id="FullStack-service-03" transform="translate(32.000000, 0.000000)">
+                            <path d="M34.5,7.84090909 L15.6818182,53.3181818" id="Shape" stroke="#004FFF" stroke-width="0.584999979" opacity="0.552511161" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1.039999961853027,2.599999904632568"></path>
+                            <path d="M34.5,7.84090909 L53.3181818,53.3181818" id="Shape" stroke="#004FFF" stroke-width="0.584999979" opacity="0.552511161" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1.039999961853027,2.599999904632568"></path>
+                            <circle id="Oval" stroke="#004FFF" stroke-width="0.779999971" cx="34.5" cy="34.5" r="27.0511364"></circle>
+                            <path d="M34.5,7.44886364 L34.5,61.1590909" id="Shape" stroke="#004FFF" stroke-width="0.779999971" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M34.5,7.84090909 L61.5071489,34.0536955" id="Shape" stroke="#004FFF" stroke-width="0.779999971" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M34.5,7.84090909 L7.84088557,34.0536955" id="Shape" stroke="#004FFF" stroke-width="0.779999971" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <circle id="Oval" stroke="#A1BDFB" stroke-width="0.779999971" opacity="0.6" cx="34.5" cy="34.5" r="34.1079545"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
