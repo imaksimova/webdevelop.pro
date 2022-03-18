@@ -1,0 +1,85 @@
+.s-team {
+  background-image: url("/images/abstract-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 45px;
+  position: relative;
+  padding-bottom: 100px;
+}
+.team-items {
+  width: 100%;
+  max-width: 945px;
+  margin: 0 auto;
+}
+.team-member {
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 110px;
+	width: 100%;
+	justify-content: space-between;
+	align-items: flex-start;
+	.team-member-photo {
+		height: 425px;
+		width: 365px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.team-member-info {
+		max-width: 460px;
+		.social-and-name {
+			display: flex;
+			width: 100%;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-end;
+		}
+		.name-social {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-end;
+			flex-shrink: 0;
+			.team-member-photo {
+				display: none;
+			}
+		}
+		.name {
+			color: $primary;
+		}
+		.position {
+			margin-top: 3px;
+		}
+		.details {
+			color: $primary;
+			opacity: 0.8;
+			letter-spacing: 0.3px;
+			margin-top: 20px;
+			.link-wrap {
+				margin-right: 10px;
+				&:last-child {
+					.comma {
+						display: none;
+					}
+				}
+			}
+			.certifications {
+				margin-top: 30px;
+				a {
+					position: relative;
+				}
+			}
+		}
+		.social-links {
+			margin-top: 20px;
+			display: flex;
+			a {
+				display: inline-block;
+				margin-right: 28px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
