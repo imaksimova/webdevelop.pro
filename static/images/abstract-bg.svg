@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400px" height="4401px" viewBox="0 0 1400 4401" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="52.6583186%" y1="7.8646226%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#004FFF" stop-opacity="0.03" offset="0%"></stop>
+            <stop stop-color="#D8D8D8" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Team" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-About" transform="translate(0.000000, -427.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Group-2" transform="translate(-3.000000, 427.000000)">
+                <path d="M3,768 C435.044792,1044.06344 901.027287,1182.09516 1400.94749,1182.09516 C1403.68417,1182.09516 1403.68417,1286.06344 1400.94749,1494 L3,1494 L3,768 Z" id="decor-bg-1"></path>
+                <path d="M-1.8189894e-12,1493 C433.864109,1769.08713 900.846358,1907.1307 1400.94675,1907.1307 C1403.68442,1907.1307 1403.68442,2025.42046 1400.94675,2262 L-1.8189894e-12,2262 L-1.8189894e-12,1493 Z" id="decor-bg-2" transform="translate(701.500000, 1877.500000) scale(-1, 1) translate(-701.500000, -1877.500000) "></path>
+                <path d="M-1.8189894e-12,2947 C433.864109,3223.08713 900.846358,3361.1307 1400.94675,3361.1307 C1403.68442,3361.1307 1403.68442,3479.42046 1400.94675,3716 L-1.8189894e-12,3716 L-1.8189894e-12,2947 Z" id="decor-bg-2-copy-2" transform="translate(701.500000, 3331.500000) scale(-1, 1) translate(-701.500000, -3331.500000) "></path>
+                <path d="M-1.8189894e-12,0 C433.864109,276.087131 900.846358,414.130697 1400.94675,414.130697 C1403.68442,414.130697 1403.68442,532.420465 1400.94675,769 L-1.8189894e-12,769 L-1.8189894e-12,0 Z" id="decor-bg-2-copy" transform="translate(701.500000, 384.500000) scale(-1, 1) translate(-701.500000, -384.500000) "></path>
+                <path d="M3,2262 C435.683388,2538.13932 901.999179,2676.20898 1401.94737,2676.20898 C1404.68421,2676.20898 1404.68421,2766.47265 1401.94737,2947 L3,2947 L3,2262 Z" id="decor-bg-3"></path>
+                <path d="M3,3716 C435.683388,3992.13932 901.999179,4130.20898 1401.94737,4130.20898 C1404.68421,4130.20898 1404.68421,4220.47265 1401.94737,4401 L3,4401 L3,3716 Z" id="decor-bg-3-copy"></path>
+            </g>
+        </g>
+    </g>
+</svg>
