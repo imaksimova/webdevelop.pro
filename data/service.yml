@@ -1,0 +1,121 @@
+serviceItem :
+  - title: Development Team
+    itemUrl: /
+    img: images/services/service-1.svg
+    descr: >
+      Webdevelop Pro's specialty is <strong>building and managing result-driven development teams.</strong>
+      We've been improving our teamwork practices for as long as we've been in the software development business. 
+      <a href="#">Our work approach</a> is based on One project - One team rule. We believe the best result is 
+      achieved when the dev team is focused solely on one project. Our specialists have a wide 
+      range of skills in various technologies and are constantly learning new trends. Webdevelop Pro 
+      can assemble a high-performance team exclusively for your product. 
+    caption1: Dedicated Team
+    caption2: Great Technical Skills
+    caption3: Results-driven Development
+    caption4: Successful Product
+
+  - title: MVP Development
+    itemUrl: /
+    img: images/services/service-2.svg
+    descr: >
+      The point of building a minimum viable product or an MVP is to test a product's idea. 
+      This option is especially good for startups as it can reduce financial risks, 
+      evaluate product viability and analyze users' feedback in a shorter time and at a reduced cost. 
+      The data gathered from launching an MVP shows what improvements are required to create a 
+      successful product. With our <a href="#">Startup devkit</a>, we can build a robust and scalable MVP in 4-6 months. 
+    caption1: Building an MVP
+    caption2: Product Refinement
+    caption3: Customers Feedback
+    caption4: Enhance Features
+
+  - title: Fintech Software
+    itemUrl: /
+    img: images/services/service-3.svg
+    descr: >
+      Our team has a proven track record in delivering successful Fintech products. 
+      Whether your business is a start-up or a corporation we can help you manage your 
+      financial operations better. With a well-selected tech stack, carefully 
+      designed architecture and optimized development workflow, our team 
+      can create an effective product for your business goals.  
+    caption1: Increase Efficiency
+    caption2: Enhance Customer Experience
+    caption3: Automate Business Processes
+    caption4: Improve Security
+  
+  - title: IoT Software
+    itemUrl: /
+    img: images/services/service-4.svg
+    descr: >
+      If you are searching for a development team to implement the latest IoT Technology 
+      trends in your business you can rely on Webdevelop Pro. We have experience in 
+      building applications that collect, share, analyze and predict events based on 
+      the information provided by smart devices, sensors, and controllers. 
+      Using various cloud providers we build robust, scalable and secure systems.  
+    caption1: Сonnect Digital Products
+    caption2: Reshape Your Business
+    caption3: Analyze Big Data
+    caption4: Enhance Internal Operations
+
+  - title: E-commerce Software
+    itemUrl: /
+    img: images/services/service-5.svg
+    descr: >
+      Would you like to get ahead of your competition in selling goods or services online? 
+      High-quality software is an essential part of a successful E-commerce online business. 
+      Webdevelop Pro has extensive expertise in designing and developing custom E-commerce 
+      software and we set high standards for our products performance and reliability. 
+      Our dedicated team of professionals can create a product of any level of complexity that fits your requirements. 
+    caption1: Optimize Online Business
+    caption2: Manage and Organize Products
+    caption3: Automation of Operations
+    caption4: Expand Customer Base
+  
+  - title: AI/ML Development
+    itemUrl: /
+    img: images/services/service-6.svg
+    descr: >
+      Artificial Intelligence and Machine Learning became extremely popular technologies used 
+      by most advanced tech giants. There are numerous applications for ML to solve such 
+      important business problems as detecting spam, automating data entry, improving product 
+      recommendation system for your customers, and many others. AI-powered software is 
+      fast, scalable and efficient. Webdevelop pro offers end-to-end Machine Learning, 
+      Data Science and AI software development to revolutionize your business. 
+    caption1: AI Software
+    caption2: End-to-end Machine Learning
+    caption3: Data Science
+    caption4: AI/ML Technologies
+  
+  - title: Blockchain Development
+    itemUrl: /
+    img: images/services/service-7.svg
+    descr: >
+      Blockchain is a cutting edge technology adopted by businesses worldwide. 
+      Amongst its top advantages are transparency, efficiency, keeping your 
+      data secure, and inalterability of the information stored on a blockchain. 
+      Blockchain is a perfect solution for those who don’t want 3rd parties in 
+      transactions with their clients. Businesses like art galleries, supply chains, 
+      various verification systems, and others could benefit from the transparency 
+      of transactions or participants involved. We have experience in building 
+      blockchain applications and will be happy to help you implement 
+      blockchain technology in your business. 
+    caption1: Decentralized Network
+    caption2: Secure Transactional Records
+    caption3: Transparency
+    caption4: Manage Efficiency
+
+  - title: CTO as a Service
+    itemUrl: /
+    img: images/services/service-8.svg
+    descr: >
+      Not all companies have a full-time in-house CTO, even if you do there might come a time 
+      when you find yourself in need of external expertise to handle technical challenges for your business:
+      <ul><li>you have an idea for a new product but you don't know how to implement it;</li>
+      <li>you have a big ongoing project and your in-house expertise is not enough to proceed;</li>
+      <li>you need an outside expert to coach your in-house team on new technology trends;</li>
+      <li>your in-house team needs help in organizing their workflow;</li>
+      <li>you don't need a full-time CTO at the moment, but you still need someone to give you advice on technologies</li></ul>
+      We can provide a service of consulting CTO on demand for as long as you need it. 
+    caption1: Outside Technical Consultant
+    caption2: Organize Workflow
+    caption3: Manage Dev Team
+    caption4: Improve Infrastructure

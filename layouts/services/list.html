@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+<section class="site-services">
+  <div class="base-header">
+    <div class="container">
+      <div class="offset-left">
+        <div class="base-header-title bottom">
+          <span class="white-color text-uppercase is-h1-title">Our</span>
+          <div class="base-header-title__wrap">
+            <div class="in-touch text-uppercase is-h1-title">services</div>
+            <hr>
+            <p class="sub-title">
+              Webdevelop Pro is a dedicated team of developers with over 10 
+              years of experience in creating software. We offer a wide range 
+              of custom software development and consulting services 
+              to empower your business.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="square"></div>
+  </div>
+  <div class="container">
+    {{ range .Site.Data.service.serviceItem }}
+      {{ partial "services-item.html" . }}
+    {{ end }}
+  </div>
+</section>
+
+{{ partial "get-in-touch.html" . }}
+
+{{ end }}

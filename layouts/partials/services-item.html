@@ -1,0 +1,32 @@
+<div class="service-item">
+  <div class="service-item__image">
+    <a href="{{ .itemUrl | absURL }}" class="service-item__image-link">
+      <img src="{{ .img | absURL }}" alt="Development Team">
+    </a>
+    <a href="#" class="v-btn v-btn--router theme--light accent">Take a look at a case study</a>
+  </div>
+  <div class="service-item__content">
+    <div class="service-item__headline">
+      <h3 class="service-item__title">
+        <a href="{{ .itemUrl | absURL }}">{{ .title }}</a>
+      </h3>
+    </div>
+    <div class="service-item__item-details">
+      {{ .descr | safeHTML }}
+    </div>
+    <div class="service-item__bottom">
+      <div class="service-item__caption-element">
+        <h5>{{ .caption1 }}</h5>
+      </div>
+      <div class="service-item__caption-element">
+        <h5>{{ .caption2 }}</h5>
+      </div>
+      <div class="service-item__caption-element">
+          <h5>{{ .caption3 }}</h5>
+      </div>
+      <div class="service-item__caption-element">
+        <h5>{{ .caption4 }}</h5>
+      </div>
+    </div>
+  </div>
+</div>
