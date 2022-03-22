@@ -1,6 +1,6 @@
 serviceItem :
   - title: Development Team
-    itemUrl: /
+    itemUrl: /services/ai-ml-development
     img: images/services/service-1.svg
     descr: >
       Webdevelop Pro's specialty is <strong>building and managing result-driven development teams.</strong>

@@ -1,23 +1,9 @@
 {{ define "main" }}
 
 <section class="site-about">
+  {{ partial "base-title.html" . }}
   <div class="container">
-    <div class="base-header">
-      <div class="offset-left">
-        <h1 class="text-uppercase base-header-title" style="display:none">
-          <span class="in-touch">Our Team</span>
-        </h1>
-        <div class="base-header-title bottom">
-          <span class="white-color text-uppercase is-h1-title">Our</span>
-          <div class="base-header-title__wrap">
-            <div class="in-touch text-uppercase is-h1-title">Team</div>
-            <hr>
-            <p class="sub-title">We're a self-organizing team that can deliver the best architecture and design With every completed project we learn how to be more effective and improve our skills.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    {{ partial "about-team.html" . }}
+    {{ partial "about/about-team.html" . }}
   </div>
 </section>
 
