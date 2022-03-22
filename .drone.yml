@@ -1,0 +1,63 @@
+kind: pipeline
+name: devsite
+steps:
+
+- name: build-image
+  image: docker
+  commands:
+    - docker build -t cr.webdevelop.us/devsite:${DRONE_COMMIT_BRANCH}-${DRONE_COMMIT_SHA} .
+    - docker push cr.webdevelop.us/devsite:${DRONE_COMMIT_BRANCH}-${DRONE_COMMIT_SHA}
+  volumes:
+  - name: docker_sock
+    path: /var/run/docker.sock
+
+- name: deploy
+  image: quay.io/honestbee/drone-kubernetes
+  settings:
+    kubernetes_server:
+      from_secret: KUBERNETES_SERVER
+    kubernetes_token:
+      from_secret: KUBERNETES_TOKEN
+    namespace: webdevelop-dev
+    deployment: devsite
+    repo: cr.webdevelop.us/devsite
+    tag: ${DRONE_COMMIT_BRANCH}-${DRONE_COMMIT_SHA}
+    container: devsite
+
+- name: notify-slack
+  image: plugins/slack
+  settings:
+    webhook:
+      from_secret: slackwebhook
+    channel: _dev_frontend
+    username: drone.io-bot
+    icon_url: https://xebialabs.com/wp-content/uploads/2018/10/droneio-1.jpg
+    template: >
+     {{#if build.pull }}
+        *{{#success build.status}}✔{{ else }}✘{{/success}} <{{ build.link }}|{{ uppercasefirst build.status }}>*: <https://github.com/{{ repo.owner }}/{{ repo.name }}/pull/{{ build.pull }}|Pull Request #{{ build.pull }}>
+     {{else}}
+        *{{#success build.status}}✔{{ else }}✘{{/success}} <{{ build.link }}|{{ uppercasefirst build.status }}: Build #{{ build.number }}>*
+     {{/if}}
+
+     {{ build.author }} -> <https://github.com/{{ repo.owner }}/{{ repo.name }}/commit/{{ build.commit }}|{{ truncate build.commit 8 }}> -> <https://github.com/{{ repo.owner }}/{{ repo.name }}/commits/{{ build.branch }}|{{ repo.name }}/{{ build.branch }}>: _"${DRONE_COMMIT_MESSAGE}"_
+  when:
+    status: [ success, failure ]
+
+trigger:
+  branch:
+  - master
+  - dev
+  event:
+  - push
+
+volumes:
+- name: docker_sock
+  host:
+    path: /var/run/docker.sock
+- name: build
+  host:
+    path: /storage/${DRONE_COMMIT_BRANCH}/build-site
+- name: build_dest
+  host:
+    path: /storage/${DRONE_COMMIT_BRANCH}/site
+
