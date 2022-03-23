@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="464px" height="464px" viewBox="0 0 464 464" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>illustration-nlp</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="23.976217%" y1="24.6689779%" x2="76.023783%" y2="75.335199%" id="linearGradient-1">
+            <stop stop-color="#CFD8DB" offset="0%"></stop>
+            <stop stop-color="#CFD8DB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Service_desktop-AI/ML-DEVELOPMENT-1" transform="translate(-814.000000, -1596.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1400" height="5560"></rect>
+            <g id="bg-abstr-hww" transform="translate(-3.000000, 283.000000)"></g>
+            <g id="Group-7" transform="translate(861.000000, 1732.000000)">
+                <g id="Group" transform="translate(0.000000, 2.200000)">
+                    <polygon id="Path-15" stroke="#82A9FF" stroke-width="1.50920004" points="3.01840007 48.2944012 81.496802 3.01840007 156.956804 46.7852011 78.4784019 92.0612022"></polygon>
+                    <polygon id="Path-15" stroke="#82A9FF" stroke-width="1.50920004" points="28.2876008 48.043191 81.0013274 17.8398005 131.687603 47.0364113 78.9738764 77.2398018"></polygon>
+                    <polyline id="Path-16" stroke="#82A9FF" stroke-width="1.50920004" points="3.01840007 48.2944012 3.01840007 141.864803 78.4784019 185.631604 156.956804 140.355603 156.956804 46.7852011"></polyline>
+                    <line x1="78.4784019" y1="92.0612022" x2="78.4784019" y2="185.631604" id="Path-17" stroke="#82A9FF" stroke-width="1.50920004"></line>
+                    <circle id="Oval-Copy" fill="#82A9FF" cx="156.956804" cy="46.7852011" r="3.01840007"></circle>
+                    <circle id="Oval-Copy-5" fill="#82A9FF" cx="156.956804" cy="140.355603" r="3.01840007"></circle>
+                    <circle id="Oval-Copy-2" fill="#82A9FF" cx="81.496802" cy="3.01840007" r="3.01840007"></circle>
+                    <circle id="Oval" fill="#82A9FF" cx="78.4784019" cy="92.0612022" r="3.01840007"></circle>
+                    <circle id="Oval-Copy-6" fill="#82A9FF" cx="79.5784019" cy="76.7184017" r="2.20000005"></circle>
+                    <circle id="Oval-Copy-10" fill="#82A9FF" cx="81.1184018" cy="17.3184004" r="2.20000005"></circle>
+                    <circle id="Oval-Copy-11" fill="#82A9FF" cx="81.1184018" cy="27.2184006" r="2.20000005"></circle>
+                    <circle id="Oval-Copy-12" fill="#82A9FF" cx="35.9184008" cy="52.5184011" r="2.20000005"></circle>
+                    <circle id="Oval-Copy-13" fill="#82A9FF" cx="124.018403" cy="51.4184011" r="2.20000005"></circle>
+                    <circle id="Oval-Copy-8" fill="#82A9FF" cx="131.718403" cy="47.018401" r="2.20000005"></circle>
+                    <circle id="Oval-Copy-9" fill="#82A9FF" cx="27.5000006" cy="47.8368011" r="2.20000005"></circle>
+                    <circle id="Oval-Copy-4" fill="#82A9FF" cx="78.4784019" cy="185.631604" r="3.01840007"></circle>
+                    <circle id="Oval-Copy-3" fill="#82A9FF" cx="3.01840007" cy="48.2944012" r="3.01840007"></circle>
+                    <circle id="Oval-Copy-7" fill="#82A9FF" cx="3.01840007" cy="141.864803" r="3.01840007"></circle>
+                    <line x1="80.8500018" y1="26.9500006" x2="123.750003" y2="51.1500011" id="Path-2" stroke="#82A9FF" stroke-width="1.43000003"></line>
+                    <line x1="35.7500008" y1="26.9500006" x2="80.3000017" y2="51.7000011" id="Path-2-Copy" stroke="#82A9FF" stroke-width="1.43000003" transform="translate(58.300001, 39.050001) scale(-1, 1) translate(-58.300001, -39.050001) "></line>
+                    <line x1="80.8500018" y1="17.6000004" x2="80.8500018" y2="26.9500006" id="Path-20" stroke="#82A9FF" stroke-width="1.43000003"></line>
+                </g>
+                <g id="Group-14" transform="translate(213.400005, 0.000000)" fill-rule="nonzero">
+                    <g id="Group-5" transform="translate(0.554393, 0.000000)">
+                        <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.851118006" fill="#F7F7F7" stroke-linecap="round" stroke-linejoin="round" points="77.2446798 90.8806823 0.108707324 46.3459334 80.2712554 0.0655414556 157.407228 44.5943325"></polygon>
+                        <polygon id="Shape" fill="#EDEFF1" points="0.108707324 46.3459334 0.108707324 142.701852 77.2446798 187.230643 77.2446798 90.8806823"></polygon>
+                        <polygon id="Shape" fill="url(#linearGradient-1)" points="77.2446798 90.8806823 157.407228 44.5943325 157.407228 140.950251 77.2446798 187.230643"></polygon>
+                        <polygon id="Shape" fill="#E0E8EA" opacity="0.4" points="77.6855589 78.4705308 23.1118733 46.9595894 79.8303762 14.2153781 134.404062 45.7263195"></polygon>
+                        <polygon id="Shape" fill="#DBDEE2" points="134.404062 45.7263195 79.8303762 14.2153781 79.6456836 22.3314403 126.937403 49.837971"></polygon>
+                        <polygon id="Shape" fill="#E7E9EB" points="79.8303762 14.2153781 23.1118733 46.9595894 30.3938399 50.9699579 79.6456836 22.3314403"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

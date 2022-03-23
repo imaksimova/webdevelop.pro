@@ -1,141 +1,105 @@
 ---
-title: "Building and managing a development team"
+title: "AI/ML development"
 date: 2022-03-22T13:00:47+02:00
 draft: false
-titleLeft: "building"
-titleRight: "and managing a development team"
-description: "Effective development team means everyone understands business goals, necessary steps and area of responsibility"
+titleLeft: "AI/ML"
+titleRight: "development"
+description: "Driving force for businesses to gain more market share"
 btnUrl: /
 items:
-  - label: Project research
-    img: /images/services/srv-single-1.svg
-    title: Understanding requirements
-    caption1: Initial Requirements
-    caption2: Pre-Screening
+  - label: NLP
+    img: /images/services/srv-single-18.svg
+    title: Chatbot Development
+    caption: [Text Recognition, Business Process Optimization, Intelligent Chatbot, Increase User Experience]
     text: >
-      Before putting a development team together, we need to gather all the information about the project. 
-      A dedicated development team is built according to the project requirements. 
-      After that, we select the tech stack and define what skillset is required for the project.
+      Today, NLP plays a huge part in chatbot development. 
+      NLP technology enables chatbots to understand voice 
+      messages and texts and give an appropriate reply. 
+      Our engineers are skilled in developing sophisticated 
+      and intelligent chatbots. We can train a bot to 
+      understand your business specifics and improve 
+      communication and client experience. We have 
+      extensive knowledge of ready to use models, frameworks, 
+      APIs, and techniques for various use-cases.
 
-  - label: Screening and pre-selection
-    img: /images/services/srv-single-2.svg
-    title: We spread the word and approach the developers with the necessary skills
-    caption1: Technical Expertise
-    caption2: Professional Background
-    caption3: Personal Qualities
-    caption4: Teamwork Experience
+  - label: intuitive smart devices
+    img: /images/services/srv-single-19.svg
+    title: Data-driven Internet of Things
+    caption: [Internet Of Things, Analyze Data, Machine Learning, Artificial Intelligence]
     text: >
-      We are looking for professionals who are passionate about what they do and who are specialists 
-      in their respective areas of expertise. We need our candidates to be team players eager to be 
-      fully engaged in their work. At this stage, we filter out those candidates 
-      who aren’t suitable for the project. We run preliminary interviews to check:
+      The use of IoT technology presents endless opportunities for business growth and improvement. 
+      ML and AI help to make the most of large volumes of IoT data and transform it 
+      into valuable business insights. Applying AI and ML techniques to data 
+      processing and analytics we can build efficient solutions for data 
+      visualization, create intelligent IoT applications, and build secure IoT solutions.
 
-  - label: Tech assignment
-    img: /images/services/srv-single-3.svg
-    title: We put candidates’ technical skills, speed, and quality of work to a test.
-    caption1: Time Management
-    caption2: High-Performance
+  - label: identify objects
+    img: /images/services/srv-single-20.svg
+    title: Video and Image Processing
+    caption: [Video Stream Analyze, Machine Vision, Image Recognition]
     text: >
-      The candidates have to prove the level of the skills they claim to have mastered. 
-      We give them a thoroughly prepared tech assignment designed according to the project’s 
-      technical challenges and/or the role in the team that the candidate is being recruited for. 
-      Now they have to prove how good are they are at what they do. 
-      The results are reviewed by our top in-house developers.
+      AI can easily identify an object in an image or a video file and 
+      many applications of image processing like, for example, 
+      face recognition, are a part of our everyday life. 
+      With our expertise in using powerful tools and cutting 
+      edge technologies like Nvidia cards and Google's 
+      Cloud Video Intelligence API, we can develop new 
+      learning algorithms and build custom solutions for video and image processing.
   
-  - label: Personality traits
-    img: /images/services/srv-single-4.svg
-    title: We want to hire people who are passionate about what they do
-    caption1: Culture Fit
-    caption2: Aspire To Grow
+  - label: speech recognition
+    img: /images/services/srv-single-21.svg
+    title: Natural Language Processing
+    caption: [End To End Machine Learning, NLP, Voice Recognition]
     text: >
-      It's no doubt that having great technical skills is essential, 
-      but that's not all that we expect from our candidates. 
-      We want to hire people who are comfortable working with others 
-      and are comfortable to work with. We're looking for 
-      specialists that constantly improve and develop their skills.
-  
-  - label: Final interview
-    img: /images/services/srv-single-5.svg
-    title: It is our responsibility to assemble a team of professionals
-    caption1: Top Notch Engineers
-    caption2: Managing Risks
-    text: >
-      Now that we have filled in all the gaps and gathered all the information we go through 
-      it very carefully to select the best candidates. We talk to the candidates again 
-      to make sure all of the requirements are met. It is our primary goal to find 
-      professionals best suited for your project. We work with many top-notch web 
-      engineers, designers, and testers. We can begin interviewing potential candidates 
-      as soon as we receive your request. A development team is assembled within a few weeks. 
-      If necessary, we are open to signing an NDA to learn more about your project.
-  
-  - label: How we manage a development team
-    img: /images/services/srv-single-6.svg
-    title: Our work doesn't stop once we've assembled the team.
-    caption1: Set Clear Goals
-    caption2: Work Progress Reports
-    caption3: Analyze The Performance
-    caption4: Check The Results
-    text: >
-      We monitor the process of product development from requirements gathering to launch. 
-      Over the years we've learned the best practices to effectively manage a dedicated 
-      development team. We adopted the basics of the Agile method and combined them with 
-      our own experience. Here are the highlights of our approach to managing development teams:
-  
-  - label: Transparency and flexibility
-    img: /images/services/srv-single-2.svg
-    title: Transparency and flexibility are our core values.
-    caption1: Resolve Blockers
-    caption2: Realistic Plans
-    text: >
-      Daily meetings, sprint planning, sprint reviews, and systematic reports are standard 
-      procedures that we follow at all times. A group channel for clients and everyone 
-      working on the project is open 24/7. We use a staggering work schedule to equally 
-      accommodate our clients and development teams. It's unlikely that every project 
-      has a detailed plan for every possible change from the very beginning. A dedicated 
-      development team model allows us to respond to tweaks and changes in the project 
-      quickly and effectively. Managing a development team is a continuous process, 
-      and we can always adjust the team to the project's needs.
-  
-  - label: Risk management and pricing
-    img: /images/services/srv-single-7.svg
-    title: High-quality software development requires effective risk management
-    caption1: High-Quality Software
-    caption2: Managing Risks
-    text: >
-      Managing risks is our top priority. We believe that using Agile methodology 
-      provides us with means to identify, prioritize, manage, and control risks 
-      throughout the process of product development. We assess the risks we might 
-      encounter at the same time as we gather requirements. We also monitor risks 
-      at the sprint level with a thorough analysis every 2 weeks.
+      NLP is a field of artificial intelligence. Natural 
+      language processing is the ability of a software 
+      program to understand natural human language. 
+      Numerous applications of NLP technology like 
+      chatbots for customer support, data and text 
+      analysis, email filters, search results, and 
+      many others enable business growth and improve our lives. 
+      With the help of tools and libraries for NLP, 
+      we can set algorithms that work with big volumes 
+      of data and deliver meaningful information to the end-user.
 ---
 
-Many companies choose a dedicated team model to build custom software. Among many benefits of a 
-dedicated development team are reduced project cost, flexibility, and faster time-to-market. 
-This model is especially beneficial for long-term large-scale projects, and that's the kind 
-of projects we're good with. Webdevelop Pro has been designing custom software for over 
-10 years and delivered plenty of projects. Here’s how we build a dedicated development team you can rely on.
+Nowadays, it’s hard to find an industry that hasn't been modified by 
+Artificial intelligence (AI) and Machine learning (ML). They are 
+the driving force for traditional businesses to gain more market share, 
+increase revenue, improve customer experience, and decrease operating costs. 
+If you want to explore these new technologies to enhance your business or 
+optimize your business processes, we can provide you with production-ready innovative AI/ML solutions.
 
-## How we build a development team
+## How we create AI/ML solutions
 
-To assemble an effective development team we need to understand your business idea and goals first. 
-There is no need to go deep into the details but it's important to see the big picture to 
-recognize potential challenges and assess the risks. We take responsibility for the whole 
-process of building a team so you don't have to make decisions on every small detail unless 
-requested otherwise. We establish a direct channel of communication to keep you 
-informed on the progress each step of the way.
+These steps are required to create a (general) AI/ML solution:
 
-## Our recruiting process
+- Data collection and organization. Extract insights, filter noise data and transcode existing data into a workable format.
+- Creating or choosing a prediction model, creating a training set, which will be used to train the model.
+- Splitting training set data and test set to check prediction model results.
+- Creating a validation data set, which will be used to test, adjust and optimize your prediction model.
+- Checking model on a set of real data, which haven’t been used for training.
 
-Once challenges and goals are clear, its time to start looking for the right people. 
-We have a very thorough recruiting process to provide you with a high-performance team.
 <!-- section break -->
 
-## Conclusion
+## Exclusive ML solution for your platform
 
-One of the advantages of a dedicated team is simple and transparent pricing. 
-The dedicated team model allows you to cut your expenses on the recruitment. 
-The cost of a dedicated team is formed exclusively for every project and depends 
-on the project complexity and the skillset of the specialists involved in it.
+Webdevelop pro can build high-performance machine learning dataset and 
+adaptive algorithms from scratch. Our engineers transform raw data 
+from legacy software into clean datasets. We can integrate machine 
+learning models for video, image or voice recognition into your 
+business to conduct market research, optimize pricing, 
+improve content recommendations and user experience.
+These steps are required to create an AI/ML solution:
 
-If a dedicated team is what you need, Webdevelop Pro will be happy to provide 
-you with the best IT specialists to build your product. We're looking forward to hear from you.
+- Collect and organize data. Extract insights, filter out noise data and transcode existing data into a workable format;
+- Select or create a prediction model, a training set which will be used to train the model;
+- Split training set data and test set to check prediction model results;
+- Create a validation data set which will be used to test, adjust and optimize prediction model;
+- Test model on a set of real data that haven’t been used for training.
+
+Webdevelop pro can build an exclusive AI/ML solution to meet your business requirements. 
+We can tweak every aspect of development according to your requirements to create a 
+product that suits your company’s model and addresses specific pain-points. 
+Webdevelop Pro can empower your business with robust and scalable AI/ML 
+technology implementations to help you achieve your business goals more effectively.

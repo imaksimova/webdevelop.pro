@@ -35,28 +35,27 @@
           </h2>
           <div class="content">
             <p>
-              {{ .text }}
+              {{ .text | safeHTML }}
             </p>
           </div>
           <div class="item-content-bottom">
-            {{ with .caption1 }}
+            {{ range .caption }}
               <div class="caption-element is-uppercase-link">
                 <h5>{{ . }}</h5>
               </div>
             {{ end }}
-            {{ with .caption2 }}
-              <div class="caption-element is-uppercase-link">
-                <h5>{{ . }}</h5>
+            {{ if .captionText1 }}
+              <div class="caption-element is-uppercase-link is-link">
+                <a href="{{ .captionUrl1 | absURL }}">
+                  {{ .captionText1 }}
+                </a>
               </div>
             {{ end }}
-            {{ with .caption3 }}
-              <div class="caption-element is-uppercase-link">
-                <h5>{{ . }}</h5>
-              </div>
-            {{ end }}
-            {{ with .caption4 }}
-              <div class="caption-element is-uppercase-link">
-                <h5>{{ . }}</h5>
+            {{ if .captionUrl2 }}
+              <div class="caption-element is-uppercase-link is-link">
+                <a href="{{ .captionUrl2 | absURL }}">
+                  {{ .captionText2 }}
+                </a>
               </div>
             {{ end }}
           </div>
