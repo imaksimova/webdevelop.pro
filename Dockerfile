@@ -1,8 +1,8 @@
 FROM jojomi/hugo:0.80.0
 
-COPY . /docs
+COPY . /app
 
-WORKDIR /docs
+WORKDIR /app
 
 EXPOSE 8085
 
