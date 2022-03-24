@@ -1,0 +1,135 @@
+{{ define "main" }}
+
+<section class="site-contacts">
+  {{ partial "base-title.html" . }}
+  <div class="container">
+    <div class="site-contacts-form">
+      <div class="site-contacts-form__img">
+        <img class="illustration-contacts" src="{{ "images/illustration-contacts.svg" | absURL }}">
+      </div>
+      <div class="site-contacts-form__content">
+        {{ partial "form-get-in-touch.html" . }}
+      </div>
+    </div>
+    <div class="contact-address-row">
+      <div class="contact-address-row__item">
+        <div class="extra-small">Kyiv office</div>
+        <div class="small-text">13 Yaroslav Val St</div>
+        <a href="tel:+38 063 440 5605" class="small-link">+38 063 440 5605</a>
+        <a href="mailto:manager@webdevelop.pro" class="small-link email">manager@webdevelop.pro</a>
+      </div>
+      <div class="contact-address-row__item working-days">
+        <div class="extra-small">BUSINESS HOURS (GMT +3)</div>
+        <div class="small-text"><span>Mon — Fri</span><span>8 am — 5 pm</span></div>
+        <div class="small-text"><span>Sat — Sun</span><span>day off</span></div>
+      </div>
+      <div class="contact-address-row__item">
+        <div class="extra-small">San Francisco office</div>
+        <div class="small-text">995 Market St</div>
+          <a href="tel:+1 609 733 7724" class="small-link">+1 609 733 7724</a>
+          <a href="mailto:manager@webdevelop.pro" class="small-link email">manager@webdevelop.pro</a>
+      </div>
+      <div class="contact-address-row__item working-days">
+        <div class="extra-small">BUSINESS HOURS (GMT -7)</div>
+        <div class="small-text"><span>Mon — Fri</span><span>8 am — 5 pm</span></div>
+        <div class="small-text"><span>Sat — Sun</span><span>day off</span></div>
+      </div>
+    </div>
+    <div class="contact-mode">
+      <h3>We are available for you about 24 hours/day in working mode:</h3>
+      <div class="contact-mode-kyiv">
+        <div class="contact-mode-kyiv__left contact-mode-points">
+          <div class="small-text timezone strong">AM</div>
+          <div class="points">
+            <span class="small-text">01</span>
+            <span class="small-text">02</span>
+            <span class="small-text">03</span>
+            <span class="small-text">04</span>
+            <span class="small-text">05</span>
+            <span class="small-text">06</span>
+            <span class="small-text">07</span>
+          </div>
+        </div>
+        <div class="contact-mode-kyiv__center contact-mode-points">
+          <div class="small-text timezone strong">PM</div>
+          <div class="points">
+            <span class="small-text">08</span>
+            <span class="small-text">09</span>
+            <span class="small-text">10</span>
+            <span class="small-text">11</span>
+            <span class="small-text">12</span>
+            <span class="small-text">01</span>
+            <span class="small-text">02</span>
+            <span class="small-text">03</span>
+            <span class="small-text">04</span>
+            <span class="small-text">05</span>
+            <span class="small-text">06</span>
+            <span class="small-text">07</span>
+          </div>
+          <div class="extra-small bottom-text">WORKING TIME OF THE KYIV TEAM (GMT +3)</div>
+        </div>
+        <div class="contact-mode-kyiv__right contact-mode-points right-margin">
+          <div class="small-text timezone strong"></div>
+          <div class="points">
+            <span class="small-text">08</span>
+            <span class="small-text">09</span>
+            <span class="small-text">10</span>
+            <span class="small-text">11</span>
+            <span class="small-text">12</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-mode-mobile">
+        <div class="extra-small bottom-text">WORKING TIME OF THE KYIV TEAM (GMT +3)</div>
+      </div>
+      <div class="contact-mode-sf">
+        <div class="contact-mode-sf__left contact-mode-points">
+          <div class="small-text timezone strong">PM</div>
+          <div class="points">
+            <span class="small-text">02</span>
+            <span class="small-text">03</span>
+            <span class="small-text">04</span>
+            <span class="small-text">05</span>
+            <span class="small-text">06</span>
+            <span class="small-text">07</span>
+          </div>
+          <div class="extra-small bottom-text">SAN-FRANCISCO TEAM (GMT -7)</div>
+        </div>
+        <div class="contact-mode-sf__center contact-mode-points">
+          <div class="small-text timezone strong">AM</div>
+          <div class="points">
+            <span class="small-text">08</span>
+            <span class="small-text">09</span>
+            <span class="small-text">10</span>
+            <span class="small-text">11</span>
+            <span class="small-text">12</span>
+            <span class="small-text">01</span>
+            <span class="small-text">02</span>
+            <span class="small-text">03</span>
+            <span class="small-text">04</span>
+            <span class="small-text">05</span>
+            <span class="small-text">06</span>
+            <span class="small-text">07</span>
+          </div>
+        </div>
+        <div class="contact-mode-sf__right contact-mode-points right-margin">
+          <div class="small-text timezone strong"></div>
+          <div class="points">
+            <span class="small-text">08</span>
+            <span class="small-text">09</span>
+            <span class="small-text">10</span>
+            <span class="small-text">11</span>
+            <span class="small-text">12</span>
+            <span class="small-text">01</span>
+          </div>
+          <div class="extra-small bottom-text">SAN-FRANCISCO TEAM (GMT -7)</div>
+        </div>
+      </div>
+      <div class="contact-mode-mobile">
+        <div class="extra-small bottom-text">SAN-FRANCISCO TEAM (GMT -7)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

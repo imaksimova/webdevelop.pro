@@ -1,0 +1,271 @@
+.site-contacts {
+  padding-bottom: 125px;
+}
+.site-contacts-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 95px;
+  &__img, &__content {
+    width: 50%;
+  }
+  &__img {
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+  }
+  &__content {
+    padding-left: 15px;
+  }
+}
+
+.contact-address {
+	margin-bottom: 105px;
+  @include tablet {
+    margin-bottom: 70px;
+  }
+}
+.contact-address-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+  margin-bottom: 105px;
+}
+.contact-address-row__item {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+  @include desktop {
+    width: 50%;
+  }
+	&:nth-child(1) {
+		width: 20%;
+		margin-right: 20px;
+    @include desktop {
+      order: 1;
+      width: 50%;
+      margin-right: 0;
+    }
+    @include mobile {
+      width: 100%;
+    }
+	}
+  &:nth-child(2) {
+    @include desktop {
+      order: 3;
+      margin-top: 40px;
+    }
+    @include mobile {
+      width: 100%;
+      order: 2;
+    }
+  }
+	&:nth-child(3) {
+		width: 20%;
+		margin-left: 50px;
+		margin-right: 20px;
+    @include desktop {
+      order: 2;
+      width: 50%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    @include mobile {
+      width: 100%;
+      order: 3;
+      margin-top: 40px;
+    }          
+	}
+  &:nth-child(4) {
+    @include desktop {
+      order: 4;
+      width: 50%;
+      margin-top: 40px;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+	.extra-small {
+		text-transform: uppercase;
+		color: $accent_color;
+		margin-bottom: 30px;
+	}
+	.small-link {
+		font-size: 14px;
+		line-height: 24px;
+		&.email {
+			margin-top: 8px;
+		}
+	}
+	&.working-days {
+		.extra-small {
+			color: $primary;
+			opacity: 0.4;
+		}
+		.small-text {
+			span {
+				&:last-child {
+					margin-left: 32px;
+				}
+			}
+		}
+	}
+}
+
+.contact-mode {
+	margin-bottom: 105px;
+  @include tablet {
+    margin-bottom: 95px;
+  }
+	h3 {
+		max-width: 540px;
+		width: 100%;
+		margin-bottom: 40px;
+    @include tablet {
+      text-align: center;
+    }
+	}
+	.contact-mode-points {
+		.timezone {
+			color: $accent_color;
+			opacity: 0.4;
+			letter-spacing: 2.5px;
+			margin-bottom: 10px;
+		}
+		.bottom-text {
+			text-align: center;
+			margin-top: 12px;
+			color: $accent_color;
+      @include desktop {
+        font-size: 7px;
+      }
+      @include tablet {
+        display: none;
+      }
+        
+		}
+		.points {
+			padding: 7px 0;
+			span {
+				margin: 0 14px;
+        @media screen and (max-width: 1070px) {
+          margin: 0 10px;
+        }
+        @include desktop {
+          margin: 0 7px;
+        }
+        @include tablet {
+          margin: 0 14px;
+        }
+        @include mobile-xs {
+          margin: 0 6px;
+        }
+        @media screen and (max-width: 355px) {
+          font-size: 12px;
+        }
+			}
+		}
+		&.right-margin {
+			margin-top: 24px;
+		}
+	}
+}
+.contact-mode-kyiv {
+	display: flex;
+	flex-direction: row;
+  @include tablet {
+    width: 100%;
+    max-width: 395px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}
+.contact-mode-kyiv__center {
+	.timezone {
+		margin-left: 32%;
+    @include tablet {
+      margin-left: 0;
+      text-align: center;
+    }
+	}
+	.points {
+		background-color: #e2ebff;
+		border-radius: 100px;
+	}
+}
+.contact-mode-kyiv__left {
+	.timezone {
+		margin-left: 5px;
+	}
+	.points {
+		span {
+			&:first-child {
+				margin-left: 5px;
+			}
+		}
+	}
+}
+.contact-mode-sf {
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+  @include tablet {
+    width: 100%;
+    max-width: 395px;
+    margin: 0 auto;
+    margin-top: 60px;
+    justify-content: space-between;
+  }
+}
+.contact-mode-sf__left {
+	.timezone {
+		margin-left: 5px;
+	}
+	.points {
+		background-color: #e2ebff;
+		border-radius: 100px;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+		span {
+			&:first-child {
+				margin-left: 5px;
+			}
+		}
+	}
+}
+.contact-mode-sf__center {
+	.timezone {
+		margin-left: 35%;
+    @include tablet {
+      margin-left: 0;
+      text-align: center;
+    }
+	}
+}
+.contact-mode-sf__right {
+	.timezone {
+		margin-left: 5px;
+	}
+	.points {
+		background-color: #e2ebff;
+		border-radius: 100px;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+		span {
+			&:last-child {
+				margin-right: 5px;
+			}
+		}
+	}
+}
+.contact-mode-mobile {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+	.bottom-text {
+		text-align: center;
+		margin-top: 15px;
+		color: $accent_color;
+	}
+}

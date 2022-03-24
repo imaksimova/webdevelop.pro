@@ -873,6 +873,7 @@
 	&__left {
 		width: 50%;
 		padding-left: 8%;
+		padding-right: 30px;
 		@include desktop {
 			width: 60%;
 		}
@@ -929,6 +930,15 @@
 			left: 0;
 		}
 	}
+	.illustration-contacts {
+		position: relative;
+		left: 90px;
+		top: -15px;
+		width: 230px;
+		@include tablet {
+			display: none;
+		}
+	}
 }
 .get-touch-title {
 	position: relative;
@@ -968,7 +978,7 @@
 		}
 	}
 }
-.get-touch-form {
+.form-get-in-touch {
 	margin-top: 60px;
 	.form-btn {
 		margin-top: 50px;
@@ -976,14 +986,5 @@
 			width: 100%;
 			max-width: 260px;
 		}
-	}
-}
-
-.illustration-contacts {
-	position: relative;
-	left: 90px;
-	top: -15px;
-	@include tablet {
-		display: none;
 	}
 }
