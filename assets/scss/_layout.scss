@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -44,7 +44,7 @@ body {
 
 *, :after, :before {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 a {
@@ -125,8 +125,9 @@ a {
   }
   &.sky {
     background-color: #f2f6ff;
+    color: $accent_color;
     &:hover {
-      color: $accent_color;
+      background-color: #d6e2ff;
     }
   }
 }
@@ -180,13 +181,23 @@ a {
 		top: 0;
 		margin-bottom: 20px;
 		margin-top: 20px;
+    @include tablet {
+      left: 0;
+      margin-top: 30px;
+    }
 	}
 	.sub-title {
 		max-width: 756px;
-		position: relative;
-		left: 15px;
-		top: 0;
+		margin-left: 15px;
+    @include tablet {
+      margin-left: 0;
+    }
 	}
+  .offset-left {
+    @include tablet {
+      padding-left: 0;
+    }
+  }
 }
 .base-header-title {
 	position: relative;
@@ -199,6 +210,9 @@ a {
 		position: absolute;
 		width: 100%;
 		height: 160px;
+    @include tablet {
+      display: none;
+    }
 	}
 	.white-color {
 		color: #fff;
@@ -209,9 +223,15 @@ a {
 		display: flex;
 		align-items: center;
 		padding-right: 5px;
+    @include tablet {
+      display: none;
+    }
 	}
 	.in-touch {
 		margin-left: 15px;
+    @include tablet {
+      display: none;
+    }
 	}
 	&.bottom {
 		padding: 0;
@@ -222,4 +242,25 @@ a {
 	flex-direction: column;
 	position: relative;
 	margin-top: 50px;
+  @include tablet {
+    margin-top: 0;
+  }
+}
+
+.base-header-mobile {
+  background-color: $accent_color;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 47px;
+  padding: 40px 80px 40px 15px;
+  display: inline-block;
+  margin-left: -15px;
+  max-width: 100%;
+}
+
+.hidden-desktop {
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 }

@@ -1,11 +1,24 @@
 .footer-top {
 	background-color: #1d1d1d;
 	padding: 57px 0;
+  @include desktop {
+    padding-bottom: 5px;
+    padding-top: 65px;
+  }
+      
   &__wrap {
     display: flex;
+    @include desktop {
+      flex-wrap: wrap;
+      max-width: 300px;
+      margin: 0 auto;
+    }
   }
   &__form {
     width: 25%;
+    @include desktop { 
+      width: 100%;
+    }
     h5 {
       color: #fff;
       margin-bottom: 15px;
@@ -34,12 +47,41 @@
   &__menu {
     width: 25%;
     padding: 0 15px;
+    @include desktop { 
+      width: 100%;
+    }
     ul {
       padding-left: 75px;
       margin: 0;
       list-style-type: none;
+      @include desktop {
+        max-width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0 auto;
+        padding-left: 0;
+        margin-top: 50px;
+        margin-bottom: 65px;
+      }
       li {
         margin-bottom: 12px;
+        @include desktop {
+          width: 50%;
+          text-align: center;
+          &:nth-child(1) {
+            order: 0;
+          }
+          &:nth-child(2) {
+            order: 2;
+          }
+          &:nth-child(3) {
+            order: 1;
+          }
+          &:nth-child(4) {
+            order: 3;
+          }
+        }
         a {
           font-family: $font-book;
           font-weight: 400;
@@ -51,6 +93,10 @@
   }
   &__contact {
     padding: 0 15px;
+    @include desktop { 
+      text-align: center;
+      margin-bottom: 45px;
+    }
     h4 {
       color: #fff;
     }
@@ -66,28 +112,7 @@
     }
   }
 }
-.footer-top-menu {
-	list-style-type: none;
-	padding-left: 75px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	li {
-		padding-bottom: 12px;
-		&:last-child {
-			padding-bottom: 0;
-		}
-	}
-}
-.footer-top-contact h4,
-.footer-top-contact p {
-	color: #fff;
-}
-.footer-top-contact {
-	.sub-title {
-		margin-bottom: 15px;
-	}
-}
+
 .footer-bottom {
 	background-color: #101010;
 	text-align: center;
@@ -98,18 +123,34 @@
 		opacity: 0.9;
 	}
 }
-.mobile-social {
-	justify-content: center;
-	margin-bottom: 70px;
-	a {
-    margin-right: 40px;
-  }
-}
 
 .social-links {
   display: flex;
   align-items: center;
   a {
     margin-right: 24px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &.desktop-social {
+    @include desktop {
+      display: none;
+    }
+  }
+  
+  &.mobile-social {
+    justify-content: center;
+    margin-bottom: 70px;
+    display: none;
+    @include desktop {
+      display: flex;
+    }
+    a {
+      margin-right: 40px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
