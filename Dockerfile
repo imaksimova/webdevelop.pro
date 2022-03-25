@@ -6,4 +6,4 @@ WORKDIR /app
 
 EXPOSE 8085
 
-CMD ["hugo", "server", "--bind=0.0.0.0", "--minify", "--port=8085", "--baseURL=https://grafana.webdevelop.pro/", "--appendPort=false"]
+CMD ["hugo", "server", "--bind=0.0.0.0", "--minify", "--port=8085", "--baseURL=https://dev2.webdevelop.pro/", "--appendPort=false"]
