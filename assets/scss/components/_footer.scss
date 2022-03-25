@@ -35,6 +35,9 @@
       width: 207px;
       border-top-left-radius: 2px;
       border-bottom-left-radius: 2px;
+      @include desktop {
+        width: 100%;
+      }
     }
     .v-btn {
       width: 70px;
@@ -86,7 +89,11 @@
           font-family: $font-book;
           font-weight: 400;
           color: #fff;
+          opacity: .8;
           font-size: 16px;
+          &:hover {
+            opacity: 1;
+          }
         }
       }
     }
@@ -131,6 +138,9 @@
     margin-right: 24px;
     &:last-child {
       margin-right: 0;
+    }
+    &:hover {
+      opacity: .8;
     }
   }
   &.desktop-social {

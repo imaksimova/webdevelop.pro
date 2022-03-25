@@ -6,13 +6,17 @@
         <span class="white-color text-uppercase is-h1-title">{{ .Params.titleLeft }}</span>
         <div class="base-header-title__wrap">
           <div class="in-touch text-uppercase is-h1-title">{{ .Params.titleRight }}</div>
-          <hr>
-          <p class="sub-title">
-            {{ .Description }}
-          </p>
+          {{ if .Description }}
+            <hr>
+            <p class="sub-title">
+              {{ .Description }}
+            </p>
+          {{ end }}
         </div>
       </div>
     </div>
   </div>
-  <div class="square"></div>
+  {{ if .Description }}
+    <div class="square"></div>
+  {{ end }}
 </div>

@@ -1,0 +1,197 @@
+.site-how-we-work {
+  background-image: url(/images/abstract-bg.svg);
+  background-size: cover;
+  background-position-y: 180px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+}
+.how-we-work-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.how-we-work-left-sidebar {
+  flex: 0 0 160px;
+  padding: 0 15px;
+  @include tablet {
+    display: none;
+  }
+}
+.how-we-work-content {
+  flex: 1;
+}
+.how-we-work-item{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 110px;
+  @include tablet {
+    flex-direction: column;
+    margin-bottom: 85px;
+  }
+	&:first-child {
+		margin-top: 0;
+	}
+	.item-body {
+		max-width: 715px;
+    @include tablet {
+      max-width: 100%;
+    }
+		.item-headline {
+			.head-counter {
+				color: $accent_color;
+				animation-name: titleAnimation;
+				animation-duration: 0.3s;
+        @include tablet {
+          display: none;
+        }
+			}
+			.head-title {
+				color: $primary;
+				margin-top: 24px;
+				animation-name: titleAnimation;
+				animation-duration: 0.3s;
+			}
+		}
+		.item-details {
+			opacity: 0.8;
+			margin-top: 20px;
+			animation-name: contentAnimation;
+			animation-duration: 0.4s;
+			overflow: hidden;
+		}
+		.item-bottom {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			margin-top: 7px;
+      @include tablet {
+        margin-top: 30px;
+      }
+			.caption-element {
+				color: $primary;
+				padding: 30px 0 12px 0;
+				border-bottom: 1px solid rgba(51,51,51,0.4);
+				width: 100%;
+				max-width: 295px;
+				animation-name: captionAnimationOpasity;
+				animation-duration: 0.7s;
+        @include tablet {
+          max-width: 100%;
+        }
+				h5 {
+					white-space: nowrap;
+					animation-name: captionAnimation;
+					animation-duration: 0.5s;
+					overflow: hidden;
+					height: 25px;
+					width: 100%;
+					display: flex;
+				}
+			}
+		}
+	}
+	.item-image {
+		width: 167px;
+		animation-name: imageAnimation;
+		animation-duration: 1.8s;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+    @include desktop-lg {
+      width: 100%;
+      max-width: 170px;
+      margin-left: 15px;
+    }
+    @include tablet {
+      order: -1;
+      max-width: 100%;
+      margin-left: 0;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+		h5 {
+			color: $accent_color;
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+		}
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+			max-width: 165px;
+      @include desktop-lg {
+        margin-right: 0;
+      }
+      @include tablet {
+        max-width: 95px;
+      }
+		}
+		.v-btn {
+			display: none;
+			max-width: 168px;
+			width: 100%;
+			margin: 0 auto;
+      @include tablet {
+        display: none;
+      }
+		}
+	}
+}
+
+@keyframes titleAnimation {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+    opacity: 0.2;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+  
+@keyframes contentAnimation {
+  from {
+    transform: translate3d(0, -50%, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+  }
+}
+@keyframes captionAnimation {
+  from {
+    width: 0;
+    visibility: visible;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes captionAnimationOpasity {
+  from {
+    border-bottom: 1px solid transparent;
+    visibility: visible;
+  }
+  to {
+    border-bottom: 1px solid rgba(51, 51, 51, 0.4);
+  }
+}
+  
+@keyframes imageAnimation {
+  from {
+    opacity: 0;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+  }
+}
