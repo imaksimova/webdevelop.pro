@@ -4,77 +4,45 @@
   {{ partial "base-title.html" . }}
   <div class="container">
     <div class="site-approach-top">
-      <div class="spec-item">
-        <div class="title-counter">
-          <div class="counter">01</div>
-          <h4>One Project - One Team</h4>
+      {{ range .Params.specItems }}
+        <div class="spec-item {{ .cls }}">
+          <div class="title-counter">
+            <div class="counter">{{ .counter }}</div>
+            <h4>{{ .title }}</h4>
+          </div>
+          {{ if .list }}
+            <ul>
+              {{ range .list }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          {{ end }}
+          <p>
+            {{ .text }}
+          </p>
         </div>
-        <p>
-          We are a team of experienced software engineers with 10+ 
-          years in various IT fields. We have proven track record 
-          in fintech, webdev, machine learning, web design, 
-          blockchain engineering, and IoT. We believe that the best result is achieved when
-          dev team concentrates on one project at a time. 
-          We offer a wide range of custom software development and consulting services.
-        </p>
-      </div>
-      <div class="spec-item item-two">
-        <div class="title-counter">
-          <div class="counter">02</div>
-          <h4>Services we offer</h4>
-        </div>
-        <ul>
-          <li>Building and managing development teams;</li>
-          <li>Building an MVP with our startup dev kit;</li>
-          <li>Fintech Software;</li>
-          <li>IoT Software;</li>
-          <li>E-commerce Software;</li>
-          <li>AI/ML Software Development;</li>
-          <li>Distributed network and Blockchain Development;</li>
-          <li>CTO as a Service</li>
-        </ul>
-        <p>
-          Our primary languages are Python, Golang, and Javascript. 
-          We are using a lot of different tools: Django, Aiohttp, 
-          Vuejs, GoSec, TestCafe, Figma, Sketch, Kubernetes, etc. 
-          Our most important business objective and our passion is assembling result-driven
-          development teams to build great products for your business goals.
-        </p>
-      </div>
-      <div class="spec-item item-three">
-        <div class="title-counter">
-          <div class="counter">03</div>
-          <h4>How it works</h4>
-        </div>
-        <p>
-          Our team of professionals is at your service. We also 
-          cooperate with many top-notch web engineers, designers, 
-          and testers. In case our skillset is not enough, we 
-          will invite specialists with necessary skills to build a great team exclusively for
-          your project. Through the years we have developed an extensive set of 
-          libraries and frameworks that helps us speed up the product 
-          development process and save your time and money. We strive 
-          to build products that are reliable and maintainable in the future.
-        </p>
-      </div>
+      {{ end }}
     </div>
     <div class="our-aproach-details">
+      {{ $details := .Params.approachDetails }}
       <div class="our-aproach-details-header">
-        <h2 id="balanced-team" class="text-uppercase">In more detail</h2>
+        <h2 id="balanced-team" class="text-uppercase">
+          {{ $details.title }}
+        </h2>
         <hr>
-        <p class="sub-title">Balanced development team</p>
+        <p class="sub-title">
+          {{ $details.subTitle }}
+        </p>
       </div>
       <div class="our-aproach-details__row">
         <div class="our-aproach-details__text">
-          <p>In our experience, the most time-saving and cost-effective team requires 7 roles:</p>
+          <p>
+            {{ $details.shortDescr }}
+          </p>
           <ul>
-            <li>Designer</li>
-            <li>Project Manager/Business process manager</li>
-            <li>Lead engineer</li>
-            <li>Backend engineer</li>
-            <li>Frontend engineer</li>
-            <li>DevOps</li>
-            <li>Quality Assurance Engineer.</li>
+            {{ range $details.list }}
+              <li>{{ . }}</li>
+            {{ end }}
           </ul>
         </div>
         <div class="diagram">
@@ -84,13 +52,7 @@
       <div class="bottom-text">
         <div class="left">
           <p class="small-text">
-            For a company in its early stages or a new startup we recommend replacing DevOps, 
-            Quality Assurance Engineer, and project manager with an extra frontend engineer. 
-            More established startups should have a full-time DevOps, QA engineer,
-            and a Project Manager. Adding an extra Designer and a Frontend engineer 
-            is also a good idea. We value transparency and direct communication 
-            with our customers. We can set up 2-4 weeks long business 
-            trips for our development team to come to your office twice a year.
+            {{ $details.text }}
           </p>
         </div>
         <div class="right-wrap">
@@ -101,48 +63,38 @@
       </div>
     </div>
     <div class="specialists-roles">
-      <h2 class="text-uppercase">Key Roles</h2>
+      <h2 class="text-uppercase">
+        {{ .Params.tabs.title }}
+      </h2>
       <ul class="v-expansion-panel theme--light">
-        <li class="v-expansion-panel__container role-item v-expansion-panel__container--active">
-          <div class="v-expansion-panel__header">
-            <div class="toggle-btn">
-              <div class="icon-arrow"></div>
+        {{ range .Params.tabs.tabItems }}
+          <li class="v-expansion-panel__container role-item v-expansion-panel__container--active">
+            <div class="v-expansion-panel__header">
+              <div class="toggle-btn">
+                <div class="icon-arrow"></div>
+              </div>
+              <h4 class="header-title">
+                {{ .title | safeHTML }}
+              </h4>
             </div>
-            <h4 class="header-title">
-              <span>UI/UX Designer</span> is one of the most important roles in a successful development team
-            </h4>
-          </div>
-          <div class="v-expansion-panel__body">
-            <div class="content">
-              <p>
-                UI/UX design plays an essential role in successful software development. 
-                To achieve great product usability we need to link business requirements 
-                and technical processes together. That’s what UI/UX design is for. The process of designing
-                a product starts with extensive research. Thorough research is the key 
-                to creating a product that will be attractive to customers and easy to use. 
-                The next stage is wireframing. At this stage, we create the layout of product design.
-                Next step is creating a prototype. When it’s done we are ready to test 
-                the product. Finally, we create a user interface. Product design is refined throughout 
-                the whole process until it’s ready to be presented to the customer.
-              </p>
-              <p>
-                <strong>We always strive to create the best product for the end-user.</strong> 
-                User stories are an important part of our design process. User stories help us 
-                organize and prioritize our goals and keep us user-focused. Our main objective
-                is to deliver the product with the best possible design for our target audience. 
-                We believe that design-driven development is the way to achieve this goal.
-              </p>
+            <div class="v-expansion-panel__body">
+              <div class="content">
+                {{ .text | safeHTML }}
+              </div>
             </div>
-          </div>
-        </li>
+          </li>
+        {{ end }}
       </ul>
     </div>
     <div class="specialist-form">
+      {{ $expertise := .Params.sectionExpertise }}
       <div class="specialist-form__header">
-        <h2 class="text-uppercase">Our expertise</h2>
+        <h2 class="text-uppercase">
+          {{ $expertise.title }}
+        </h2>
         <hr>
         <p class="sub-title">
-          Take a look at a couple of our team specialists resumes, so you get the idea about the level of experience our developers have
+          {{ $expertise.subTitle }}
         </p>
       </div>
       {{/*  <div class="site-approach-slider">
@@ -165,128 +117,58 @@
       </div>  */}}
       <div class="bottom-section">
         <div class="content">
-          <h2>Our perspective</h2>
-          <p class="small-text">
-            It is a real challenge to find a software engineer with necessary requirements, 
-            and it's even a bigger challenge to find an experienced developer in a specific field. 
-            You are probably looking for someone capable of doing a good job, with a
-            positive attitude, and a particular skill set for your project. 
-            Then, there are budget and time limits to deliver it. All this 
-            responsibility creates a huge amount of pressure on the person in charge. 
-            Here's where we come in. Our objective is to remove this pressure from 
-            you and deliver a successful product. Our approach is simple but effective. 
-            Here is why we can give you a high-quality product guarantee:
-            </p>
-          <h3>With over 1000+ engineers in our network, we can find top-notch professionals for your project</h3>
-          <p class="small-text">
-            We have 10+ years of experience in software development. 
-            During this time we have delivered plenty of successful projects and 
-            became acquainted with many professional developers in all kinds of fields. 
-            We work on projects of various complexity
-            every day, and we will be happy to help you create the best product for your target audience.
-          </p>
-          <h3>Choice of the technology stack</h3>
-          <p class="small-text">
-            Our choice of tech stack is based on vast experience in using various kinds of 
-            software development tools. Also we’ve developed an extensive set of libraries 
-            and frameworks of our own and we constantly improve it by implementing new technologies.
-            Including reusable tech components saves time, speeds up the development 
-            process and helps us build maintainable products.
-          </p>
-          <h3>Our teamwork practices</h3>
-          <p class="small-text">
-            To create successful and profitable products and to build effective development teams 
-            is equally important to us. Some of our teamwork practices were adopted from the 
-            Agile approach. We respond to changes in project requirements quickly and
-            effectively. We value our customers’ feedback and communicate with them constantly. 
-            We are eager to learn new technologies, and sharing knowledge with each other 
-            empowers our team collaboration. We value interaction and motivation in our
-            team, and we believe it contributes greatly to creating great products.
-          </p>
-          <h3>Money-back guarantee</h3>
-          <p class="small-text">
-            A satisfaction guarantee is one of the most important points for a customer. 
-            Our work doesn't stop once we've built a team for you. We’re monitoring the 
-            whole development process from the stage of understanding product requirements to launch.
-            If a team member fails to deliver their task we take full responsibility 
-            for it. If you are not satisfied with the delivered product we give you your money back.
-          </p>
+          {{ .Content }}
         </div>
       </div>
     </div>
     <div class="schema">
+      {{ $schemaData := .Params.schema }}
       <div class="schema-header">
-        <h3>Here's an example of a development roadmap designed for a crowdfunding platform</h3>
+        <h3>
+          {{ $schemaData.title }}
+        </h3>
         <p class="sub-title">
-          <strong class="color-accent">Example:</strong> Crowdfunding Platform
+          {{ $schemaData.subTitle }}
         </p>
       </div>
       <div class="schema-content">
           <div class="wrap">
-            <div class="item">
-              <img class="item-icon" alt="users" src="{{ "images/users.svg" | absURL }}">
-              <p class="decorative-heavy text-uppercase">team</p>
-              <div class="item-chart"></div>
-              <div class="item-line"></div>
-              <div class="item-description">
-                <ul>
-                  <li>- Designer</li>
-                  <li>- Lead engineer</li>
-                  <li>- Backend engineer</li>
-                  <li>- 2 Frontend engineers</li>
-                  <li>- Quality Assurance</li>
-                  <li>- DevOps (part-time)</li>
-                </ul>
+            {{ range $schemaData.leftItems }}
+              <div class="item">
+                <img class="item-icon" alt="users" src="{{ .imgPath | absURL }}">
+                <p class="decorative-heavy text-uppercase">
+                  {{ .title }}
+                </p>
+                <div class="item-chart"></div>
+                <div class="item-line"></div>
+                <div class="item-description">
+                  <ul>
+                    {{ range .list }}
+                      <li>{{ . }}</li>
+                    {{ end }}
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="item">
-              <img class="item-icon" alt="cogs" src="{{ "images/cogs.svg" | absURL }}">
-              <p class="decorative-heavy text-uppercase">TECH STACK</p>
-              <div class="item-chart"></div>
-              <div class="item-line"></div>
-              <div class="item-description">
-                <ul>
-                  <li>- Microservices</li>
-                  <li>- Google cloud</li>
-                  <li>- Kubernetes</li>
-                  <li>- Google build</li>
-                  <li>- Python</li>
-                  <li>- Javascript</li>
-                </ul>
-                <ul class="pt-2">
-                  <li>- Django</li>
-                  <li>- Vuejs</li>
-                  <li>- TestCafe</li>
-                </ul>
-              </div>
-            </div>
+            {{ end }}
           </div>
           <div class="wrap">
             <div class="wrap-items">
-              <div class="item prototype"><img class="item-icon" alt="paper-plane" src="{{ "images/paper-plane.svg" | absURL }}">
-                <p class="decorative-heavy text-uppercase">PROTOTYPE</p>
-                <div class="item-chart"></div>
-                <div class="item-line"></div>
-                <h5>in 3 months</h5>
-              </div>
-              <div class="item mvp"><img class="item-icon" alt="flag-checkered" src="{{ "images/flag-checkered.svg" | absURL }}">
-                <p class="decorative-heavy text-uppercase">MVP VERSION</p>
-                <div class="item-chart"></div>
-                <div class="item-line"></div>
-                <h5>in 6 months</h5>
-              </div>
-              <div class="item launch"><img class="item-icon" alt="rocket" src="{{ "images/rocket.svg" | absURL }}">
-                <p class="decorative-heavy text-uppercase">LAUNCH</p>
-                <div class="item-chart"></div>
-                <div class="item-line"></div>
-                <h5>in 9 months</h5>
-              </div>
+              {{ range $schemaData.rightItems }}
+                <div class="item {{ .cls }}">
+                  <img class="item-icon" alt="paper-plane" src="{{ .imgPath | absURL }}">
+                  <p class="decorative-heavy text-uppercase">
+                    {{ .title }}
+                  </p>
+                  <div class="item-chart"></div>
+                  <div class="item-line"></div>
+                  <h5>
+                    {{ .descr }}
+                  </h5>
+                </div>
+              {{ end }}
             </div>
             <p class="wrap-text small-text">
-              When we set the deadlines for the project we cannot predict every change in the original plan. 
-              What we can do is estimate the time necessary to react to possible changes during the 
-              development process, which makes our deadlines more realistic.
-              We are prepared for the unforeseen risks and we perform well under pressure.
+              {{ $schemaData.text }}
             </p>
         </div>
       </div>

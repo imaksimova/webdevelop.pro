@@ -18,6 +18,15 @@
 	width: 100%;
 	justify-content: space-between;
 	align-items: flex-start;
+	&:nth-child(even) {
+		flex-direction: row-reverse;
+		@include tablet {
+			flex-direction: row;
+		}
+	}
+	@include desktop-lg {
+		margin-top: 80px;
+	}
 	.team-member-photo {
 		height: 425px;
 		width: 365px;

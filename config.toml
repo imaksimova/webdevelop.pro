@@ -1,7 +1,10 @@
 baseURL       = "http://example.org/"
 languageCode  = "en-us"
 title         = "Software Development and Consulting Company | Webdevelop Pro"
-
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 # Site Menus
 [menu]
   [[menu.main]]

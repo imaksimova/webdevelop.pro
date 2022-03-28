@@ -68,9 +68,15 @@
   &__row {
     display: flex;
     justify-content: space-between;
+    @include desktop-lg {
+      flex-wrap: wrap;
+    }
   }
   &__text {
     width: 34%;
+    @include desktop-lg {
+      width: 100%;
+    }
   }
 	p {
 		&.experience {
@@ -137,6 +143,9 @@
       order: -1;
       text-align: center;
       margin-top: 50px;
+    }
+    @include desktop-lg {
+      width: 100%;
     }
   }
 }
@@ -410,6 +419,9 @@
 		}
 		p {
 			margin-bottom: 15px;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -477,6 +489,10 @@
 				margin-top: 20px;
 				background-image: linear-gradient(to bottom, #fff, #004fff);
 				height: 14px;
+        @include mobile {
+          left: -28px;
+          top: 4px;
+        }
 			}
 		}
 		&.mvp {
@@ -484,6 +500,10 @@
 				margin-top: 13px;
 				background-image: linear-gradient(-180deg, #fff 0%, #004fff 100%);
 				height: 21px;
+        @include mobile {
+          left: -25px;
+          top: 7px;
+        }
 			}
 		}
 		&.launch {
@@ -492,6 +512,10 @@
 				margin-top: 6px;
 				background-image: linear-gradient(-180deg, #fff 0%, #004fff 100%);
 				height: 28px;
+        @include mobile {
+          left: -21px;
+          top: 10px;
+        }
 			}
 		}
     h5 {
@@ -608,8 +632,20 @@
     position: relative;
     &:first-child {
       flex-direction: row;
+      @include desktop-lg {
+        justify-content: space-evenly;
+      }
+      @include mobile {
+        flex-direction: column;
+      }
     }
     &:last-child {
+      @include desktop-lg {
+        margin-top: 30px;
+      }
+      @include mobile {
+        margin-top: 0;
+      }
       &:before {
         content: '';
         position: absolute;
@@ -619,6 +655,9 @@
         background-color: $secondary;
         opacity: 0.25;
         height: 5px;
+        @include mobile {
+          display: none;
+        }
       }
     }
   }
@@ -626,9 +665,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include mobile {
+      flex-direction: column;
+    }
   }
   .wrap-text {
     max-width: 660px;
     margin-top: 50px;
+    @include mobile {
+      margin-top: 0;
+    }
   }
 }
