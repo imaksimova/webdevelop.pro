@@ -71,6 +71,9 @@
 		margin: 0 auto;
 		margin-top: 20px;
 		margin-bottom: 120px;
+		@include desktop {
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -102,7 +105,6 @@
 			display: flex;
 			list-style-type: none;
 			transition: transform .6s cubic-bezier(.86,0,.07,1);
-			white-space: nowrap;
 			position: relative;
 			border-bottom: 1px solid $secondary;
 			@include tablet {
@@ -148,12 +150,7 @@
 	position: absolute;
 }
 .v-tabs__div {
-	-ms-flex-align: center;
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
 	display: inline-flex;
-	-webkit-box-flex: 0;
-	-ms-flex: 0 1 auto;
 	flex: 0 1 auto;
 	font-size: 14px;
 	font-weight: 500;
@@ -295,6 +292,9 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
+	@include tablet {
+		padding-top: 85px;
+	}
 	&__wrap {
 		display: flex;
 		justify-content: space-between;
@@ -307,6 +307,9 @@
 		margin-left: 8%;
 		@include desktop {
 			width: 100%;
+		}
+		@include tablet {
+			margin-left: 0;
 		}
 	}
 	&__right {
@@ -335,6 +338,19 @@
 		position: absolute;
 		width: 100%;
 		height: 160px;
+		@include tablet {
+			display: none;
+		}
+	}
+	@include tablet {
+		background-color: $accent_color;
+		margin-left: -15px;
+		padding: 40px 70px 40px 15px;
+		display: inline-block;
+		height: auto;
+	}
+	@include mobile {
+		max-width: 300px;
 	}
 	.white-color {
 		color: #fff;
@@ -342,6 +358,10 @@
 	}
 	.working {
 		padding-left: 22px;
+		@include tablet {
+			color: #fff;
+			padding-left: 0;
+		}
 	}
 	&.white {
 		span {
@@ -353,8 +373,15 @@
 .approach-wrap {
 	margin-left: 102px;
 	margin-top: -35px;
+	@include tablet {
+		margin-top: 0;
+		margin-left: 0;
+	}
 	hr {
 		max-width: 48px;
+		@include tablet {
+			margin-top: 30px;
+		}
 	}
 	.item {
 		max-width: 658px;
@@ -471,6 +498,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	@include tablet {
+		margin-bottom: 0;
+	}
 	.book-link {
 		display: flex;
 		position: relative;
@@ -562,7 +592,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	width: 262px;
+	width: calc(25% - 30px);
 	margin: 15px;
 	background: $white;
 	border: 1px solid $grey;
@@ -571,6 +601,13 @@
 	border-radius: 2px;
 	padding: 25px 18px;
 	text-align: center;
+	@include desktop {
+		width: calc(50% - 30px);
+	}
+	@include mobile {
+		width: 100%;
+		margin: 15px 0;
+	}
 	img {
 		width: 101px;
 		&.e-commerce-software {
@@ -599,6 +636,9 @@
 	margin-bottom: 130px;
 	padding-top: 130px;
 	overflow: hidden;
+	@include tablet {
+		margin-bottom: 85px;
+	}
 	h6 {
 		text-align: center;
 		margin-bottom: 40px;
@@ -610,8 +650,8 @@
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
-	flex: 1;
 	height: 40px;
+	margin: 0 15px 30px;
 	img {
 		width: 100%;
 		filter: grayscale(100%);
@@ -722,6 +762,11 @@
 	cursor: pointer;
 	border-top: 1px solid $secondary;
 	flex-direction: row;
+	@include tablet {
+		flex-direction: column;
+		flex-wrap: wrap;
+    align-items: flex-start;
+	}
 	&:first-child {
 		border-top: 2px solid transparent;
 	}
@@ -735,6 +780,7 @@
 		color: $primary;
 		text-align: left;
 		margin-bottom: 15px;
+		order: 0;
 		@media screen and (min-width: 768px) {
 			display: none;
 		}
@@ -754,6 +800,9 @@
 	justify-content: center;
 	align-items: center;
 	flex-basis: 140px;
+	@include tablet {
+		display: none;
+	}
 	.day {
 		color: $accent_color;
 		font-family: $font-book;
@@ -771,6 +820,9 @@
 .post_item__details {
 	width: 100%;
 	padding-right: 30px;
+	@include tablet {
+		order: 2;
+	}
 	.post_name {
 		color: $primary;
 		margin-bottom: 15px;
@@ -788,6 +840,13 @@
 	width: 168px;
 	min-width: 168px;
 	height: 109px;
+	@include tablet {
+		order: 1;
+		width: 100%;
+		margin-bottom: 15px;
+		height: 122px;
+		min-width: 100%;
+	}
 	img {
 		max-width: inherit;
 		object-fit: contain;
@@ -801,16 +860,36 @@
 	position: relative;
 	padding-top: 130px;
 	padding-bottom: 110px;
+	@include tablet {
+		padding-top: 80px;
+	}
 	&__wrap {
 		display: flex;
 		justify-content: space-between;
+		@include tablet {
+			flex-wrap: wrap;
+		}
 	}
 	&__left {
 		width: 50%;
 		padding-left: 8%;
+		padding-right: 30px;
+		@include desktop {
+			width: 60%;
+		}
+		@include tablet {
+			width: 100%;
+			padding-left: 0;
+		}
 	}
 	&__right {
 		width: 50%;
+		@include desktop {
+			width: 40%;
+		}
+		@include tablet {
+			width: 100%;
+		}
 	}
 	&:before {
 		position: absolute;
@@ -822,6 +901,9 @@
 		background-color: $accent_color;
 		z-index: 1;
 		opacity: 0.1;
+		@include tablet {
+			display: none;
+		}
 	}
 }
 .get-touch-left {
@@ -831,12 +913,31 @@
 		left: 90px;
 		top: -35px;
 		margin-bottom: 35px;
+		@include tablet {
+			top: 0;
+			left: 0;
+			margin-top: 30px;
+			margin-bottom: 20px;
+		}
 	}
 	.sub-title {
 		max-width: 325px;
 		position: relative;
 		left: 90px;
 		top: -45px;
+		@include tablet {
+			top: 0;
+			left: 0;
+		}
+	}
+	.illustration-contacts {
+		position: relative;
+		left: 90px;
+		top: -15px;
+		width: 230px;
+		@include tablet {
+			display: none;
+		}
 	}
 }
 .get-touch-title {
@@ -853,6 +954,17 @@
 		position: absolute;
 		width: 100%;
 		height: 160px;
+		@include tablet {
+			display: none;
+		}
+	}
+	@include tablet {
+		background-color: $accent_color;
+		margin-left: -15px;
+		padding: 40px 70px 40px 15px;
+		display: inline-block;
+		min-height: 118px;
+		height: auto;
 	}
 	.white-color {
 		color: #fff;
@@ -860,12 +972,13 @@
 	}
 	.in-touch {
 		margin-left: 15px;
-		.done {
-			color: $accent_color;
+		@include tablet {
+			color: #fff;
+			margin-left: 0;
 		}
 	}
 }
-.get-touch-form {
+.form-get-in-touch {
 	margin-top: 60px;
 	.form-btn {
 		margin-top: 50px;
@@ -874,10 +987,4 @@
 			max-width: 260px;
 		}
 	}
-}
-
-.illustration-contacts {
-	position: relative;
-	left: 90px;
-	top: -15px;
 }

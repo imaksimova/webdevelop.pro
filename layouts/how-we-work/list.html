@@ -1,0 +1,62 @@
+{{ define "main" }}
+
+<section class="site-how-we-work">
+  {{ partial "base-title.html" . }}
+  <div class="container">
+    <div class="how-we-work-wrap">
+      <div class="how-we-work-left-sidebar">
+        <nav class="timeline-nav">
+          <a href="#item-1" class="nav-item scrollactive-item item-1">
+            <span class="nav-el">Idea</span>
+          </a>
+          <a href="#item-2" class="nav-item scrollactive-item item-2">
+            <span class="nav-el">Planning</span>
+          </a>
+          <a href="#item-3" class="nav-item scrollactive-item item-3">
+            <span class="nav-el">Team</span>
+          </a>
+          <a href="#item-4" class="nav-item scrollactive-item item-4">
+            <span class="nav-el">Prototyping</span>
+          </a>
+          <a href="#item-5" class="nav-item scrollactive-item item-5">
+            <span class="nav-el">MVP</span>
+          </a>
+          <a href="#item-6" class="nav-item scrollactive-item item-6">
+            <span class="nav-el">Product</span>
+          </a>
+          <a href="#item-7" class="nav-item scrollactive-item item-7">
+            <span class="nav-el">Growing</span>
+          </a>
+        </nav>
+      </div>
+      <div class="how-we-work-content">
+        {{ range .Params.items }}
+          <div id="idea" class="how-we-work-item idea">
+            <div class="item-body">
+              <div class="item-headline">
+                <h5 class="head-counter">{{ .label }}</h5>
+                <h3 class="head-title">{{ .title }}</h3>
+              </div>
+              <p class="item-details">
+                {{ .text }}
+              </p>
+              <div class="item-bottom">
+                {{ range .caption }}
+                  <div class="caption-element">
+                    <h5>{{ . }}</h5>
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+            <div class="item-image">
+              <h5 class="head-counter">{{ .label }}</h5>
+              <img alt="It all starts with an idea" src="{{ .img | absURL }}">
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

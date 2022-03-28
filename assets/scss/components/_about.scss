@@ -24,15 +24,26 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
+		@include desktop {
+			display: none;
+		}
 	}
 	.team-member-info {
 		max-width: 460px;
+		@include desktop {
+			max-width: 100%;
+		}
 		.social-and-name {
 			display: flex;
 			width: 100%;
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: flex-end;
+			@include desktop {
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: flex-start;
+			}
 		}
 		.name-social {
 			display: flex;
@@ -40,8 +51,22 @@
 			justify-content: space-between;
 			align-items: flex-end;
 			flex-shrink: 0;
+			@include desktop { 
+				align-items: flex-start;
+			}
 			.team-member-photo {
 				display: none;
+				@include desktop {
+					display: flex;
+					height: 220px;
+					width: 220px;
+					margin-right: 15px;
+					flex-shrink: 0;
+				}
+				@include tablet {
+					width: 140px;
+					height: 160px;
+				}
 			}
 		}
 		.name {

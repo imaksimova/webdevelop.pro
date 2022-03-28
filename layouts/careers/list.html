@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<section class="site-careers">
+  {{ partial "base-title.html" . }}
+  <div class="container">
+    <div class="careers-wrap">
+      <div class="careers-left-sidebar">
+        <nav class="timeline-nav">
+          <a href="#item-1" class="nav-item scrollactive-item item-1">
+            <span class="nav-el">USA</span>
+          </a>
+          <a href="#item-2" class="nav-item scrollactive-item item-2">
+            <span class="nav-el">EUROPE</span>
+          </a>
+          <a href="#item-3" class="nav-item scrollactive-item item-3">
+            <span class="nav-el">WORLDWIDE</span>
+          </a>
+        </nav>
+      </div>
+      <div class="careers-content">
+        {{ range .Params.items }}
+          <div class="careers-card-list">
+            <h2 class="is-h2-title">{{ .title }}</h2>
+            <div class="layout stretch row wrap">
+              {{ range .cardItems }}
+                <div class="card">
+                  <div class="card-name decorative-heavy">{{ .name }}</div>
+                  <a href="{{ .itemUrl | absURL }}">
+                    <div class="card-title is-h4-title">{{ .title }}</div>
+                  </a>
+                  <p>{{ .text }}</p>
+                  <div class="btn-row">
+                    <a href="{{ .itemUrl | absURL }}" class="v-btn v-btn--block v-btn--large theme--light accent">
+                      <div class="v-btn__content">Apply now</div>
+                    </a>
+                  </div>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

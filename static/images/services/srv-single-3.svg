@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="286px" height="338px" viewBox="0 0 286 338" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>illustration-tech assignment</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-34.1%" y="-60.6%" width="168.3%" height="221.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="14.3999996" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Service_desktop-Development-Team" transform="translate(-896.000000, -2795.000000)" fill-rule="nonzero">
+            <g id="Test-assignment" transform="translate(129.000000, 2729.000000)">
+                <g id="illustration-tech-assignment" transform="translate(683.000000, 5.000000)">
+                    <g id="Group-11" transform="translate(84.000000, 215.899996)">
+                        <path d="M145.656849,161.053349 C74.9319911,121.623468 70.6902309,120.29692 -1.8156356e-14,80.8495843 L140.237784,6.35472461e-14 C210.806821,39.6393363 214.823509,41.1753388 285.375233,80.8146751 C238.802438,107.578354 192.229643,134.324579 145.656849,161.053349 Z" id="Path" fill="#F9F9F9"></path>
+                        <polygon id="Path" fill="#EDEFF1" points="145.665686 160.730511 -1.8156356e-14 79.113926 -1.8156356e-14 100.417416 37.6067835 121.650714 145.665686 182.24458 285.375233 101.522952 285.375233 80.1141723"></polygon>
+                        <polygon id="Path" fill="#CFD8DB" points="145.80716 160.869838 145.513114 160.712542 145.513114 182.069807 145.80716 182.24458 285.375233 101.848985 285.375233 80.5266747"></polygon>
+                        <path d="M145.532141,125.734632 C94.6821073,97.3611332 91.7335295,96.3334865 40.9697117,68.0470761 L141.652433,9.88924075 C192.295549,38.4020818 195.106182,39.4993995 245.81827,68.0122406 L145.532141,125.734632 Z" id="Path" fill="#FCFCFC"></path>
+                        <polygon id="Path" fill="#EDEFF1" points="145.52334 125.978762 40.9697117 67.8119366 40.9697117 82.986645 67.9529617 98.1266684 145.540582 141.274868 245.81827 83.8017436 245.81827 68.5229801"></polygon>
+                        <polygon id="Path" fill="#CFD8DB" points="145.736817 125.829265 145.513114 125.706681 145.513114 141.152284 145.736817 141.274868 245.81827 83.2400277 245.81827 67.8119366"></polygon>
+                    </g>
+                    <g id="Group-14-Copy-2" transform="translate(166.799998, 62.000000)">
+                        <g id="Group-7">
+                            <polygon id="Shape" fill="#A4B9EA" opacity="0.303548" filter="url(#filter-1)" points="19.2253879 251.268881 0.412142513 240.406982 108.347974 179.999995 126.956206 189.064442"></polygon>
+                            <polygon id="Shape" stroke="#FFFFFF" stroke-width="1.14382141" fill="#E9EFFF" stroke-linecap="round" stroke-linejoin="round" points="19.2253879 71.2688857 0.412142513 60.4069864 108.347974 0 126.956206 9.06444695"></polygon>
+                            <polygon id="Shape" fill="#CBDBFF" points="0.239973126 202.986006 19.2253879 213.640837 19.2253879 71.2688857 0.497096178 60.4560348"></polygon>
+                            <polygon id="Shape" fill="#9CBAFB" points="19.2253879 71.2688857 126.956206 9.06444695 126.956206 151.444405 19.2253879 213.640837"></polygon>
+                            <g id="don" transform="translate(39.059998, 56.699998)" fill="#FFFFFF">
+                                <path d="M37.5444648,78.8778744 C33.9397644,85.0366 28.0987201,88.3793293 24.5042312,86.3433033 L4.3005491,74.9172467 C0.726483519,72.8913501 -1.79351637,68.7562798 1.78054921,62.5975543 C5.35461479,56.4388288 9.9611882,54.3510347 13.5607828,56.3870607 L25.5951722,63.1940731 C26.504006,63.7005473 26.7195846,64.1198001 27.6284184,62.5699893 L58.9638966,8.06212177 C62.5634912,1.90339624 68.4045355,-1.43933308 72.0041301,0.596692958 C73.7298932,1.57418805 74.6999967,3.68618521 74.6999967,6.47179297 C74.6999967,9.25740073 73.7298932,12.4785763 72.0041301,15.4363852 L37.5444648,78.8778744 Z" id="Path"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

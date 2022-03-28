@@ -1,0 +1,84 @@
+{{ define "main" }}
+
+<section class="single-service">
+  {{ partial "base-title.html" . }}
+  <div class="container">
+    <div class="content-service-top narrow">
+      {{- $sectionDelimiter := "<!-- section break -->" -}}
+      {{- $rawContentSections := split .RawContent $sectionDelimiter -}}
+      {{ index $rawContentSections 0 | .RenderString }}
+    </div>
+    <div class="book-call-small-section">
+      <div class="book-call-small">
+        <div class="book-call-small__icon">
+          <img src="/images/rocket-icon-white.svg" alt="rocket">
+        </div>
+        <div class="book-call-small__content">
+          <h3>Do you have an idea for a product?</h3>
+          <p>Our experts can brief you out on what to keep in mind. Let us give you a call and discuss it.</p>
+        </div>
+        <div class="book-call-small__btn">
+          <button target="_blank" type="button" class="v-btn theme--light accent">
+            Book a call
+          </button>
+        </div>
+      </div>
+    </div>
+    {{ range .Params.items }}
+      <div class="layout content-service-item">
+        <div class="item-content">
+          <h6 class="label">
+            {{ .label }}
+          </h6>
+          <h2 class="is-h2-title small-line-height">
+            {{ .title }}
+          </h2>
+          <div class="content">
+            <p>
+              {{ .text | safeHTML }}
+            </p>
+          </div>
+          <div class="item-content-bottom">
+            {{ range .caption }}
+              <div class="caption-element is-uppercase-link">
+                <h5>{{ . }}</h5>
+              </div>
+            {{ end }}
+            {{ if .captionText1 }}
+              <div class="caption-element is-uppercase-link is-link">
+                <a href="{{ .captionUrl1 | absURL }}">
+                  {{ .captionText1 }}
+                </a>
+              </div>
+            {{ end }}
+            {{ if .captionUrl2 }}
+              <div class="caption-element is-uppercase-link is-link">
+                <a href="{{ .captionUrl2 | absURL }}">
+                  {{ .captionText2 }}
+                </a>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+        <div class="item-img">
+          <img src="{{ .img | absURL }}" alt="{{ .title }}">
+        </div>
+      </div>
+    {{ end }}
+    {{- if gt (len $rawContentSections) 1 -}}
+      <div class="content-service-bottom">
+        {{ index $rawContentSections 1 | .RenderString }}
+      </div>
+    {{ end }}
+    {{ with .Params.btnUrl }}
+      <div class="single-service__btn-wrap">
+        <a href="{{ . | absURL }}" class="v-btn v-btn--router theme--light accent">
+          Take a look at a case study
+        </a>
+      </div>
+    {{ end }}
+  </div>
+  {{ partial "get-in-touch.html" . }}
+</section>
+
+{{ end }}

@@ -1,0 +1,114 @@
+.site-careers {
+  background-image: url(/images/abstract-bg.svg);
+  background-size: 100%;
+  background-position-y: 160px;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+.careers-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.careers-left-sidebar {
+  width: 15%;
+  padding: 0 15px;
+  @include desktop {
+    width: 20%;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+
+.timeline-nav {
+  counter-reset: nav-counter;
+  .nav-item {
+    display: block;
+    counter-increment: nav-counter;
+    font-size: 13px;
+    line-height: normal;
+    letter-spacing: .5px;
+    font-family: $font-book;
+    color: #b5b5b6;
+    cursor: pointer;
+    margin-bottom: 24px;
+    @include mt(0.35s);
+    &:hover {
+      color: $accent_color;
+      &::before {
+        color: $accent_color;
+        opacity: 1;
+      }
+    }
+    &::before {
+      position: relative;
+      left: -14px;
+      content: "0" counter(nav-counter);
+      font-size: 12px;
+      line-height: 25px;
+      font-family: Avenir-Book,sans-serif;
+      color: #b5b5b6;
+      @include mt(0.35s);
+    }
+  }
+}
+
+.careers-content {
+  width: 85%;
+  @include desktop {
+    width: 80%;
+  }
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.careers-card-list{
+	margin-bottom: 100px;
+	.is-h2-title {
+		margin-bottom: 20px;
+    text-transform: uppercase;
+	}
+}
+.card-list-items {
+	display: flex;
+	flex-direction: row;
+}
+.stretch {
+	align-items: stretch;
+}
+
+.card {
+	background: #fff;
+	box-shadow: 0 10px 25px 0 rgba(3,52,162,0.09);
+	border-radius: 2px;
+	padding: 30px;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 15px;
+	width: 46%;
+  @include desktop {
+    height: 100%;
+    width: 100%;
+  }
+  @include tablet {
+    margin: 15px 0;
+  }
+	.btn-row {
+		margin-top: 20px;
+		height: 48px;
+	}
+}
+.card-name {
+	color: $accent_color;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.card-title {
+	margin-bottom: 10px;
+}

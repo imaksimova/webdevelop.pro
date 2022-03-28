@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+<section class="site-devkit">
+  {{ partial "base-title.html" . }}
+  <div class="devkit-row">
+    <div class="container">
+      <p>
+        For 
+        <span class="tag-row__tag">early-stage</span>,
+        <span class="tag-row__tag">medium-stage</span> 
+        and 
+        <span class="tag-row__tag">stable</span> 
+        digital companies in need of a 
+        <span class="tag-row__arrow"> &lt;</span>custom
+        <span class="tag-row__arrow">&gt;</span> web platform.
+      </p>
+    </div>
+  </div>
+  <div class="dev-content">
+    <div class="container">
+      <div class="dev-content-header">
+        {{ .Params.headerContent | safeHTML }}
+      </div>
+      <div class="dev-content-scroll">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+  <div class="dev-bottom">
+    <div class="container">
+      <div class="dev-bottom__wrap">
+        <div class="dev-bottom__left">
+          {{ partial "devkit-book.html" . }}
+        </div>
+        <div class="dev-bottom__right">
+          <h3>Download the development kit pdf and read it whenever and wherever you like.</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+{{ end }}

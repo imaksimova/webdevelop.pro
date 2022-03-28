@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="464px" height="464px" viewBox="0 0 464 464" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Competetive</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Service_desktop-MVP" transform="translate(-128.000000, -2061.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1400" height="7537"></rect>
+            <g id="bg-abstr-hww" transform="translate(-3.000000, 283.000000)"></g>
+            <g id="illustration-research" transform="translate(232.000000, 2135.000000)">
+                <path d="M131.000004,271.600011 L131.000004,146.200004 L230.000004,89.200004" id="Path-2" stroke="#82A9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3.600000143051147,7.200000286102295"></path>
+                <path d="M230,88.600004 L131,32.2000017 L32,88.600004 L130.400004,146.200002" id="Path-3" stroke="#82A9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3.600000143051147,7.200000286102295"></path>
+                <path d="M32,89.200004 L32,215.800009 L131,272.200004 L230,215.800009 L230,94.0000042" id="Path-4" stroke="#82A9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3.600000143051147,7.200000286102295"></path>
+                <polygon id="Path" fill="#F4F8FF" fill-rule="nonzero" opacity="0.8" points="33.3684211 53.4315789 130.310526 0 229.631579 53.4315789 130.905263 108"></polygon>
+                <polygon id="Path" fill="#F0F5FF" fill-rule="nonzero" opacity="0.698831" points="0 111 99 169.146387 99 296 0 239.137679"></polygon>
+                <polygon id="Path" fill="#EAF0FB" fill-rule="nonzero" opacity="0.698831" points="254 112 155 169.832083 155 296 254 239.445042"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
