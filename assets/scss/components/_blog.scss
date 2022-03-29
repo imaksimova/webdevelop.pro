@@ -1,26 +1,24 @@
+.site-blog-list-wrap {
+  width: 100%;
+  max-width: 945px;
+  margin: 0 auto;
+}
 .site-blog-list {
-  &__wrap {
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 125px;
+    right: 0;
     width: 100%;
-    max-width: 945px;
-    margin: 0 auto;
+    height: 769px;
+    background-image: url("/images/bg-pattern-2.svg");
+    background-position: top right;
+    background-size: cover;
+    z-index: -1;
   }
-	.latest-articles {
-		position: relative;
-		z-index: 3;
-		overflow: hidden;
-		&:after {
-			content: '';
-			position: absolute;
-			top: 125px;
-			right: 0;
-			width: 100%;
-			height: 769px;
-			background-image: url("~images/blog/bg-pattern-2.svg");
-			background-position: top right;
-			background-size: cover;
-			z-index: -1;
-		}
-	}
 	.posts-main {
 		margin-top: 120px;
 		display: flex;
@@ -74,6 +72,9 @@
         width: 100%;
         height: 375px;
         margin-bottom: 26px;
+        @include tablet {
+          height: 243px;
+        }
         &:hover {
           .post_item__inner {
             &:after {
@@ -84,14 +85,31 @@
         .post_details__title {
           margin-bottom: 16px;
         }
+        .date {
+          @include tablet {
+            display: none;
+          }
+        }
+        .excerpt {
+          @include tablet {
+            display: none;
+          }
+        }
       }
       &.post-small {
         width: calc(50% - 13px);
         height: 243px;
-        margin-bottom: 26px;
+        margin-bottom: 25px;
         overflow: hidden;
+        @include tablet {
+          width: 100%;
+        }
         &:nth-child(2n+1) {
           margin-left: 26px;
+          @include tablet {
+            margin-left: 0;
+            margin-top: 25px;
+          }
         }
         .post_item__inner {
           &:after {
@@ -138,11 +156,19 @@
         h2 {
           color: $white;
           text-transform: uppercase;
+          @include tablet {
+            margin-bottom: 10px;
+            font-family: $font-heavy;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: normal;
+            text-transform: capitalize;
+          }
         }
         .date-mobile {
           color: $white;
           margin-bottom: 5px;
-          text-align: center;
           text-transform: uppercase;
           @media screen and (min-width: 768px) {
             display: none;
@@ -183,40 +209,444 @@
       }
     } 
 	}
-	.all-posts {
-		margin-top: 25px;
+}
+
+
+.all-articles {
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  padding-bottom: 85px;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 726px;
+    background-image: url("/images/bg-pattern-1.svg");
+    background-position: 0% 20px;
+    z-index: -1;
+    background-size: cover;
+  }
+  .all-posts {
+    margin-top: 25px;
+  }
+}
+
+.filter-articles {
+	margin-top: 35px;
+	border-bottom: 1px solid $secondary;
+	padding-bottom: 25px;
+	h4 {
+		margin-bottom: 15px;
 	}
-	.all-articles {
+	.filter-list {
+		padding-left: 0;
+	}
+}
+
+.filter-item {
+	list-style-type: none;
+	float: left;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	&:last-child {
+		margin-right: 0;
+	}
+	.btn {
+		display: block;
+		text-decoration: none;
+		font-family: $font-book;
+		color: $primary;
+		font-size: 14px;
+		line-height: 22px;
+		letter-spacing: 0.3px;
+		background-color: $light_blue;
+		border-radius: 4px;
+		padding: 6px 8px;
+		transition: 0.5s ease;
+		outline: none;
+		text-transform: capitalize;
+    cursor: pointer;
+		&.active {
+			background-color: $accent_color;
+			color: $white;
+		}
+		&:hover {
+			background-color: $accent_color;
+			color: $white;
+		}
+	}
+}
+
+
+.single-blog {
+	margin-top: 120px;
+	margin-bottom: 110px;
+  @include tablet {
+    margin-top: 130px;
+    margin-bottom: 85px;
+  }
+	.sub-title {
+		margin-bottom: 30px;
+	}
+	.single-post-title {
+		margin-top: 45px;
+		h1 {
+			font-size: 34px;
+			line-height: 44px;
+			letter-spacing: normal;
+		}
+		hr {
+			max-width: 48px;
+			margin-top: 15px;
+			margin-bottom: 25px;
+		}
+	}
+  .single-artictle-top {
+    width: 100%;
+    max-width: 945px;
+    margin: 0 auto;
+  }
+	.single-post-header {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+    @include tablet {
+      display: block;
+      margin-top: 16px;
+    }
+		.post-author {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			flex-shrink: 0;
+      @include tablet {
+        margin-bottom: 16px;
+      }
+			.author-thumb {
+				width: 65px;
+				height: 65px;
+				padding: 2px;
+				border-radius: 50%;
+				border: 1px dashed $accent_color;
+				margin-right: 21px;
+				img {
+					object-fit: cover;
+					border-radius: 50%;
+					height: 100%;
+					width: 100%;
+				}
+			}
+			.author-details {
+				.name {
+					font-size: 16px;
+					line-height: 28px;
+					font-family: $font-book;
+					color: $primary;
+					opacity: 0.8;
+				}
+				.date {
+					font-size: 14px;
+					line-height: 24px;
+					opacity: 0.65;
+					font-family: $font-light;
+					color: $primary;
+					opacity: 0.8;
+				}
+			}
+		}
+		.post-category-filter {
+			margin-left: 30px;
+      @media screen and (max-width: 802px) and (min-width: 768px) {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+      }
+      @include tablet {
+        margin-left: 0;
+      }
+			ul {
+				padding-left: 0;
+				li {
+					margin-bottom: 0;
+          @include tablet {
+            margin-top: 0;
+            margin-bottom: 8px;
+          }
+				}
+			}
+		}
+	}
+	.sigle-post-bg {
+		width: 100%;
+		margin-top: 45px;
 		position: relative;
-		z-index: 3;
-		overflow: hidden;
-		padding-bottom: 85px;
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 726px;
-			background-image: url("~images/blog/bg-pattern-1.svg");
-			background-position: 0% 20px;
-			z-index: -1;
-			background-size: cover;
-		}
-		&:after {
-			content: '';
-			position: absolute;
-			bottom: -10%;
-			right: 0;
-			width: 100%;
-			height: 769px;
-			background-image: url("~images/blog/bg-pattern-3.svg");
-			background-position: 0% 0%;
-			z-index: -1;
-			background-size: cover;
+		margin-bottom: 45px;
+	}
+}
+.siblings-wrap {
+	margin-top: 85px;
+}
+.siblings {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  @include tablet {
+    ustify-content: center;
+  }
+  .thumbnail {
+    @include tablet {
+      margin-bottom: 35px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.thumbnail {
+	width: 100%;
+	max-width: 33.333%;
+	flex-basis: 33.333%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 15px;
+  @include tablet {
+    max-width: 360px;
+    flex-basis: 360px;
+  }
+}
+.thumbnail-date {
+	opacity: 0.6;
+	color: $primary;
+}
+.thumbnail-bg {
+	width: 100%;
+	height: 126px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 15px 0;
+}
+.thumbnail-description {
+	margin-top: 15px;
+	color: $primary;
+}
+
+.blog-disqus {
+	margin-bottom: 30px;
+}
+.bottom-wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-top: 85px;
+	margin-bottom: 50px;
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+	ul {
+		padding-left: 0;
+    @include tablet {
+      margin-top: 50px;
+    }
+		li {
+			margin-bottom: 0;
+      @include tablet {
+        margin-bottom: 25px;
+      }
 		}
 	}
+	.share {
+		.link {
+			img {
+				font-size: 16px;
+			}
+		}
+	}
+}
+.share {
+	display: flex;
+	flex-direction: column;
+	.links {
+		display: flex;
+		margin-top: 20px;
+	}
+	.link {
+		display: flex;
+		margin-right: 45px;
+		&:last-child {
+			margin-right: 0;
+		}
+		svg {
+			width: 16px;
+			height: 15px;
+			fill: $primary;
+			opacity: 0.8;
+      @include mt(0.3s);
+		}
+		&:hover {
+			svg {
+				fill: $accent_color;
+			}
+		}
+	}
+}
+
+.general-chart {
+	width: 100%;
+	height: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-left: 30px;
+  @include tablet {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+	.chart-column {
+		width: 100%;
+		height: 350px;
+		position: relative;
+    @include tablet {
+      width: 800px;
+    }
+		.yaxis-labels {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			width: 100%;
+			padding-bottom: 15px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			justify-content: space-between;
+      @include tablet {
+        bottom: 0;
+      }
+			span {
+				height: 30px;
+				width: 100%;
+				position: relative;
+				font-size: 14px;
+				color: $primary;
+				&:before {
+					content: '';
+					position: absolute;
+					transform: translate(0%, -50%);
+					left: 30px;
+					top: 50%;
+					width: calc(100% - 30px);
+					height: 1px;
+					background-color: $secondary;
+				}
+				&:last-child {
+					&:before {
+						background-color: $primary;
+					}
+				}
+			}
+		}
+		.xaxis-labels {
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			padding-left: 30px;
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			font-size: 12px;
+			justify-content: space-around;
+			span {
+				transform: rotate(-90deg);
+				display: flex;
+				color: $primary;
+			}
+		}
+		.yaxis-title {
+			position: absolute;
+			left: -15px;
+			top: 0;
+			transform: rotate(-90deg);
+			height: 100%;
+			color: $secondary;
+		}
+		.column-series {
+			height: 100%;
+			padding-left: 30px;
+			padding-bottom: 30px;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: flex-end;
+			.point {
+				width: 30px;
+				margin: 0 7px;
+				background-color: $accent_color;
+				position: relative;
+				&:hover {
+					opacity: 0.8;
+					cursor: pointer;
+					box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+				}
+			}
+			.point-label {
+				position: absolute;
+				transform: translate(-50%, -50%);
+				left: 50%;
+				top: -10px;
+				font-size: 12px;
+				color: $primary;
+				font-family: $font-black;
+			}
+		}
+	}
+}
+
+.single-blog-content {
+  width: 100%;
+  max-width: 945px;
+  margin: 0 auto;
+  &__img {
+    margin: 45px 0;
+  }
+  &__inner {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    p {
+      margin-bottom: 25px;
+    }
+    h2 {
+      margin-top: 45px;
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 38px;
+      letter-spacing: .3px;
+    }
+  }
+}
+
+.site-tags {
+  padding-bottom: 80px;
+  background-image: url(/images/abstract-bg.svg);
+  background-size: cover;
+  background-position-y: 80px;
+  background-repeat: no-repeat;
+  margin-top: 120px;
+  height: 100%;
+  &__wrap {
+    width: 100%;
+    max-width: 945px;
+    margin: 0 auto;
+  }
   .filter-articles {
-    margin-top: 85px;
-  } 
+    border-bottom: 0;
+  }
 }

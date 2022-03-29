@@ -1,0 +1,35 @@
+{{ define "main" }}
+  <section class="author-single">
+    <div class="container">
+      <div class="author-single-header">
+        <div class="author-single-header__image">
+          <div class="author-image">
+            <img alt="Vlad Tarasenko" src="https://media.webdevelop.pro/ceo_eed00c5a5084a7c0e6640bf7a1738c121ccc7679.jpg">
+          </div>
+        </div>
+        <div class="author-single-header__bio">
+          <div class="is-h3-title">Vlad Tarasenko</div>
+          <div class="sub-title">Founder and Engineer</div>
+          <p class="short-bio">
+            Vlad has experience of successfully managed all stages of the development 
+            process from idea to product launch. He is a good problem solver who knows how 
+            to find a balance between the quality of the product and development speed. He can grasp the
+            essence of the project at hand.
+          </p>
+        </div>
+      </div>
+      <div class="author-single__content">
+        <div class="filter-articles">
+          <h4 class="filter-title">Favorite Tags:</h4>
+          {{ with .Params.favoriteTags }}
+            <ul class="filter-list clearfix">
+              {{ range . }}
+                <li class="filter-item"><a href="{{ "tags" | absURL }}/{{ . | urlize }}" class="btn">{{ . }}</a></li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
