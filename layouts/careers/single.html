@@ -1,0 +1,55 @@
+{{ define "main" }}
+
+<section class="single-career">
+  <div class="container">
+    <div class="single-career__wrap">
+      <div class="single-career__left">
+        <div class="scroll-content">
+          <div class="single-post-title">
+            <h1>
+              {{ .Title }}
+            </h1>
+            <hr>
+            <p class="sub-title">
+              {{ .Description }}
+            </p>
+          </div>
+          <div class="single-post-content">
+            <div class="content">
+              {{ .Content | safeHTML }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-career__right">
+        <div class="vue-affix affix-top">
+          <div class="card">
+            {{ if .Params.label }}
+              <div class="card-name decorative-heavy">{{ .Params.label }}</div>
+            {{ end }}
+            <div class="card-title is-h4-title">{{ .Title }}</div>
+            <div class="card-location">
+              <span class="location-icon"></span>
+              <p>{{ .Params.location }}</p>
+            </div>
+            <p>
+              We are looking forward to hearing more about you! Just tell us everything related to 
+              the main arguments why you are the best match for fo this position.
+            </p>
+            <p>
+              And do not forget to provide CV + related web links to convey 
+              a full picture of your professionalism.
+            </p>
+            <div class="btn-row">
+              <a href="mailto:manager@webdevelop.pro" target="_blank" class="v-btn v-btn--block v-btn--large theme--light accent">
+                Apply now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
