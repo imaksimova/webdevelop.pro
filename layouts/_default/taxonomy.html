@@ -1,0 +1,44 @@
+{{ define "main" }}
+  <section class="site-tags">
+    <div class="base-header">
+      <div class="container">
+        {{ $title := .Title }}
+        {{ $titleArray := split $title " " }}
+        {{ $titleLeft := index $titleArray 0 }}
+        {{ $titleRight := replace $title $titleLeft "" }}
+        <div class="offset-left">
+          <h1 class="hidden-desktop base-header-mobile">{{ $titleLeft }} {{ $titleRight }}</h1>
+          <div class="base-header-title bottom">
+            <span class="white-color text-uppercase is-h1-title">{{ $titleLeft }}</span>
+            {{ if $titleRight }}
+              <div class="base-header-title__wrap">
+                <div class="in-touch text-uppercase is-h1-title">{{ $titleRight }}</div>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="site-tags__wrap">
+        <div class="filter-articles">
+          <h4 class="filter-title">Article Filter:</h4>
+          <ul class="filter-list clearfix">
+            {{$cLink := .Permalink}}
+            {{ range .Site.Taxonomies.tags }}
+              <li class="filter-item">
+                <a href="{{ .Page.RelPermalink }}" class="btn {{ if (eq .Page.Permalink $cLink)}}active{{ end }}">
+                  {{ .Page.Title }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ $pages := where .Pages "Params.hidden" "!=" true }}
+        {{ range (.Paginate $pages).Pages }}
+          {{ partial "post-item.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

@@ -2,7 +2,7 @@
 
 <section class="site-blog-list">
   <div class="container">
-    <div class="site-blog-list__wrap">
+    <div class="site-blog-list-wrap">
       <div class="posts-main">
         <a href="/blog/digitalizing-businesses-which-made-through-covid-19-outbreak" class="post_item post-large">
           <div class="post_item__inner">
@@ -36,24 +36,27 @@
           </div>
         </a>
       </div>
+      <div class="filter-articles">
+        <h4 class="filter-title">Article Filter:</h4>
+        {{ with .Params.tagItems }}
+          <ul class="filter-list clearfix">
+            {{ range . }}
+              <li class="filter-item"><a href="{{ "tags" | absURL }}/{{ . | urlize }}" class="btn">{{ . }}</a></li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="all-articles">
+  <div class="container">
+    <div class="site-blog-list-wrap">
       <div class="all-posts">
-        <a href="/blog/hiring-software-development-talent-challenge" class="post_item">
-          <div class="post_item__pulish-date">
-            <div class="day">14</div>
-            <div class="date decorative-heavy">Jul 2020</div>
-          </div>
-          <div class="mobile decorative-heavy">Jul 14, 2020</div>
-          <div class="post_item__details">
-            <h4 class="post_name">Hiring software development talent challenge</h4>
-            <p class="post_excerpt">
-              It seems that an ideal interview does not exist. Firstly, such standard prefixes as "junior-middle-senior-lead" are not universal, as each company has its own ratings and metrics and there is too much variety of necessary skills. Moreover, recruitment
-              metrics also change with the growth of the company.
-            </p>
-          </div>
-          <div class="post_item__image">
-            <img alt="Hiring software development talent challenge" src="https://media.webdevelop.pro/1.Hiring_1f2e2a2cb4ad01ba157998f70cf360153b8e9fd8.jpg">
-          </div>
-        </a>
+        {{ range .Pages }}
+          {{ partial "post-item.html" . }}
+        {{ end }}
       </div>
     </div>
   </div>

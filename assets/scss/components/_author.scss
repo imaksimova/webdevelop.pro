@@ -1,0 +1,54 @@
+.author-single {
+	margin-top: 125px;
+	margin-bottom: 60px;
+  &__content {
+    width: 100%;
+    max-width: 945px;
+    margin: 0 auto;
+  }
+}
+.author-single-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  @include tablet {
+    flex-direction: column;
+  }
+}
+.author-single-header__image {
+	.author-image {
+		border-radius: 100%;
+		overflow: hidden;
+		width: 168px;
+		height: 168px;
+		border: dashed 1px $accent_color;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		img {
+			width: 152px;
+			height: 152px;
+			border-radius: 100%;
+		}
+	}
+}
+.author-single-header__bio {
+	margin-left: 30px;
+  @include tablet {
+    margin-left: 0;
+  }
+	.sub-title {
+		margin-top: 15px;
+		margin-bottom: 20px;
+    @include tablet {
+      text-align: center;
+    }
+	}
+  .is-h3-title {
+    @include tablet {
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
+}
