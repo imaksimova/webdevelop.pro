@@ -5,9 +5,7 @@ description: Our priority at Webdevelop Pro is to partner with small teams for t
   grow over the long term, flexibly adapting to new business needs as the team and business scales.
 date: 2020-07-12
 draft: false
-author: Elias Weinraub
-authorImg: /images/elias.png
-authorSlug: elias
+authors: "Elias Weinraub"
 image: /images/blog/5.jpg
 tags: [
   "Relationships",
