@@ -1,10 +1,18 @@
 ---
 title: "Building a minimum viable product"
-date: 2022-03-23T13:57:43+02:00
+date: 2022-03-30
 draft: false
-titleLeft: "building"
-titleRight: "a minimum viable product"
 description: "Reliable solution within limited time and resources"
+postTitle: MVP Development
+captions: [Building an MVP, Product Refinement, Customers Feedback, Enhance Features]
+postDescription: >
+  The point of building a minimum viable product or an MVP is to test a product's idea. 
+  This option is especially good for startups as it can reduce financial risks, 
+  evaluate product viability and analyze users' feedback in a shorter time and at a reduced cost. 
+  The data gathered from launching an MVP shows what improvements are required to create a 
+  successful product. With our <a href="#">Startup devkit</a>, we can build a robust and scalable MVP in 4-6 months. 
+image: images/services/service-2.svg
+btn: false
 items:
   - label: goals definition
     img: /images/services/srv-single-8.svg

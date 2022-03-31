@@ -1,11 +1,19 @@
 ---
 title: "E-commerce software development"
-date: 2022-03-23T15:39:21+02:00
+date: 2022-03-27
 draft: false
-titleLeft: "e-commerce"
-titleRight: "software development"
 description: "Complete control over business processes and workflows"
-btnUrl: /
+postTitle: E-commerce Software
+captions: [Optimize Online Business, Manage and Organize Products, Automation of Operations, Expand Customer Base]
+postDescription: >
+  Would you like to get ahead of your competition in selling goods or services online? 
+  High-quality software is an essential part of a successful E-commerce online business. 
+  Webdevelop Pro has extensive expertise in designing and developing custom E-commerce 
+  software and we set high standards for our products performance and reliability. 
+  Our dedicated team of professionals can create a product of any level 
+  of complexity that fits your requirements. 
+image: images/services/service-5.svg
+btn: true
 items:
   - label: full control
     img: /images/services/srv-single-22.svg

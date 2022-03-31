@@ -130,6 +130,10 @@ a {
       background-color: #d6e2ff;
     }
   }
+  &.white {
+    background-color: #fff;
+    color: $accent_color;
+  }
 }
 
 .form-control {

@@ -1,0 +1,176 @@
+{{ define "main" }}
+
+<section class="user-case">
+  <div class="container">
+    <div class="user-case-header">
+      <div class="user-case-header__top">
+        <h1 class="is-h2-title">
+          {{ .Title }}
+        </h1>
+        <hr>
+        <div class="sub-title">
+          {{ .Params.subTitle }}
+        </div>
+      </div>
+      {{ with .Params.tags }}
+        <div class="user-case-header__filter">
+          <ul class="clearfix">
+            {{ range . }}
+              <li class="filter-item">
+                <a href="{{ "tags" | absURL }}/{{ . | urlize }}" class="btn">
+                  {{ . }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+      <div class="user-case-header__left">
+        <div class="content">
+          <p>
+            {{ .Description | safeHTML }}
+          </p>
+        </div>
+      </div>
+      <div class="user-case-header__right">
+        <div class="content">
+          {{ range .Params.cases }}
+            <p>
+              <strong>{{ .label }}</strong><br>
+              {{ .text | safeHTML }}
+            </p>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ if or .Params.goals .Params.goalsItem }}
+      <div class="goals">
+        <div class="user-case-goals">
+          <h3>Project goals</h3>
+          <div class="content link-underline">
+            {{ .Params.goals | safeHTML }}
+            {{ if .Params.goalsItem }}
+              <ul>
+                {{ range .Params.goalsItem }}
+                  {{ if .tooltipText }}
+                    <li>
+                      <span class="tooltip">
+                        {{ .text }}
+                        <span class="tooltip-text">
+                          {{ .tooltipText }}
+                        </span>
+                      </span>
+                    </li>
+                  {{ else }}
+                    <li>{{ .text }}</li>
+                  {{ end }}
+                {{ end }}
+              </ul>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    {{ end }}
+    <div class="user-case-content">
+      {{ .Content }}
+    </div>
+    {{ if .Params.stepItems  }}
+      <div class="timelines-container timelines">
+        <div class="timelines-content">
+          <h3 class="timelines-content__title">Project timeline</h3>
+          {{ range .Params.stepItems }}
+            <div class="timelines-items">
+              <div class="timelines-items__step">
+                <div class="circle">
+                  <span></span>
+                </div>
+                <h6 class="step">
+                  {{ .label }}
+                </h6>
+              </div>
+              <div class="items timelines-items__items {{ if .inner }}timelines-inner{{ end }}">
+                {{ range .items }}
+                  <div class="timeline-info">
+                    <div class="timeline-info__header">
+                      <div class="circle"><span></span></div>
+                      <div class="title link-underline">
+                        <h4 id="initial-research-and-development">
+                          {{ .title }}
+                        </h4>
+                      </div>
+                      <div class="duration link-underline">
+                        <p>{{ .duration }}</p>
+                      </div>
+                    </div>
+                    <div class="description link-underline">
+                      <p>{{ .text }}</p>
+                    </div>
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+    <div class="navigation">
+      <a href="{{ .Site.BaseURL }}contacts" target="_blank" class="navigation-btn mobile v-btn theme--light accent">
+        <div class="v-btn__content">Free consulatation</div>
+      </a>
+      <div class="navigation-row">
+        <div class="navigation-previous">
+          <a href="{{ if .PrevInSection }}{{ .PrevInSection.RelPermalink }}{{ else }}#{{ end }}" class="uppercase-link {{ if not .PrevInSection }}disabled{{ end }}">
+            previous case
+          </a>
+        </div>
+        <a href="{{ .Site.BaseURL }}contacts" target="_blank" class="navigation-btn desktop v-btn theme--light accent">
+          <div class="v-btn__content">Free consulatation</div>
+        </a>
+        <div class="navigation-next">
+          <a href="{{ if .NextInSection }}{{ .NextInSection.RelPermalink }}{{ else }}#{{ end }}" class="uppercase-link {{ if not .NextInSection }}disabled{{ end }}">
+            next case
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="book-call-big">
+      <div class="book-call-big__content">
+        <h2>Do you consider building a similar product?</h2>
+        <hr>
+        <p>
+          Let's book a short meeting and immediately discuss with you all the details about your project.
+        </p>
+        <a href="#" class="v-btn theme--light white">
+          Book a call
+        </a>
+      </div>
+      <div class="book-call-big__img">
+        <img src="{{ "images/web-develop-ilustration.svg" | absURL }}" alt="web-develop">
+      </div>
+    </div>
+    {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+    {{ $.Scratch.Add "path" .Site.BaseURL }}
+    <ul class="breadcrumbs">
+      <li>
+        <a href="/" class="breadcrumbs-item-title router-link-active">
+          <span>Home</span>
+        </a>
+        <img class="arrow" src="{{ "images/arrow-down.svg" | absURL }}">
+      </li>
+      {{ range $index, $element := split $url "/" }}
+        {{ $.Scratch.Add "path" $element }}
+        {{ if ne $element "" }}
+          <li>
+            <a href="{{ $.Scratch.Get "path" }}" class="breadcrumbs-item-title">
+              <span>{{ humanize (replace . "posts" "blog") }}</span>
+            </a>
+            <img class="arrow" src="{{ "images/arrow-down.svg" | absURL }}">
+            {{ $.Scratch.Add "path" "/" }}
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul> 
+  </div>
+</section>
+
+{{ end }}

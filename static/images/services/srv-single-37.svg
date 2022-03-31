@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="464px" height="464px" viewBox="0 0 464 464" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>illustration-use correct dev strat copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="23.976217%" y1="24.6689779%" x2="76.023783%" y2="75.335199%" id="linearGradient-1">
+            <stop stop-color="#CFD8DB" offset="0%"></stop>
+            <stop stop-color="#CFD8DB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Service_desktop-Blockchain" transform="translate(-814.000000, -2294.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1400" height="6019"></rect>
+            <g id="Group-12" transform="translate(914.000000, 2406.000000)">
+                <g id="Group-14" transform="translate(71.104001, 3.333000)" fill-rule="nonzero">
+                    <g id="Group-5" transform="translate(0.677523, 0.000000)">
+                        <polygon id="Shape" stroke="#FFFFFF" stroke-width="1.04015135" fill="#F7F7F7" stroke-linecap="round" stroke-linejoin="round" points="94.4007264 111.065286 0.132851225 56.6393671 98.0995045 0.0800982156 192.36738 54.4987356"></polygon>
+                        <polygon id="Shape" fill="#EDEFF1" points="0.132851225 56.6393671 0.132851225 174.39594 94.4007264 228.814577 94.4007264 111.065286"></polygon>
+                        <polygon id="Shape" fill="url(#linearGradient-1)" points="94.4007264 111.065286 192.36738 54.4987356 192.36738 172.255308 94.4007264 228.814577"></polygon>
+                    </g>
+                </g>
+                <g id="Group">
+                    <polygon id="Path-15" stroke="#82A9FF" stroke-width="1.83315006" points="3.68878685 59.0205897 99.5972451 3.68878685 191.816916 57.1761962 95.9084582 112.507999"></polygon>
+                    <polyline id="Path-16" stroke="#82A9FF" stroke-width="1.84439343" stroke-linecap="round" stroke-linejoin="round" points="3.68878685 59.0205897 3.68878685 173.372982 95.9084582 226.860392 143.248108 199.549055"></polyline>
+                    <line x1="95.9084582" y1="112.507999" x2="95.9084582" y2="226.860392" id="Path-17" stroke="#82A9FF" stroke-width="1.84439343"></line>
+                    <circle id="Oval-Copy" fill="#82A9FF" cx="191.816916" cy="57.1761962" r="3.68878685"></circle>
+                    <circle id="Oval-Copy-2" fill="#82A9FF" cx="99.5972451" cy="3.68878685" r="3.68878685"></circle>
+                    <circle id="Oval" fill="#82A9FF" cx="95.9084582" cy="112.507999" r="3.68878685"></circle>
+                    <circle id="Oval-Copy-4" fill="#82A9FF" cx="95.9084582" cy="226.860392" r="3.68878685"></circle>
+                    <circle id="Oval-Copy-3" fill="#82A9FF" cx="3.68878685" cy="59.0205897" r="3.68878685"></circle>
+                    <circle id="Oval-Copy-7" fill="#82A9FF" cx="3.68878685" cy="173.372982" r="3.68878685"></circle>
+                    <line x1="191.647502" y1="57.7720007" x2="191.647502" y2="75.5480009" id="Path-23" stroke="#82A9FF" stroke-width="1.83315006" stroke-linecap="round" stroke-linejoin="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

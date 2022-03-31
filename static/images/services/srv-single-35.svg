@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="464px" height="464px" viewBox="0 0 464 464" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>illustration-use correct dev strat</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="52.6583186%" y1="38.6691091%" x2="50%" y2="63.4458163%" id="linearGradient-1">
+            <stop stop-color="#004FFF" stop-opacity="0.03" offset="0%"></stop>
+            <stop stop-color="#D8D8D8" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="23.976217%" y1="24.6689779%" x2="76.023783%" y2="75.335199%" id="linearGradient-2">
+            <stop stop-color="#CFD8DB" offset="0%"></stop>
+            <stop stop-color="#CFD8DB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="23.9856474%" y1="24.6689779%" x2="76.0143526%" y2="75.335199%" id="linearGradient-3">
+            <stop stop-color="#CFD8DB" offset="0%"></stop>
+            <stop stop-color="#CFD8DB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Service_desktop-Blockchain" transform="translate(-813.000000, -1063.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1400" height="6019"></rect>
+            <g id="bg-abstr-hww" transform="translate(-3.000000, 283.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+                <path d="M3,500 C435.044792,776.063443 901.027287,914.095164 1400.94749,914.095164 C1403.68417,914.095164 1403.68417,1018.06344 1400.94749,1226 L3,1226 L3,500 Z" id="decor-bg-1"></path>
+            </g>
+            <g id="Group-16" transform="translate(928.000000, 1144.000000)">
+                <g id="Group-14" transform="translate(53.000000, 76.000000)" fill-rule="nonzero">
+                    <g id="Group-5" transform="translate(0.440742, 0.000000)">
+                        <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.87450007" fill="#F7F7F7" stroke-linecap="round" stroke-linejoin="round" points="61.409524 72.2501466 0.0864223276 36.8450192 63.8156517 0.0521054602 125.138753 35.4524964"></polygon>
+                        <polygon id="Shape" fill="#EDEFF1" points="0.0864223276 36.8450192 0.0864223276 113.447979 61.409524 148.84837 61.409524 72.2501466"></polygon>
+                        <polygon id="Shape" fill="url(#linearGradient-2)" points="61.409524 72.2501466 125.138753 35.4524964 125.138753 112.055456 61.409524 148.84837"></polygon>
+                    </g>
+                </g>
+                <polygon id="Shape" stroke="#FFFFFF" stroke-width="1.61700007" fill="#F7F7F7" fill-rule="nonzero" opacity="0.3" stroke-linecap="round" stroke-linejoin="round" points="113.277668 141 0 75.2878698 117.722332 7 231 72.7033392"></polygon>
+                <polygon id="Shape" fill="#EDEFF1" fill-rule="nonzero" opacity="0.3" points="0 74 0 215.574449 113 281 113 139.434305"></polygon>
+                <polygon id="Shape" fill="url(#linearGradient-3)" fill-rule="nonzero" opacity="0.3" points="114 139.146276 232 71 232 212.862495 114 281"></polygon>
+                <g id="Group" stroke="#82A9FF" stroke-dasharray="4.85099993729591,8.085000594854364" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.54000003">
+                    <path d="M0.215599932,68.1296016 L117.933203,0.215599932 L231.123205,65.8658015 L113.405603,133.779803 L0.215599932,68.1296016 Z" id="Path-15"></path>
+                    <path d="M0.215599932,72.5296017 L0.215599932,212.885205 L113.405603,278.535407 L231.123205,210.621405 L231.123205,70.2658016" id="Path-16"></path>
+                    <line x1="113.405603" y1="138.179803" x2="113.405603" y2="278.535407" id="Path-17"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
