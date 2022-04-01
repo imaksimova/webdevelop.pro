@@ -1,11 +1,21 @@
 ---
 title: "Cto as a Service"
-date: 2022-03-23T15:15:56+02:00
+date: 2022-03-24
 draft: false
-titleLeft: "cto"
-titleRight: "as a service"
 description: "A CTO’s role is very important in any company"
-btnUrl: /
+postTitle: CTO as a Service
+captions: [Outside Technical Consultant, Organize Workflow, Manage Dev Team, Improve Infrastructure]
+postDescription: >
+  Not all companies have a full-time in-house CTO, even if you do there might come a time 
+  when you find yourself in need of external expertise to handle technical challenges for your business:
+  <ul><li>you have an idea for a new product but you don't know how to implement it;</li>
+  <li>you have a big ongoing project and your in-house expertise is not enough to proceed;</li>
+  <li>you need an outside expert to coach your in-house team on new technology trends;</li>
+  <li>your in-house team needs help in organizing their workflow;</li>
+  <li>you don't need a full-time CTO at the moment, but you still need someone to give you advice on technologies</li></ul>
+  We can provide a service of consulting CTO on demand for as long as you need it. 
+image: images/services/service-8.svg
+btn: true
 items:
   - label: use correct development strategy
     img: /images/services/srv-single-16.svg

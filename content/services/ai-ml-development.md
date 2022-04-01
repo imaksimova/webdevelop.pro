@@ -1,11 +1,19 @@
 ---
 title: "AI/ML development"
-date: 2022-03-22T13:00:47+02:00
+date: 2022-03-26
 draft: false
-titleLeft: "AI/ML"
-titleRight: "development"
 description: "Driving force for businesses to gain more market share"
-btnUrl: /
+postTitle: AI/ML Development
+captions: [AI Software, End-to-end Machine Learning, Data Science, AI/ML Technologies]
+postDescription: >
+  Artificial Intelligence and Machine Learning became extremely popular technologies used 
+  by most advanced tech giants. There are numerous applications for ML to solve such 
+  important business problems as detecting spam, automating data entry, improving product 
+  recommendation system for your customers, and many others. AI-powered software is 
+  fast, scalable and efficient. Webdevelop pro offers end-to-end Machine Learning, 
+  Data Science and AI software development to revolutionize your business.
+image: images/services/service-6.svg
+btn: true
 items:
   - label: NLP
     img: /images/services/srv-single-18.svg

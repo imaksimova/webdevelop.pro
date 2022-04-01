@@ -68,6 +68,9 @@
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
+    img {
+      max-height: 200px;
+    }
 		h5 {
 			color: $accent_color;
 		}

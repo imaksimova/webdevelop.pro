@@ -1,11 +1,18 @@
 ---
 title: "Fintech Software"
-date: 2022-03-23T22:19:26+02:00
+date: 2022-03-29
 draft: false
-titleLeft: "fintech"
-titleRight: "software"
 description: "We know how to help you to improve your business"
-btnUrl: /
+postTitle: Fintech Software
+captions: [Increase Efficiency, Enhance Customer Experience, Automate Business Processes, Improve Security]
+postDescription: >
+  Our team has a proven track record in delivering successful Fintech products. 
+  Whether your business is a start-up or a corporation we can help you manage your 
+  financial operations better. With a well-selected tech stack, carefully 
+  designed architecture and optimized development workflow, our team 
+  can create an effective product for your business goals. 
+image: images/services/service-3.svg
+btn: true
 items:
   - label: competitive
     img: /images/services/srv-single-30.svg

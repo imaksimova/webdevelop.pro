@@ -6,9 +6,7 @@ description: It seems that an ideal interview does not exist. Firstly, such stan
   also change with the growth of the company.
 date: 2020-07-14
 draft: false
-authors: ["Vlad Tarasenko"]
-authorImg: /images/vlad-photo.png
-authorSlug: vladyslav
+authors: "Vlad Tarasenko"
 image: /images/blog/4.jpg
 tags: [
   "Relationships"

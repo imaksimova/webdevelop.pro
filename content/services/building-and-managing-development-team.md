@@ -1,11 +1,19 @@
 ---
 title: "Building and managing a development team"
-date: 2022-03-22T13:00:47+02:00
+date: 2022-03-31
 draft: false
-titleLeft: "building"
-titleRight: "and managing a development team"
 description: "Effective development team means everyone understands business goals, necessary steps and area of responsibility"
-btnUrl: /
+postTitle: Development Team
+captions: [Dedicated Team, Great Technical Skills, Results-driven Development, Successful Product]
+postDescription: >
+  Webdevelop Pro's specialty is <strong>building and managing result-driven development teams.</strong>
+  We've been improving our teamwork practices for as long as we've been in the software development business. 
+  <a href="#">Our work approach</a> is based on One project - One team rule. We believe the best result is 
+  achieved when the dev team is focused solely on one project. Our specialists have a wide 
+  range of skills in various technologies and are constantly learning new trends. Webdevelop Pro 
+  can assemble a high-performance team exclusively for your product. 
+image: images/services/service-1.svg
+btn: true
 items:
   - label: Project research
     img: /images/services/srv-single-1.svg

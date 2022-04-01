@@ -1,35 +1,37 @@
 <div class="service-item">
+  {{ $btnUrl :=  replace .Page.RelPermalink "services" "case-study" }}
   <div class="service-item__image">
-    <a href="{{ .itemUrl | absURL }}" class="service-item__image-link">
-      <img src="{{ .img | absURL }}" alt="{{ .title }}">
+    <a href="{{ .Permalink | absURL }}" class="service-item__image-link">
+      <img src="{{ .Params.image | absURL }}" alt="{{ .Params.postTitle }}">
     </a>
-    <a href="#" class="v-btn v-btn--router theme--light accent">Take a look at a case study</a>
+    {{ if .Params.btn }}
+      <a href="{{ $btnUrl | absURL }}" class="v-btn v-btn--router theme--light accent">
+        Take a look at a case study
+      </a>
+    {{ end }}
   </div>
   <div class="service-item__content">
     <div class="service-item__headline">
       <h3 class="service-item__title">
-        <a href="{{ .itemUrl | absURL }}">{{ .title }}</a>
+        <a href="{{ .Permalink | absURL }}">{{ .Params.postTitle }}</a>
       </h3>
     </div>
     <div class="service-item__item-details">
-      {{ .descr | safeHTML }}
+      {{ .Params.postDescription | safeHTML }}
     </div>
     <div class="service-item__bottom">
-      <div class="service-item__caption-element">
-        <h5>{{ .caption1 }}</h5>
-      </div>
-      <div class="service-item__caption-element">
-        <h5>{{ .caption2 }}</h5>
-      </div>
-      <div class="service-item__caption-element">
-          <h5>{{ .caption3 }}</h5>
-      </div>
-      <div class="service-item__caption-element">
-        <h5>{{ .caption4 }}</h5>
-      </div>
+      {{ range .Params.captions }}
+        <div class="service-item__caption-element">
+          <h5>{{ . }}</h5>
+        </div>
+      {{ end }}
     </div>
-    <div class="service-item__btn-bottom">
-      <a href="#" class="v-btn v-btn--router theme--light accent">Take a look at a case study</a>
-    </div>
+    {{ if .Params.btn }}
+      <div class="service-item__btn-bottom">
+        <a href="{{ $btnUrl | absURL }}" class="v-btn v-btn--router theme--light accent">
+          Take a look at a case study
+        </a>
+      </div>
+    {{ end }}
   </div>
 </div>

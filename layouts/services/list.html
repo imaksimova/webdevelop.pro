@@ -3,7 +3,7 @@
 <section class="site-services">
   {{ partial "base-title.html" . }}
   <div class="container">
-    {{ range .Site.Data.service.serviceItem }}
+    {{ range .Pages }}
       {{ partial "services/services-item.html" . }}
     {{ end }}
   </div>

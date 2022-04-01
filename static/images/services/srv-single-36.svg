@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="464px" height="464px" viewBox="0 0 464 464" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>illustration-use correct dev strat copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="10.7523759%" cy="16.6736297%" fx="10.7523759%" fy="16.6736297%" r="142.422562%" id="radialGradient-1">
+            <stop stop-color="#F1EDED" offset="0%"></stop>
+            <stop stop-color="#ECE0E0" offset="21.7747044%"></stop>
+            <stop stop-color="#DBCFCF" offset="35.3278083%"></stop>
+            <stop stop-color="#DBCFCF" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Service_desktop-Blockchain" transform="translate(-126.000000, -1652.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1400" height="6019"></rect>
+            <g id="Group-11" transform="translate(198.000000, 1704.000000)">
+                <circle id="Oval" fill="url(#radialGradient-1)" opacity="0.6" cx="158.821231" cy="96.7712288" r="40.6712272"></circle>
+                <g id="Group-9" transform="translate(0.000000, 282.200008)" fill-rule="nonzero">
+                    <polygon id="Shape-Copy-14" fill="#CBDBFF" points="57.7714793 68.0850001 0 34.7008684 60.0385202 0 117.81 33.3883657"></polygon>
+                    <polygon id="Path-Copy-3" fill="#9CBAFB" points="0 34.4734178 58.0125001 68.0850001 59.6700001 67.2546952 59.6700001 0"></polygon>
+                </g>
+                <g id="Group-9-Copy" transform="translate(100.300003, 216.750006)" fill-rule="nonzero">
+                    <polygon id="Shape-Copy-14" fill="#F1EDED" points="57.7714793 68.0850001 0 34.7008684 60.0385202 0 117.81 33.3883657"></polygon>
+                    <polygon id="Path-Copy-3" fill="#DBCFCF" points="0 34.4734178 58.0125001 68.0850001 59.6700001 67.2546952 59.6700001 0"></polygon>
+                </g>
+                <g id="Group-9-Copy-2" transform="translate(194.650005, 159.800004)" fill-rule="nonzero">
+                    <polygon id="Shape-Copy-14" fill="#F1EDED" points="57.7714793 68.0850001 0 34.7008684 60.0385202 0 117.81 33.3883657"></polygon>
+                    <polygon id="Path-Copy-3" fill="#DBCFCF" points="0 34.4734178 58.0125001 68.0850001 59.6700001 67.2546952 59.6700001 0"></polygon>
+                </g>
+                <g id="Group-5" transform="translate(15.300000, 117.300003)" fill-rule="nonzero">
+                    <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.5" fill="#E9EFFF" stroke-linecap="round" stroke-linejoin="round" points="44.3835981 52.2186342 0.0624615467 26.6296564 46.1226216 0.0376591065 90.4437581 25.6232136"></polygon>
+                    <polygon id="Shape" fill="#CBDBFF" points="0.0624615467 26.6296564 0.0624615467 81.9942769 44.3835981 107.579831 44.3835981 52.2186342"></polygon>
+                    <polygon id="Shape" fill="#9CBAFB" points="44.3835981 52.2186342 90.4437581 25.6232136 90.4437581 80.9878341 44.3835981 107.579831"></polygon>
+                </g>
+                <g id="Group-5-Copy" opacity="0.6" transform="translate(221.000006, 0.000000)" fill-rule="nonzero">
+                    <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.5" fill="#FAF2F2" stroke-linecap="round" stroke-linejoin="round" points="19.7335974 41.1686339 0.711780635 0.973553054 65.7937574 14.5732133"></polygon>
+                    <polygon id="Shape" fill="#F1EDED" points="0.850000024 0.735381097 0.850000024 56.1000016 19.7335974 96.5298311 19.7335974 41.1686339"></polygon>
+                    <polygon id="Shape" fill="#DBCFCF" points="19.7335974 41.1686339 65.7937574 14.5732133 65.7937574 69.9378338 19.7335974 96.5298311"></polygon>
+                </g>
+                <polygon id="Path-10" fill="#4B83FF" opacity="0.050062" points="15.3000004 324.404253 59.2359865 351.05001 105.400003 323.703048 105.400003 197.200006 59.2359865 224.546967 15.3000004 198.602414"></polygon>
+                <line x1="59.5000017" y1="226.522173" x2="59.0750017" y2="349.77501" id="Path-9" stroke="#4B83FF" stroke-width="0.850000024" opacity="0.399781" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1.700000047683716,4.25000011920929"></line>
+                <line x1="15.7250004" y1="201.294172" x2="15.7250004" y2="325.934083" id="Path-9-Copy-2" stroke="#4B83FF" stroke-width="0.850000024" opacity="0.399781" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1.700000047683716,4.25000011920929"></line>
+                <line x1="105.825003" y1="200.444235" x2="105.825003" y2="323.425009" id="Path-9-Copy" stroke="#4B83FF" stroke-width="0.850000024" opacity="0.399781" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1.700000047683716,4.25000011920929"></line>
+            </g>
+            <g id="bg-abstr-hww" transform="translate(-3.000000, 283.000000)"></g>
+        </g>
+    </g>
+</svg>

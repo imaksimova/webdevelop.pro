@@ -1,11 +1,18 @@
 ---
 title: "Iot Software"
-date: 2022-03-23T15:54:42+02:00
+date: 2022-03-28
 draft: false
-titleLeft: "iot"
-titleRight: "software"
 description: "IoT software development is a constantly changing industry. We ensure the reliability and security of our IoT solutions."
-btnUrl: /
+postTitle: IoT Software
+captions: [Сonnect Digital Products, Reshape Your Business, Analyze Big Data, Enhance Internal Operations]
+postDescription: >
+  If you are searching for a development team to implement the latest IoT Technology 
+  trends in your business you can rely on Webdevelop Pro. We have experience in 
+  building applications that collect, share, analyze and predict events based on 
+  the information provided by smart devices, sensors, and controllers. 
+  Using various cloud providers we build robust, scalable and secure systems.  
+image: images/services/service-4.svg
+btn: false
 items:
   - label: technical factors
     img: /images/services/srv-single-24.svg
