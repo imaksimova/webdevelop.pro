@@ -1,0 +1,43 @@
+tabsItems:
+  - title: Exclusive Team
+    img: images/Individual-team.svg
+    tabId: tab-1
+  - title: Full-Stack Service
+    img: images/fullstack-service.svg
+    tabId: tab-2
+  - title: "Skills & Experience"
+    img: images/skills-experience.svg
+    tabId: tab-3
+  - title: Flexibility
+    img: images/flexibility.svg
+    tabId: tab-4
+  - title: Transparency
+    img: images/transparency.svg
+    tabId: tab-5
+
+tabsContent:
+  - title: Motivated professionals and great performance
+    subTitle: Organizing cohesive teamwork
+    tabId: tab-1
+    text: >
+      To create a high-quality product you need a high-performance team. Building and managing development teams is our specialty. Our developers are passionate about their   work and are specialists in their respective fields. We constantly improve our skills and learn  new technologies. Our teamwork practices are powered by Agile methodology. Webdevelop Pro can assemble  a development team exclusively for your product with your business goals in mind. 
+  - title: The full circle of development
+    subTitle: From draft to release
+    tabId: tab-2
+    text: >
+      Our process of product development begins with understanding your business idea. A draft is composed based on business requirements. Then we design the DevOps strategy, infrastructure, and architecture. After that, we proceed to the development of UX/UI design, front-end and back-end.  Then comes the turn of product maintenance and enhancements.  While we take care of the technical side you can focus on expanding your business.  Sounds good, right? 
+  - title: 15+ years in software development
+    subTitle: Providing specific skills
+    tabId: tab-3
+    text: >
+      We’d love to share our experience and ideas. Approaching complex business cases and connecting different platforms is what we’re good at. With our knowledge and expertise in working with various 3rd party APIs,  we can find an optimal solution based on your business requirements, budget, and deadline. 
+  - title: We adapt to change
+    subTitle: Delivering success
+    tabId: tab-4
+    text: >
+      Running a business is not an easy task. Any business has a different set of goals and requirements depending on the business stage. We build our teams according to your needs. Many years' experience in the field allows us to  provide a high level of flexibility and adjust our team’s work and priorities to your business requirements.
+  - title: Daily Standup, Sprint Planning, Sprint Review
+    subTitle: Transparency is one of our core values
+    tabId: tab-5
+    text: >
+      Putting all of the project handling on one person is not our way. All our projects have a group channel and daily stand up calls that are open for customers or anyone involved in the project.  You will have a direct channel of communication with the team so you don’t have to wait for days for feedback on your suggestion.

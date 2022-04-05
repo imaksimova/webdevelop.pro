@@ -5,61 +5,41 @@
         <div class="v-tabs__wrapper">
           <div class="v-tabs__container">
             <div class="v-tabs__slider-wrapper"><div class="v-tabs__slider accent"></div></div>
-            <div class="v-tabs__div" id="tab-1">
-              <a href="/#tab-1" class="v-tabs__item v-tabs__item--active">
-                <img src="{{ "images/Individual-team.svg" | absURL }}" alt="Individual-team" />
-                <h5>Exclusive Team</h5>
-              </a>
-            </div>
-            <div class="v-tabs__div" id="tab-2">
-              <a href="/#tab-2" class="v-tabs__item">
-                <img src="{{ "images/fullstack-service.svg" | absURL }}" alt="fullstack-service" />
-                <h5>Full-Stack Service</h5>
-              </a>
-            </div>
-            <div class="v-tabs__div" id="tab-3">
-              <a href="/#tab-3" class="v-tabs__item">
-                <img src="{{ "images/skills-experience.svg" | absURL }}" alt="skills-experience" />
-                <h5>Skills &amp; Experience</h5>
-              </a>
-            </div>
-            <div class="v-tabs__div" id="tab-4">
-              <a href="/#tab-4" class="v-tabs__item">
-                <img src="{{ "images/flexibility.svg" | absURL }}" alt="flexibility" />
-                <h5>Flexibility</h5>
-              </a>
-            </div>
-            <div class="v-tabs__div" id="tab-5">
-              <a href="/#tab-5" class="v-tabs__item">
-                <img src="{{ "images/transparency.svg" | absURL }}" alt="transparency" />
-                <h5>Transparency</h5>
-              </a>
-            </div>
+            {{ range .Site.Data.tabs.tabsItems }}
+              <div class="v-tabs__div" data-tabs="{{ .tabId }}">
+                <div class="v-tabs__item">
+                  <img src="{{ .img | absURL }}" alt="{{ .title }}" />
+                  <h5>
+                    {{ .title }}
+                  </h5>
+                </div>
+              </div>
+            {{ end }}
           </div>
         </div>
       </div>
     </div>
-    <div class="v-window" id="targetElement">
-      <div class="v-window__container v-window__container--is-active">
-        <div class="v-window-item">
-          <div class="layout row wrap">
-            <div class="item--left">
-              <h3>Motivated professionals and great performance</h3>
-              <p class="sub-title">Organizing cohesive teamwork</p>
-            </div>
-            <div class="item--right">
-              <p>
-                To create a high-quality product you need a high-performance team.
-                Building and managing development teams is our specialty. Our developers are 
-                passionate about their work and are specialists in their
-                respective fields. We constantly improve our skills and learn
-                new technologies. Our teamwork practices are powered by Agile methodology. 
-                Webdevelop Pro can assemble a development team exclusively for your
-                product with your business goals in mind.
-              </p>
+    <div class="v-window">
+      <div class="v-window__container">
+        {{ range .Site.Data.tabs.tabsContent }}
+          <div class="v-window-item" id="{{ .tabId }}">
+            <div class="layout row wrap">
+              <div class="item--left">
+                <h3>
+                  {{ .title }}
+                </h3>
+                <p class="sub-title">
+                  {{ .subTitle }}
+                </p>
+              </div>
+              <div class="item--right">
+                <p>
+                  {{ .text }}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        {{ end }}
       </div>
     </div>  
   </div>

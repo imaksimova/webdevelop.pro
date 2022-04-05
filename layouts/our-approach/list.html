@@ -64,12 +64,12 @@
     </div>
     <div class="specialists-roles">
       <h2 class="text-uppercase">
-        {{ .Params.tabs.title }}
+        {{ .Params.accordion.title }}
       </h2>
       <ul class="v-expansion-panel theme--light">
-        {{ range .Params.tabs.tabItems }}
-          <li class="v-expansion-panel__container role-item v-expansion-panel__container--active">
-            <div class="v-expansion-panel__header">
+        {{ range .Params.accordion.accordionItems }}
+          <li class="v-expansion-panel__container">
+            <div class="v-expansion-panel__header accordion">
               <div class="toggle-btn">
                 <div class="icon-arrow"></div>
               </div>
@@ -97,24 +97,21 @@
           {{ $expertise.subTitle }}
         </p>
       </div>
-      {{/*  <div class="site-approach-slider">
-        <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+      <div class="site-approach-slider">
+        <div class="swiper-approach swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-slide-duplicate">
-              <a href="/docs/Project-Manager.pdf" target="_blank" class="item">
-                <img src="{{ "images/Project-Manager.png" | absURL }}" alt="Project-Manager">
-              </a>
-            </div>
-            <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev">
-              <a href="/docs/UX_UI.pdf" target="_blank" class="item">
-                <img src="{{ "images/UX_UI.png" | absURL }}" alt="UX-UI">
-              </a>
-            </div>
+            {{ range $expertise.sliderItems }}
+              <div class="swiper-slide">
+                <a href="{{ .docsUrl | absURL }}" target="_blank" class="item">
+                  <img src="{{ .img | absURL }}" alt="{{ .label }}">
+                </a>
+              </div>
+            {{ end }}
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div> 
         </div>
-      </div>  */}}
+      </div>
       <div class="bottom-section">
         <div class="content">
           {{ .Content }}

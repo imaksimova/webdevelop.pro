@@ -1,0 +1,137 @@
+{{ define "main" }}
+
+<section class="s-top">
+  <div class="container">
+    <div class="top-wrap">
+      <h1 class="top-title">
+        {{ $title := .Title }}
+        {{ $titleArray := split $title " " }}
+        {{ $titleLeft := index $titleArray 0 }}
+        {{ $titleRight := replace $title $titleLeft "" }}
+        <div class="flag-img"></div>
+        <span class="white-color">{{ $titleLeft }}</span>
+        <span class="black-color">{{ $titleRight }}</span>
+      </h1>
+      <p class="title-descr">
+        {{ .Params.subTitle }}
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="s-happen">
+  <div class="container">
+    <h2 class="s-title">
+      {{ .Params.firstSection.title }}
+    </h2>
+    <div class="s-happen-text">
+      <div class="s-happen-text__left">
+        <p>
+          {{ .Params.firstSection.textLeft }}
+        </p>
+      </div>
+      <div class="s-happen-text__right">
+        <p>
+          {{ .Params.firstSection.textRight }}
+        </p>
+      </div>
+    </div>
+    <div class="s-happen-card">
+      <div class="s-happen-card__left">
+        <h3 class="s-happen-card__title">
+          {{ .Params.firstSection.cardTitle }}
+        </h3>
+        <p>
+          {{ .Params.firstSection.cardText }}
+        </p>
+      </div>
+      <div class="s-happen-card__right"><img src="{{ "images/help-ukraine/img-1.jpg" | absURL }}"></div>
+    </div>
+  </div>
+</section>
+
+<section class="s-fund">
+  <div class="container">
+    <h2 class="s-big-title">
+      {{ .Params.secondSection.title }}
+    </h2>
+    <div class="s-top-intro">
+      <div class="s-top-intro__number"><img src="{{ "images/help-ukraine/01.svg" | absURL }}"></div>
+      <h4 class="s-top-intro__title">
+        {{ .Params.secondSection.subTitle }}
+      </h4>
+      <p class="s-top-intro__descr">
+        {{ .Params.secondSection.description | safeHTML }}
+      </p>
+    </div>
+    <div class="fund-items">
+      {{ range .Params.secondSection.items }}
+        <div class="fund-item">
+          <div class="fund-item__type">{{ .label }}</div>
+          <h5 class="fund-item__title">{{ .title }}</h5>
+          <p class="fund-item__text">
+            {{ .text | safeHTML }}
+          </p>
+          <div class="fund-item__payment"><strong class="fund-item__label">Payment options:</strong>
+            <div class="fund-item__payment-options">
+              {{ range .paymentOptions }}
+                <div class="fund-item__payment-item">
+                  {{ . }}
+                </div>
+              {{ end }}
+            </div>
+          </div>
+          <a href="{{ .btnUrl }}" target="_blank" class="fund-item__btn v-btn v-btn--large theme--light accent">
+            Make a Donation
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="s-voice">
+  <div class="container">
+    <div class="s-top-intro">
+      <div class="s-top-intro__number"><img src="{{ "images/help-ukraine/02.svg" | absURL }}"></div>
+      <h4 class="s-top-intro__title">
+        {{ .Params.thirdSection.title }}
+      </h4>
+      <p class="s-top-intro__descr">
+        {{ .Params.thirdSection.description | safeHTML }}
+      </p>
+    </div>
+    <div class="s-table-wrap">
+      <table class="s-table">
+        <thead>
+          <tr>
+            <th>State</th>
+            <th>Name</th>
+            <th>Party</th>
+            <th>Contact</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range .Site.Data.tableItems.items }}
+            <tr>
+              <td>{{ .state }}</td>
+              <td>{{ .name }}</td>
+              <td>{{ .party }}</td>
+              <td>
+                <a
+                  href="{{ .contact }}" 
+                  target="_blank" 
+                  class="s-table__link {{ if eq .contact "" }}disabled{{ end }}"
+                  >
+                    Get in Touch
+                </a>
+              </td>
+            </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+{{ end }}

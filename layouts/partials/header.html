@@ -20,13 +20,13 @@
       {{ range .Site.Menus.main }}
         {{ if .HasChildren }}
           <li class="is-submenu {{ if $currentPage.HasMenuCurrent "main" . }}router-link-active{{ end }}">
-            <a href="{{ .URL }}">
+            <a href="{{ .URL | absURL }}">
               {{ .Name }}
             </a>
             <ul class="dropdown-list submenu">
               {{ range .Children }}
                 <li class="{{ if $currentPage.IsMenuCurrent "main" . }}router-link-active{{ end }}">
-                  <a href="{{ .URL }}">{{ .Name }}</a>
+                  <a href="{{ .URL | absURL }}">{{ .Name }}</a>
                 </li>
               {{ end }}
             </ul>
@@ -47,21 +47,21 @@
           <div id="cross"><span></span><span></span></div>
         </div>
       </a>
-      <div class="mobile-menu">
+      <div id="mob-menu" class="mobile-menu">
         <ul class="menu">
           <li><a href="/">Home</a></li>
           <li><a href="/how-we-work">Our Workflow</a></li>
           <li><a href="/our-approach">Our Approach</a></li>
           <li><a href="/startup-dev-kit">DevKit</a></li>
           <li><a href="/services">Services</a></li>
-          <li><a href="/company/about">About</a></li>
+          <li><a href="/about">About</a></li>
           <li><a href="/blog">Resources</a></li>
-          <li><a href="/company/careers">Careers</a></li>
-          <li><a href="/company/contacts">Contact us</a></li>
+          <li><a href="/careers">Careers</a></li>
+          <li><a href="/contacts">Contact us</a></li>
         </ul>
         <div class="bottom-wrap">
           <p class="small-text">Find out how to launch your startup</p>
-          <a href="/company/contacts" class="v-btn v-btn--router theme--light accent">
+          <a href="/contacts" class="v-btn v-btn--router theme--light accent">
             Free Consultancy
           </a>
         </div>

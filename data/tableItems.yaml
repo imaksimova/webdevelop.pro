@@ -1,0 +1,401 @@
+items:
+  - id: 1
+    state: Arizona
+    name: Doug Ducey
+    party: Republican
+    contact: https://azgovernor.gov/engage
+  - id: 2
+    state: California
+    name: Gavin Newsom
+    party: Democratic
+    contact: https://govapps.gov.ca.gov/gov40mail/
+  - id: 3
+    state: Delaware
+    name: John Carney
+    party: Democratic
+    contact: http://governor.delaware.gov/contact-connect
+  - id: 4
+    state: Florida
+    name: Ron DeSantis
+    party: Republican
+    contact: http://flgov.com/contact-governor-2
+  - id: 5
+    state: Georgia
+    name: Brian Kemp
+    party: Republican
+    contact: http://gov.georgia.gov/contact-us
+  - id: 6
+    state: Illinois
+    name: J. B. Pritzker
+    party: Democratic
+    contact: http://www2.illinois.gov/sites/gov/contactus/Pages/default.aspx
+  - id: 7
+    state: Indiana
+    name: Eric Holcomb
+    party: Republican
+    contact: http://in.gov/gov/2752.htm
+  - id: 8
+    state: Iowa
+    name: Kim Reynolds
+    party: Republican
+    contact: http://governor.iowa.gov/contact
+  - id: 9
+    state: Louisiana
+    name: John Bel Edwards
+    party: Democratic
+    contact: http://gov.louisiana.gov/page/contact
+  - id: 10
+    state: Maryland
+    name: Larry Hogan
+    party: Republican
+    contact: http://governor.maryland.gov/contact-the-governors-office
+  - id: 11
+    state: Massachusetts
+    name: Charlie Baker
+    party: Republican
+    contact: http://mass.gov/governor/constituent-services/contact-governor-office
+  - id: 12
+    state: Michigan
+    name: Gretchen Whitmer
+    party: Democratic
+    contact: http://michigan.gov/whitmer/0,9309,7-387-90498_90663---,00.html
+  - id: 13
+    state: Missouri
+    name: Mike Parson
+    party: Republican
+    contact: http://governor.mo.gov/contact-us
+  - id: 14
+    state: New Hampshire
+    name: Chris Sununu
+    party: Republican
+    contact: http://governor.nh.gov/contact/index.htm
+  - id: 15
+    state: New Jersey
+    name: Phil Murphy
+    party: Democratic
+    contact: http://nj.gov/governor/contact/all
+  - id: 16
+    state: New Mexico
+    name: Michelle Lujan Grisham
+    party: Democratic
+    contact: http://governor.state.nm.us/contact-the-governor
+  - id: 17
+    state: New York
+    name: Kathy Hochul
+    party: Democratic
+    contact: https://www.governor.ny.gov/content/governor-contact-form
+  - id: 18
+    state: North Carolina
+    name: Roy Cooper
+    party: Democratic
+    contact: http://governor.nc.gov/contact/contact-governor-cooper
+  - id: 19
+    state: North Dakota
+    name: Doug Burgum
+    party: Republican
+    contact: http://governor.nd.gov/contact
+  - id: 20
+    state: Ohio
+    name: Mike DeWine
+    party: Republican
+    contact: http://governor.ohio.gov/wps/portal/gov/governor/contact
+  - id: 21
+    state: Pennsylvania
+    name: Tom Wolf
+    party: Democratic
+    contact: http://governor.pa.gov/contact
+  - id: 22
+    state: South Dakota
+    name: Kristi Noem
+    party: Republican
+    contact: http://iqconnect.lmhostediq.com/iqextranet/EForm.aspx
+  - id: 23
+    state: Tennessee
+    name: Bill Lee
+    party: Republican
+    contact: http://tn.gov/governor/contact-us.html
+  - id: 24
+    state: Texas
+    name: Greg Abbott
+    party: Republican
+    contact: http://gov.texas.gov/contact
+  - id: 25
+    state: Utah
+    name: Spencer Cox
+    party: Republican
+    contact: http://ltgovernor.utah.gov/contact
+  - id: 26
+    state: Vermont
+    name: Phil Scott
+    party: Republican
+    contact: http://governor.vermont.gov/contact
+  - id: 27
+    state: Washington
+    name: Jay Inslee
+    party: Democratic
+    contact: http://governor.wa.gov/contact/contact/contacting-governors-office
+  - id: 28
+    state: West Virginia
+    name: Jim Justice
+    party: Republican
+    contact: http://risch.senate.gov/public/index.cfm/email
+  - id: 29
+    state: Wisconsin
+    name: Tony Evers
+    party: Democratic
+    contact: http://evers.wi.gov/Pages/connect.aspx
+  - id: 30
+    state: California
+    name: Eric Swalwell
+    party: Democratic
+    contact: http://swalwell.house.gov/contact
+  - id: 31
+    state: Missouri
+    name: Roy Blunt
+    party: Republican
+    contact: http://blunt.senate.gov/public/index.cfm/contact-roy
+  - id: 32
+    state: Secretary of State of the United States
+    name: Mike Pompeo
+    party: Republican
+    contact: http://register.state.gov/contactus/contactusform
+  - id: 33
+    state: Senator from South Dakota
+    name: Mike Rounds
+    party: Republican
+    contact: http://rounds.senate.gov/contact
+  - id: 34
+    state: Michigan
+    name: Gary Peters
+    party: Democratic
+    contact: http://peters.senate.gov/contact/email-gary
+  - id: 35
+    state: Montana
+    name: Steve Daines
+    party: Republican
+    contact: https://www.daines.senate.gov/connect/email-steve
+  - id: 36
+    state: Massachusetts
+    name: Ed Markey
+    party: Democratic
+    contact: http://markey.senate.gov/contact
+  - id: 37
+    state: Virginia
+    name: Mark Warner
+    party: Democratic
+    contact: http://warner.senate.gov/public/index.cfm/contact
+  - id: 38
+    state: Delaware
+    name: Chris Coons
+    party: Democratic
+    contact: http://coons.senate.gov/contact
+  - id: 39
+    state: Alabama
+    name: Doug Jones
+    party: ''
+    contact: http://jones.senate.gov/contact
+  - id: 40
+    state: House Republican Leader
+    name: Kevin McCarthy
+    party: ''
+    contact: https://kevinmccarthy.house.gov/contact/email-me
+  - id: 41
+    state: Massachusetts
+    name: Elizabeth Warren
+    party: Democratic
+    contact: http://warren.senate.gov/contact
+  - id: 42
+    state: Vermont
+    name: Bernie Sanders
+    party: ''
+    contact: http://sanders.senate.gov/contact
+  - id: 43
+    state: Minnesota
+    name: Amy Klobuchar
+    party: ''
+    contact: http://klobuchar.senate.gov/public/index.cfm/contact
+  - id: 44
+    state: Texas
+    name: Beto O'Rourke
+    party: Democratic
+    contact: https://betoorourke.com/contact/
+  - id: 45
+    state: New Jersey
+    name: Cory Booker
+    party: ''
+    contact: http://booker.senate.gov/
+  - id: 46
+    state: Arizona
+    name: Mark Kelly
+    party: Democratic
+    contact: https://www.kelly.senate.gov/
+  - id: 47
+    state: Arizona
+    name: Kyrsten Sinema
+    party: Democratic
+    contact: https://www.sinema.senate.gov/contact-kyrsten
+  - id: 48
+    state: Arkansas
+    name: John Boozman
+    party: Republican
+    contact: https://www.boozman.senate.gov/public/index.cfm/e-mail-me
+  - id: 49
+    state: Arkansas
+    name: Tom Cotton
+    party: Republican
+    contact: https://www.cotton.senate.gov/contact/contact-tom
+  - id: 50
+    state: California
+    name: Dianne Feinstein
+    party: Democratic
+    contact: https://www.feinstein.senate.gov/public/index.cfm/e-mail-me
+  - id: 51
+    state: California
+    name: Alex Padilla
+    party: Democratic
+    contact: https://www.padilla.senate.gov/contact/contact-form/
+  - id: 52
+    state: Colorado
+    name: Michael Bennet
+    party: Democratic
+    contact: https://www.bennet.senate.gov/public/index.cfm/write-to-michael
+  - id: 53
+    state: Colorado
+    name: John Hickenlooper
+    party: Democratic
+    contact: https://www.hickenlooper.senate.gov/contact/contact-form/
+  - id: 54
+    state: Connecticut
+    name: Richard Blumenthal
+    party: Democratic
+    contact: https://www.blumenthal.senate.gov/contact/write-to-senator-blumenthal
+  - id: 55
+    state: Delaware
+    name: Tom Carper
+    party: Democratic
+    contact: https://www.carper.senate.gov/public/index.cfm/email-senator-carper
+  - id: 56
+    state: Delaware
+    name: Chris Coons
+    party: Democratic
+    contact: https://www.coons.senate.gov/contact/share-your-opinion
+  - id: 57
+    state: Florida
+    name: Marco Rubio
+    party: Republican
+    contact: ''
+  - id: 58
+    state: Florida
+    name: Rick Scott
+    party: Republican
+    contact: ''
+  - id: 59
+    state: Georgia
+    name: Jon Ossoff
+    party: Democratic
+    contact: ''
+  - id: 60
+    state: Georgia
+    name: Raphael Warnock
+    party: Democratic
+    contact: ''
+  - id: 61
+    state: Hawaii
+    name: Mazie K. Hirono
+    party: Democratic
+    contact: ''
+  - id: 62
+    state: Hawaii
+    name: Brian E. Schatz
+    party: Democratic
+    contact: ''
+  - id: 63
+    state: Idaho
+    name: Mike Crapo
+    party: Republican
+    contact: ''
+  - id: 64
+    state: Idaho
+    name: Jim Risch
+    party: Republican
+    contact: ''
+  - id: 65
+    state: Illinois
+    name: Tammy Duckworth
+    party: Democratic
+    contact: ''
+  - id: 66
+    state: Illinois
+    name: Dick Durbin
+    party: Democratic
+    contact: ''
+  - id: 67
+    state: Indiana
+    name: Mike Braun
+    party: Republican
+    contact: ''
+  - id: 68
+    state: Indiana
+    name: Todd C. Young
+    party: Republican
+    contact: ''
+  - id: 69
+    state: Iowa
+    name: Joni Ernst
+    party: Republican
+    contact: ''
+  - id: 70
+    state: Iowa
+    name: Chuck Grassley
+    party: Republican
+    contact: ''
+  - id: 71
+    state: Kansas
+    name: Roger Marshall
+    party: Republican
+    contact: ''
+  - id: 72
+    state: Kansas
+    name: Jerry Moran
+    party: Republican
+    contact: ''
+  - id: 73
+    state: Kentucky
+    name: Mitch McConnell
+    party: Republican
+    contact: ''
+  - id: 74
+    state: Kentucky
+    name: Rand Paul
+    party: Republican
+    contact: ''
+  - id: 75
+    state: Louisiana
+    name: Bill Cassidy
+    party: Republican
+    contact: ''
+  - id: 76
+    state: Maine
+    name: Susan Collins
+    party: Republican
+    contact: ''
+  - id: 77
+    state: Maine
+    name: Angus King
+    party: Independent
+    contact: ''
+  - id: 78
+    state: Maryland
+    name: Ben Cardin
+    party: Democratic
+    contact: ''
+  - id: 79
+    state: Maryland
+    name: Chris Van Hollen
+    party: Democratic
+    contact: ''
+  - id: 80
+    state: Massachusetts
+    name: Edward J. Markey
+    party: Democratic
+    contact: ''

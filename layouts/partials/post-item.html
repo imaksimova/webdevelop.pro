@@ -15,10 +15,10 @@
       {{ .Title }}
     </h4>
     <p class="post_excerpt">
-      {{ .Description }}
+      {{ .Description | plainify }}
     </p>
   </div>
   <div class="post_item__image">
-    <img src="{{ .Params.image }}" alt="{{ .Title }}">
+    <img src="{{ if .Params.image }}{{ .Params.image }}{{ else }}/images/blog/sharing.png{{ end }}" alt="{{ .Title }}">
   </div>
 </a>

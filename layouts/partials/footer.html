@@ -68,3 +68,75 @@
     </div>
   </div>
 </footer>
+
+{{ if eq .Page.RelPermalink "/our-approach/" }}
+  {{ $swiper := resources.Get "js/swiper-bundle.min.js" }}
+  <script src="{{ $swiper.Permalink }}"></script>
+  <script>
+    const swiper = new Swiper(".swiper-approach", {
+      // Optional parameters
+      slidesPerView: 1,
+      speed: 900,
+      loop: true,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+      }
+    });
+  </script>
+{{ end }}
+
+{{ if eq .Page.RelPermalink "/how-we-work/" }}
+  {{ $jquery := resources.Get "js/jquery.min.js" }}
+  <script src="{{ $jquery.Permalink }}"></script>
+  {{ $waypoint := resources.Get "js/jquery.waypoints.min.js" }}
+  <script src="{{ $waypoint.Permalink }}"></script>
+  <script>
+    const wayNavLi = $('.wayp-lists .nav-item');
+    function waypTracked (hash) {
+      wayNavLi.removeClass('active');
+      $.each(wayNavLi, function () {
+        const href = $(this).attr('href').slice(1);
+        if (href === hash) {
+          $(this).addClass('active');
+        }
+      });
+    } 
+    $('.tracked').waypoint(function (direction) {
+      if (direction === 'down') {
+        var hash = $(this)[0].element.id;
+        waypTracked(hash);
+      }
+    },{
+      offset: '5%'
+    });
+    $('.tracked').waypoint(function (direction) {
+      if (direction === 'up') {
+        var hash = $(this)[0].element.id;
+        waypTracked(hash);
+      }
+    },{
+      offset: '-10%'
+    });
+    $('.wayp-lists .nav-item').on('click', function () {
+      const scrollEl = $(this).attr('href');
+      if ($(scrollEl).length != 0) {
+        $('html, body').animate({
+          scrollTop: $(scrollEl).offset().top - 30
+        }, 500);
+      }
+      return false;
+  });
+  </script>
+{{ end }}
+
+{{ $main := resources.Get "js/script.js" | minify }}
+<script src="{{ $main.Permalink }}"></script>
+

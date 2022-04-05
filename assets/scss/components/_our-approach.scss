@@ -4,6 +4,7 @@
   background-position-y: 160px;
   position: relative;
   z-index: 2;
+	overflow-x: hidden;
 }
 .site-approach-top {
   padding-left: 8%;
@@ -206,6 +207,7 @@
 				justify-content: flex-start;
 				align-items: flex-start;
 				padding: 0;
+				cursor: pointer;
 				& > *:not(.v-expansion-panel__header__icon) {
 					flex: unset;
 				}
@@ -260,6 +262,9 @@
 			}
 			.v-expansion-panel__body {
 				margin-left: 65px;
+				max-height: 0;
+				overflow: hidden;
+				transition: max-height 0.2s ease-out;
         @include tablet {
           margin-left: 50px;
         }
@@ -316,6 +321,11 @@
     }
 	}
 }
+
+.swiper-approach {
+	position: relative;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
 	border: solid $secondary;
@@ -326,6 +336,10 @@
 	width: 31px;
 	height: 31px;
 	outline: none;
+	@include mt(0.3s);
+	&::after {
+		display: none;
+	}
   @include mobile {
     top: 40%;
   }
