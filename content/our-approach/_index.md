@@ -1,5 +1,5 @@
 ---
-title: "Our Approach"
+title: "Our business approach"
 date: 2022-03-25T22:48:51+02:00
 draft: false
 titleLeft: "our"
@@ -63,11 +63,12 @@ approachDetails:
     is also a good idea. We value transparency and direct communication 
     with our customers. We can set up 2-4 weeks long business 
     trips for our development team to come to your office twice a year.
-tabs:
+accordion:
   title: Key roles
-  tabItems:
+  accordionItems:
     - title: "<span>UI/UX Designer</span> is one of the most important roles in a successful development team"
-      text: "<p>UI/UX design plays an essential role in successful software development. 
+      text: > 
+        <p>UI/UX design plays an essential role in successful software development. 
         To achieve great product usability we need to link business requirements and technical processes together. 
         That’s what UI/UX design is for. The process of designing a product starts with extensive research. 
         Thorough research is the key to creating a product that will be attractive to customers and easy to use. 
@@ -77,11 +78,47 @@ tabs:
         ready to be presented to the customer.</p><p><strong>We always strive to create the best product for the end-user.</strong> User stories are an important part of our design process. 
         User stories help us organize and prioritize our goals and keep us user-focused. 
         Our main objective is to deliver the product with the best possible design for our target audience. 
-        We believe that design-driven development is the way to achieve this goal.</p>"
+        We believe that design-driven development is the way to achieve this goal.</p>
+    
+    - title: "<span>Team Leader</span> is the driving force of the whole development process"
+      text: >
+        In our experience, an effective team leader should be both a project manager and a software engineer. As a leader and a project manager, they must know the team well and be able to help each member of the team complete their tasks. As a professional software engineer a team leader knows the project inside and out, keeping in mind the big picture and the small details. A team leader knows what the team should be focused on at any given moment of the project development, and maintains a balance between development speed and attention to detail. It’s a crucial role in a development team with a huge amount of responsibility and a wide range of competencies.
+    
+    - title: "<span>Front-end developer</span> is responsible for everything that runs inside the user's browser"
+      text: >
+        Front-end developer is the one responsible for implementing visual and interactive elements of a software product, bringing designers ideas to live with the help of dev tools such as HTML, CSS, and JavaScript. Everything you can see on a web page when you open it in your browser: the layout, the color scheme, tables and buttons, navigation, etc is the front-end developer’s domain. A front-end developer is required to be able to concentrate on the details. To implement numerous small features and make them work well together takes patience and focus.
+    
+    - title: "<span>Backend engineer</span> works on the server-side of the product"
+      text: >
+        The work of a back-end developer is mainly focused on a web-server or back-end. It includes data storage, optimization of application’s speed and efficiency, user authorization and server’s response to user’s actions, and other server-side components. Back-end contains the logic that connects the user and the server. Linking your application or a web-site to 3rd party products, partners or APIs is also the job of a back-end engineer.
+
+    - title: "<span>DevOps engineer</span> is a vital role in high-quality secure software development"
+      text: >
+        DevOps engineer is a relatively new specialty in the IT world. It’s the next step of evolution for sysadmins interested in coding and product development, or coders who have a passion for network operations. DevOps engineer is the one who provides scalability, stability and security of a software product. DevOps process combines IT operations, product development, and security engineering. Cloud technology implementation, finding and fixing vulnerabilities, improving speed and security of software products, setting up continuous delivery are the minimum skill set required of a DevOps engineer.
+
+    - title: "<span>Quality assurance engineer</span> is ensuring product quality throughout the development process"
+      text: >
+        QA engineer monitors the process of product development from the beginning, keeping tabs on production quality at every stage until the product is launched. QA engineer’s responsibilities include identifying bugs and potential problems, planning and performing tests on different stages of the product development, and documenting test cases. A QA engineer makes sure that the team meets their deadlines and the project stays within the budget.
 sectionExpertise:
   title: Our expertise
   subTitle: Take a look at a couple of our team specialists resumes, so 
     you get the idea about the level of experience our developers have
+  sliderItems:
+    - img: images/Golang-Specialist.png
+      docsUrl: docs/Golang-Specialist.pdf
+      label: Golang-Specialist
+    - img: images/Javascript-Specialist.png
+      docsUrl: docs/Javascript-Specialist.pdf
+      label: Javascript-Specialist
+    - img: images/Project-Manager.png
+      docsUrl: docs/Project-Manager.pdf
+      label: Project-Manager
+    - img: images/UX_UI.png
+      docsUrl: docs/UX_UI.pdf
+      label: UX_UI
+    - img: images/Python-Specialist.png
+      docsUrl: docs/Python-Specialist.pdf
+      label: Python-Specialist
 schema: 
   title: Here's an example of a development roadmap designed for a crowdfunding platform
   subTitle: <strong>Example:</strong> Crowdfunding Platform

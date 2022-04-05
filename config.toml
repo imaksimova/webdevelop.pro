@@ -88,24 +88,24 @@ title         = "Software Development and Consulting Company | Webdevelop Pro"
   [[menu.main]]
     identifier = "company"
     name    = "Company"
-    url     = "/company/about"
+    url     = "/about"
     weight  = 4
   [[menu.main]]
     identifier = "our-team"
     name    = "Our Team"
-    url     = "/company/about"
+    url     = "/about"
     parent = "company"
     weight  = 1
   [[menu.main]]
     identifier = "contact-us"
     name    = "Contact Us"
-    url     = "/company/contacts"
+    url     = "/contacts"
     parent = "company"
     weight  = 2
   [[menu.main]]
     identifier = "careers"
     name    = "Careers"
-    url     = "/company/careers"
+    url     = "/careers"
     parent = "company"
     weight  = 3
   

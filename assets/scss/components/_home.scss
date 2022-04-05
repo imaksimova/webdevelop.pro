@@ -120,6 +120,7 @@
 				justify-content: center;
 				padding: 6px 12px;
     		text-decoration: none;
+				cursor: pointer;
 				padding-bottom: 15px;
 				border-bottom: 3px solid transparent;
 				h5 {
@@ -160,6 +161,8 @@
 	text-align: center;
 	text-transform: uppercase;
 	vertical-align: middle;
+	border-bottom: 3px solid transparent;
+	@include mt(0.3s);
 	@include tablet {
 		width: 130px;
 		flex-shrink: 0;
@@ -181,6 +184,10 @@
 	min-height: 160px;
 }
 .v-window-item {
+	display: none;
+	&:first-child {
+		display: block;
+	}
 	.item--left {
 		width: 33.3333%;
 		@include tablet {
