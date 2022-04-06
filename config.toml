@@ -1,6 +1,8 @@
 baseURL       = "http://example.org/"
 languageCode  = "en-us"
 title         = "Software Development and Consulting Company | Webdevelop Pro"
+# Disqus Comment System
+disqusShortname = "webdevelop-pro"
 [taxonomies]
   author = "authors"
   tag = "tags"
@@ -119,8 +121,6 @@ title         = "Software Development and Consulting Company | Webdevelop Pro"
   author = "Webdevelop Pro LLC"
   # Google Analitycs
   googleAnalitycsID = "Your ID"
-  # We're using formspree.io for form handling, paste your formspree url below
-  formspreeFormUrl  = "https://formspree.io/myykjpje"
 
   [params.header]
     top_notif_url = "company/help-ukraine"
@@ -141,12 +141,6 @@ title         = "Software Development and Consulting Company | Webdevelop Pro"
       value = "wd"
       title  = "Web Design"
   
-  # Navbar Action Button
-  [params.navAction]
-    status  = true
-    name    = "Get in touch"
-    url     = "contact"
-  
 
   # Banner Section
   [params.banner]
@@ -159,58 +153,44 @@ title         = "Software Development and Consulting Company | Webdevelop Pro"
     secondary_button      = "Connect with Us"
     secondary_button_url  = "contact"
 
-  [params.portfolio]
-    enable    = true
-    title     = "OUR RECENT WORKS"
-    subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
-
-  [params.call_to_action]
-    enable              = true
-    background_image    = "images/backgrounds/cta-background.jpg"
-    title               = "LET’S WORK TOGETHER"
-    primary_button      = "Submit Query"
-    primary_button_url  = "contact"
-    secondary_button    = "Not Convinced"
-    secondary_button_url = "portfolio"
-
   [params.footer]
     # Footer Contact Info
     [params.footer.contactInfo]
-      title   = "Contact Info"
-      address = "713 Elmwood St.<br>Prior Lake, MN 55372"
-      phone   = "409-896-1444"
-      email   = "info@roxo.co"
-      # Footer Sitemap
-      [params.footer.sitemap]
-        title   = "Sitemap"
-        [[params.footer.sitemap.link]]
-          name = "About Company"
-          url  = "about"
-        [[params.footer.sitemap.link]]
-          name = "Projects"
-          url  = "portfolio"
-        [[params.footer.sitemap.link]]
-          name = "Blog"
-          url  = "blog"
-        [[params.footer.sitemap.link]]
-          name = "Contact"
-          url  = "contact"
+      [[params.footer.contactInfo.item]]
+        title   = "USA"
+        city    = "San Francisco"
+        phone   = "+1 609 733 7724"
+        email   = "manager@webdevelop.pro"
+      [[params.footer.contactInfo.item]]
+        title   = "Ukraine"
+        city    = "Kyiv"
+        phone   = "+38 063 440 5605"
+        email   = "manager@webdevelop.pro"
       # Footer Social Media
       [params.footer.social]
-        title   = "Social Media"
         [[params.footer.social.link]]
-          name = "Medium"
-          url  = "#"
+          img = "images/facebook-icon.svg"
+          url = "https://www.facebook.com/WebdevelopPro/"
         [[params.footer.social.link]]
-          name = "Behance"
-          url  = "#"
+          img = "images/instagram-icon.svg"
+          url = "https://www.instagram.com/webdevelop.pro/"
         [[params.footer.social.link]]
-          name = "Dribbble"
-          url  = "#"
+          img = "images/linkedin-icon.svg"
+          url = "https://www.linkedin.com/company/webdevelop-pro/"
         [[params.footer.social.link]]
-          name = "Instagram"
-          url  = "#"
-      # Footer Service
-      [params.footer.service]
-        title       = "We help brands:"
-        description = "develop design solutions<br>produce valuable cultural content<br>create fresh brand experience"
+          img = "images/github-icon.svg"
+          url = "https://github.com/webdevelop-pro"
+      # Footer Menu
+      [params.footer.menu]
+        [[params.footer.menu.item]]
+          name = "About us"
+          url  = "/about"
+        [[params.footer.menu.item]]
+          name = "How it works"
+          url  = "/startup-dev-kit"
+        [[params.footer.menu.item]]
+          name = "Contacts"
+          url  = "/contacts"
+        [[params.footer.menu.item]]
+          name = "Resources"
+          url  = "/blog"

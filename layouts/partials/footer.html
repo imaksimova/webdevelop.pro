@@ -10,55 +10,36 @@
               <button class="v-btn v-btn--small theme--light accent">Send</button>
             </div>
             <div class="social-links desktop-social">
-              <a href="https://www.facebook.com/WebdevelopPro/" target="_blank">
-                <img src="{{ "images/facebook-icon.svg" | absURL }}">
-              </a>
-              <a href="https://www.instagram.com/webdevelop.pro/" target="_blank">
-                <img src="{{ "images/instagram-icon.svg" | absURL }}">
-              </a>
-              <a href="https://www.linkedin.com/company/webdevelop-pro/" target="_blank">
-                <img src="{{ "images/linkedin-icon.svg" | absURL }}">
-              </a>
-              <a href="https://github.com/webdevelop-pro" target="_blank">
-                <img src="{{ "images/github-icon.svg" | absURL }}">
-              </a>
+              {{ range .Site.Params.footer.social.link }}
+                <a href="{{ .url }}" target="_blank">
+                  <img src="{{ .img | absURL }}">
+                </a>
+              {{ end }}
             </div>
           </form>
         </div>
         <div class="footer-top__menu">
           <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">Resources</a></li>
+            {{ range .Site.Params.footer.menu.item }}
+              <li><a href="{{ .url | absURL }}">{{ .name }}</a></li>
+            {{ end }}
           </ul>
           <div class="social-links mobile-social">
-            <a href="https://www.facebook.com/WebdevelopPro/" target="_blank">
-              <img src="{{ "images/facebook-icon.svg" | absURL }}">
-            </a>
-            <a href="https://www.instagram.com/webdevelop.pro/" target="_blank">
-              <img src="{{ "images/instagram-icon.svg" | absURL }}">
-            </a>
-            <a href="https://www.linkedin.com/company/webdevelop-pro/" target="_blank">
-              <img src="{{ "images/linkedin-icon.svg" | absURL }}">
-            </a>
-            <a href="https://github.com/webdevelop-pro" target="_blank">
-              <img src="{{ "images/github-icon.svg" | absURL }}">
-            </a>
+            {{ range .Site.Params.footer.social.link }}
+              <a href="{{ .url }}" target="_blank">
+                <img src="{{ .img | absURL }}">
+              </a>
+            {{ end }}
           </div>
         </div>
-        <div class="footer-top__contact">
-          <h4>USA</h4>
-          <p class="sub-title">San Francisco</p>
-          <a href="tel:+1 609 733 7724">+1 609 733 7724</a>
-          <a href="mailto:manager@webdevelop.pro">manager@webdevelop.pro</a>
-        </div>
-        <div class="footer-top__contact">
-          <h4>Ukraine</h4>
-          <p class="sub-title">Kyiv</p>
-          <a href="tel:+1 609 733 7724">+38 063 440 5605</a>
-          <a href="mailto:manager@webdevelop.pro">manager@webdevelop.pro</a>
-        </div>
+        {{ range .Site.Params.footer.contactInfo.item }}
+          <div class="footer-top__contact">
+            <h4>{{ .title }}</h4>
+            <p class="sub-title">{{ .city }}</p>
+            <a href="tel:{{ .phone }}">{{ .phone }}</a>
+            <a href="mailto:{{ .email }}">{{ .email }}</a>
+          </div>
+        {{ end }}
       </div>
     </div>
   </div>
@@ -73,8 +54,7 @@
   {{ $swiper := resources.Get "js/swiper-bundle.min.js" }}
   <script src="{{ $swiper.Permalink }}"></script>
   <script>
-    const swiper = new Swiper(".swiper-approach", {
-      // Optional parameters
+    const approachSlider = new Swiper(".swiper-approach", {
       slidesPerView: 1,
       speed: 900,
       loop: true,
@@ -93,6 +73,33 @@
   </script>
 {{ end }}
 
+{{ if .Page.IsHome }}
+  {{ $swiper := resources.Get "js/swiper-bundle.min.js" }}
+  <script src="{{ $swiper.Permalink }}"></script>
+  <script>
+    const approachHomeSlider = new Swiper(".approach-home-slider", {
+      direction: "horizontal",
+      loop: false,
+      freeMode: false,
+      slidesPerView: 1,
+      effect: 'fade',
+      autoHeight: true,
+      fadeEffect: {
+        crossFade: true
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+        dragSize: 16
+      },
+      breakpoints: {
+        767: {
+          autoHeight: false,
+        }
+      }
+    });
+  </script>
+{{ end }}
 {{ if eq .Page.RelPermalink "/how-we-work/" }}
   {{ $jquery := resources.Get "js/jquery.min.js" }}
   <script src="{{ $jquery.Permalink }}"></script>
