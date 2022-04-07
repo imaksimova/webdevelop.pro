@@ -18,7 +18,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="{{ "images/apple-touch-icon.png" | absURL }}">
   <link rel="shortcut icon" type="image/png" sizes="32x32" href="{{ "images/favicon-32x32.png" | absURL }}">
   <link rel="shortcut icon" type="image/png" sizes="16x16" href="{{ "images/favicon-16x16.png" | absURL }}">
-  {{ if eq .Page.RelPermalink "/our-approach/" }}
+  {{ if or (eq .Page.RelPermalink "/our-approach/") .Page.IsHome }}
     <link href="{{ "/css/swiper-bundle.min.css" | absURL }}" rel="stylesheet" />
   {{ end }}
 
