@@ -8,7 +8,7 @@
 }
 .careers-wrap {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-between;
 }
 
@@ -20,6 +20,16 @@
   }
   @include tablet {
     display: none;
+  }
+  .timeline-nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 100px;
+    .nav-item {
+      .nav-el {
+        opacity: 1;
+      }
+    }
   }
 }
 

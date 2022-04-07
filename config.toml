@@ -123,7 +123,7 @@ disqusShortname = "webdevelop-pro"
   googleAnalitycsID = "Your ID"
 
   [params.header]
-    top_notif_url = "company/help-ukraine"
+    top_notif_url = "/help-ukraine"
 
   # Contact Form
   [params.contactForm]

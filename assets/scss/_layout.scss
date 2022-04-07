@@ -138,6 +138,20 @@ a {
 
 .form-control {
   margin-bottom: 30px;
+  &.is-error {
+    margin-bottom: 20px;
+    .form-control-error {
+      display: block;
+    }    
+  }
+}
+
+.form-control-error {
+  color: #ff7070;
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 12px;
+  display: none;
 }
 
 .input-control {
@@ -257,7 +271,7 @@ a {
   text-transform: uppercase;
   font-size: 32px;
   line-height: 47px;
-  padding: 40px 80px 40px 15px;
+  padding: 40px 40px 40px 15px;
   display: inline-block;
   margin-left: -15px;
   max-width: 100%;

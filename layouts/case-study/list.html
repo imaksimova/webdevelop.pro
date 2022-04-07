@@ -1,8 +1,8 @@
 {{ define "main" }}
 
 <section class="our-cases-list">
+  {{ partial "base-title.html" . }}
   <div class="container">
-    {{ partial "base-title.html" . }}
     <div class="cases-items">
       {{ range .Pages }}
         <div class="case-item">

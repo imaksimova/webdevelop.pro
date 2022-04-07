@@ -1,5 +1,5 @@
 ---
-title: "Contacts"
+title: "Our contacts"
 date: 2022-03-24T23:04:39+02:00
 draft: false
 titleLeft: "our"

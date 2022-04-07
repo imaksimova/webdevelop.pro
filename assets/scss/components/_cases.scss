@@ -105,6 +105,9 @@
 .user-case-header__right {
   width: 50%;
   padding: 0 15px;
+	@include tablet {
+		width: 100%;
+	}
 }
 
 .user-case-header__top {
@@ -122,13 +125,13 @@
 	justify-content: flex-end;
 	display: flex;
 	flex-direction: row;
+	@include tablet {
+		order: -1;
+		justify-content: flex-start;
+		margin-bottom: 25px;
+	}
 	ul {
 		padding-left: 0;
-    @include tablet {
-      order: -1;
-      justify-content: flex-start;
-      margin-bottom: 25px;
-    }
 	}
 }
 .user-case-header__left {
@@ -344,7 +347,6 @@
 }
 .timelines-container {
 	position: relative;
-	overflow: hidden;
 }
 .scrollbar {
 	position: absolute;
@@ -688,9 +690,6 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-  @include tablet {
-    flex-direction: column;
-  }
 	&.is-btn {
 		justify-content: center;
 	}

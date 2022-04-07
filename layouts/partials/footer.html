@@ -100,7 +100,7 @@
     });
   </script>
 {{ end }}
-{{ if eq .Page.RelPermalink "/how-we-work/" }}
+{{ if or ( eq .Page.RelPermalink "/how-we-work/") ( eq .Page.RelPermalink "/careers/")  }}
   {{ $jquery := resources.Get "js/jquery.min.js" }}
   <script src="{{ $jquery.Permalink }}"></script>
   {{ $waypoint := resources.Get "js/jquery.waypoints.min.js" }}
@@ -136,12 +136,17 @@
       const scrollEl = $(this).attr('href');
       if ($(scrollEl).length != 0) {
         $('html, body').animate({
-          scrollTop: $(scrollEl).offset().top - 30
+          scrollTop: $(scrollEl).offset().top - 60
         }, 500);
       }
       return false;
   });
   </script>
+{{ end }}
+
+{{ if .Page.IsHome }}
+{{ $hubspot := resources.Get "js/hubspot.js" | minify }}
+<script src="{{ $hubspot.Permalink }}"></script>
 {{ end }}
 
 {{ $main := resources.Get "js/script.js" | minify }}
