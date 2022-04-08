@@ -1,10 +1,17 @@
+const preloader = document.getElementById("main-preloader");
+window.addEventListener("load", () => {
+  // Fully loaded!
+  preloader.style.display = "none";
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   const contactForm = document.querySelector(".contact-form");
   const inputs = document.querySelectorAll(".contact-from-input");
-  const hubspotForm = "";
-  const hubspotPortalId = "";
-  const hubspotFormId = "";
-  const generalErrorText = "";
+  const generalErrorEl = contactForm.querySelector(".general-form-error");
+  const formBtn = contactForm.querySelector(".v-btn");
+  const hubspotForm = "https://api.hsforms.com/submissions/v3/integration/submit";
+  const hubspotPortalId = "6876576";
+  const hubspotFormId = "fecb8029-9782-45f8-9560-cf730fc328f6";
   const model = {
     name: "",
     email: "",
@@ -27,14 +34,18 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateInputValue(e) {
     const input = e.target;
     model[input.name] = input.value
+    displayErrorMsg();
   }
 
   function validation() {
     let flag = true;
 
-    if(model.name === "") {
-      flag = false;
-      errors.name = "Field is required."
+    for (let i = 0; i < inputs.length; i++) { 
+      const inputName = inputs[i].name;
+      if (model[inputName] === "") {
+        flag = false;
+        errors[inputName] = "Field is required."
+      }
     }
 
     return flag;
@@ -45,8 +56,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const inputName = inputs[i].name;
       const formControl = inputs[i].parentElement;
       const errorEl = formControl.querySelector(".form-control-error");
-      formControl.classList.add("is-error");
-      errorEl.textContent = errors[inputName];
+      if (model[inputName] != "") {
+        formControl.classList.remove("is-error");
+        errorEl.textContent = "";
+      } else {
+        formControl.classList.add("is-error");
+        errorEl.textContent = errors[inputName];
+      }
     }  
   }
 
@@ -69,6 +85,12 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
+  function resetInputFields() {
+    for (let i = 0; i < inputs.length; i++) {
+      inputs[i].value = "";
+    }
+  }
+
   async function formSubmit(e) {
     e.preventDefault();
     
@@ -78,6 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     try {
+      generalErrorEl.textContent = "";
+      formBtn.disabled = true;
       const response = await fetch(`${hubspotForm}/${hubspotPortalId}/${hubspotFormId}`, {
         method: e.target.method,
         body: JSON.stringify(getRequestData()),
@@ -85,12 +109,16 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       if (response.ok) {
         console.log("success");
+        formBtn.disabled = false;
+        resetInputFields();
       }
       if (response.status === 400) {
-        generalErrorText = "Something went wrong. Please try again later.";
+        generalErrorEl.textContent = "Something went wrong. Please try again later.";
+        formBtn.disabled = false;
       }
     } catch (error) {
       console.log(error);
+      formBtn.disabled = false;
     }
   }
 });

@@ -1075,6 +1075,10 @@
 		.v-btn {
 			width: 100%;
 			max-width: 260px;
+			&[disabled] {
+				pointer-events: none;
+				opacity: 0.5;
+			}
 		}
 	}
 }
