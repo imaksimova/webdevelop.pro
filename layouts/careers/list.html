@@ -5,21 +5,23 @@
   <div class="container">
     <div class="careers-wrap">
       <div class="careers-left-sidebar">
-        <nav class="timeline-nav">
-          <a href="#item-1" class="nav-item scrollactive-item item-1">
+        <nav class="timeline-nav wayp-lists">
+          <a href="#item-1" class="nav-item active">
             <span class="nav-el">USA</span>
           </a>
-          <a href="#item-2" class="nav-item scrollactive-item item-2">
+          <a href="#item-2" class="nav-item">
             <span class="nav-el">EUROPE</span>
           </a>
-          <a href="#item-3" class="nav-item scrollactive-item item-3">
+          <a href="#item-3" class="nav-item">
             <span class="nav-el">WORLDWIDE</span>
           </a>
         </nav>
       </div>
       <div class="careers-content">
+        {{ $counter := 0 }}
         {{ range .Params.items }}
-          <div class="careers-card-list">
+          {{ $counter = add $counter 1 }}
+          <div id="item-{{ $counter }}" class="careers-card-list tracked">
             <h2 class="is-h2-title">{{ .title }}</h2>
             <div class="layout stretch row wrap">
               {{ range .cardItems }}

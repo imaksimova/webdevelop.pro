@@ -618,6 +618,11 @@
       margin-bottom: 30px;
     }
 	}
+	.sub-title {
+		strong {
+			color: $accent_color;
+		}
+	}
 }
 .schema-content {
 	display: flex;

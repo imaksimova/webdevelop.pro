@@ -1,0 +1,54 @@
+.page-not-found {
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 100px;
+	min-height: 88vh;
+  @include tablet {
+    text-align: center;
+    margin-top: 70px;
+    min-height: 92vh;
+  }
+  .v-btn {
+    max-width: 293px;
+    @include tablet {
+      margin: 0 auto;
+    }
+  }
+}
+.page-not-found__left {
+	padding-right: 0;
+  width: calc(50% - 15px);
+  @include tablet {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+	h1 {
+		margin-bottom: 25px;
+	}
+	.small-text {
+		width: 100%;
+		max-width: 460px;
+		margin-bottom: 55px;
+    @include tablet {
+      margin: 0 auto 35px;
+    }
+	}
+}
+
+.page-not-found__right {
+  width: calc(50% - 15px);
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.page-not-found__wrap {
+  display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+  @include tablet {
+    flex-direction: column;
+  }
+}

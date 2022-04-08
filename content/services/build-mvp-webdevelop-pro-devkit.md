@@ -10,7 +10,7 @@ postDescription: >
   This option is especially good for startups as it can reduce financial risks, 
   evaluate product viability and analyze users' feedback in a shorter time and at a reduced cost. 
   The data gathered from launching an MVP shows what improvements are required to create a 
-  successful product. With our <a href="#">Startup devkit</a>, we can build a robust and scalable MVP in 4-6 months. 
+  successful product. With our <a href="/startup-dev-kit">Startup devkit</a>, we can build a robust and scalable MVP in 4-6 months. 
 image: images/services/service-2.svg
 btn: false
 items:

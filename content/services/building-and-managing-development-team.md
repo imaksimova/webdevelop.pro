@@ -8,7 +8,7 @@ captions: [Dedicated Team, Great Technical Skills, Results-driven Development, S
 postDescription: >
   Webdevelop Pro's specialty is <strong>building and managing result-driven development teams.</strong>
   We've been improving our teamwork practices for as long as we've been in the software development business. 
-  <a href="#">Our work approach</a> is based on One project - One team rule. We believe the best result is 
+  <a href="/how-we-work">Our work approach</a> is based on One project - One team rule. We believe the best result is 
   achieved when the dev team is focused solely on one project. Our specialists have a wide 
   range of skills in various technologies and are constantly learning new trends. Webdevelop Pro 
   can assemble a high-performance team exclusively for your product. 
