@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   // Fixed header on scroll
   window.addEventListener("scroll", setScrollPosition);
   
@@ -87,6 +86,24 @@ document.addEventListener("DOMContentLoaded", () => {
       burger.classList.add("open");
       mobileMenu.classList.add("is-active");
     }
+  }
+
+  const buttons = document.querySelectorAll(".v-btn");
+
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function(e) {
+      let x = e.clientX - e.target.getBoundingClientRect().x;
+      let y = e.clientY - e.target.getBoundingClientRect().y;
+
+      let ripples = document.createElement('span');
+      ripples.style.left = x + 'px';
+      ripples.style.top = y + 'px';
+      buttons[i].appendChild(ripples);
+
+      setTimeout(() => {
+        ripples.remove();
+      }, 1000);
+    });
   }
 
 });

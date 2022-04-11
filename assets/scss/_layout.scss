@@ -302,10 +302,11 @@ a {
   cursor: pointer;
   text-transform: none;
   text-decoration: none;
-  transition: .3s cubic-bezier(.25,.8,.5,1),color 1ms;
+  @include mt(0.15s);
   position: relative;
   user-select: none;
   box-sizing: border-box;
+  overflow: hidden;
   &:hover {
     color: #fff;
     opacity: 0.9;
@@ -320,6 +321,27 @@ a {
   &.white {
     background-color: #fff;
     color: $accent_color;
+  }
+  span {
+    position: absolute;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: ripple 1s linear infinite;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+  }
+  100% {
+    width: 900px;
+    height: 900px;
+    opacity: 0;
   }
 }
 
@@ -339,12 +361,14 @@ a {
   font-size: 12px;
   line-height: 12px;
   display: none;
+  width: 100%;
 }
 
 .general-form-error {
   color: #ff7070;
   font-size: 14px;
   line-height: 18px;
+  margin-top: 5px;
 }
 
 .input-control {

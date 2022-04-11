@@ -4,19 +4,21 @@
       <div class="footer-top__wrap">
         <div class="footer-top__form">
           <h5>Receive latest news:</h5>
-          <form>
-            <div class="field-group">
-              <input type="text" class="input-control" placeholder="Email">
+          <form class="form-submit" id="form-id-2" method="POST">
+            <div class="field-group form-control">
+              <input type="email" name="email" class="contact-from-input input-control" placeholder="Email">
               <button class="v-btn v-btn--small theme--light accent">Send</button>
+              <span class="form-control-error"></span>
             </div>
-            <div class="social-links desktop-social">
-              {{ range .Site.Params.footer.social.link }}
-                <a href="{{ .url }}" target="_blank">
-                  <img src="{{ .img | absURL }}">
-                </a>
-              {{ end }}
-            </div>
+            <div class="general-form-error"></div>
           </form>
+          <div class="social-links desktop-social">
+            {{ range .Site.Params.footer.social.link }}
+              <a href="{{ .url }}" target="_blank">
+                <img src="{{ .img | absURL }}">
+              </a>
+            {{ end }}
+          </div>
         </div>
         <div class="footer-top__menu">
           <ul>
