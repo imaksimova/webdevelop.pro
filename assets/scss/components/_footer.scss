@@ -27,20 +27,24 @@
       margin-bottom: 15px;
     }
     .field-group {
+      position: relative;
+      width: 277px;
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 0;
+    }
+    .form-submit {
       margin-bottom: 30px;
     }
     .input-control {
       padding: 0 12px;
-      max-height: 48px;
-      height: 48px;
+      max-height: 49px;
+      height: 49px;
       width: 207px;
       border-top-left-radius: 2px;
       border-bottom-left-radius: 2px;
-      @include desktop {
-        width: 100%;
-      }
+      border-bottom: 0;
     }
     .v-btn {
       width: 70px;
