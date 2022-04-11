@@ -387,6 +387,8 @@ a {
 	}
 	hr {
 		max-width: 48px;
+    min-width: 48px;
+    width: 100%;
 		position: relative;
 		left: 15px;
 		top: 0;
@@ -408,6 +410,28 @@ a {
     @include tablet {
       padding-left: 0;
     }
+  }
+  .read-time {
+    display: flex;
+    align-items: center;
+    span {
+      display: block;
+      flex-shrink: 0;
+    }
+  }
+  .read-time-label {
+    margin-left: 26px;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 28px;
+    color: #333333;
+    margin-right: 3px;
+  }
+  .read-time-hour {
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 28px;
+    color: #004FFF;
   }
 }
 .base-header-title {

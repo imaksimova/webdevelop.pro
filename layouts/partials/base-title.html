@@ -17,6 +17,13 @@
                 {{ .Description }}
               </p>
             {{ end }}
+            {{ if .Params.readTime }}
+              <div class="read-time">
+                <hr>
+                <span class="read-time-label">Read time ~ </span>
+                <span class="read-time-hour">{{ .Params.readTime }}</span>
+              </div>
+            {{ end }}
           </div>
         {{ end }}
       </div>
