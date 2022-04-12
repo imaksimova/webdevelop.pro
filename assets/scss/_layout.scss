@@ -382,6 +382,10 @@ a {
   line-height: 28px;
   font-family: $font-book;
   outline: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .offset-left {

@@ -146,10 +146,8 @@
   </script>
 {{ end }}
 
-{{ if .Page.IsHome }}
 {{ $hubspot := resources.Get "js/hubspot.js" | minify }}
 <script src="{{ $hubspot.Permalink }}"></script>
-{{ end }}
 
 {{ $main := resources.Get "js/script.js" | minify }}
 <script src="{{ $main.Permalink }}"></script>

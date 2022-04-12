@@ -20,7 +20,7 @@
               </a>
             {{end}}
             <div class="date">
-              {{ .Date | time.Format ":date_long" }}
+              {{ .Date.Format "January 2, 2006" }}
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@
         {{ range first 3 (shuffle (where .Site.RegularPages "Section" "blog")) }}
           <a href="{{ .Permalink | absURL }}" class="thumbnail">
             <div class="thumbnail-date decorative-heavy">
-              {{ .Date | time.Format ":date_long" }}
+              {{ .Date.Format "January 2, 2006" }}
             </div>
             <div class="thumbnail-bg" style="background-image: url({{ .Params.image }});"></div>
             <h4>{{ .Title }}</h4>

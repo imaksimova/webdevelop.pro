@@ -173,6 +173,7 @@
       top: 130px;
       @include desktop-lg {
         position: relative;
+        top: 0;
       }
     }
     .card {
