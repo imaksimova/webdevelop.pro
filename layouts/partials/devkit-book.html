@@ -1,10 +1,15 @@
 <div class="devkit-book">
-  <div class="book-link__wrap">
-    <a href="{{ "/docs/Startup-DevKit.pdf" | absURL }}" target="_blank" class="book-link">
-      <img src="{{ "images/startup-dev-kit.svg" | absURL }}" alt="">
-    </a>
-    <a href="{{ "/docs/Startup-DevKit.pdf" | absURL }}" target="_blank" class="book-icon">
-      <img src="{{ "images/file-download.svg" | absURL }}" alt="">
-    </a>
+  <div class="devkit-book__content">
+    <div class="book-link__wrap">
+      <a href="{{ "/docs/Startup-DevKit.pdf" | absURL }}" target="_blank" class="book-link">
+        <img src="{{ "images/startup-dev-kit.svg" | absURL }}" alt="">
+      </a>
+      <a href="{{ "/docs/Startup-DevKit.pdf" | absURL }}" target="_blank" class="book-icon">
+        <img src="{{ "images/file-download.svg" | absURL }}" alt="">
+      </a>
+    </div>
+    {{ if .IsHome }}
+      <a href="/our-approach/" class="explore-more">Explore More</a>
+    {{ end }}
   </div>
 </div>

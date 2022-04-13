@@ -331,7 +331,9 @@
 			margin-top: 140px;
 		}
 		.devkit-book {
-			margin-bottom: 20px;
+			margin-top: 65px;
+			margin-bottom: 0;
+			justify-content: flex-end;
 		}
 	}
 }
@@ -391,7 +393,7 @@
 	padding: 0 25px;
 	position: absolute;
 	left: 0;
-	margin-top: 50px;
+	margin-top: 72px;
 	@include tablet {
 		width: 100%;
 	}
@@ -589,26 +591,55 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 	@include tablet {
 		margin-bottom: 0;
+	}
+	&__content {
+		text-align: center;
+	}
+	.explore-more {
+		margin-top: 36px;
+		margin-right: 2px;
+		display: inline-block;
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 22px;
+		color: $primary;
+		opacity: 0.8;
+		border-bottom: 1px dashed $accent_color;
+		&:hover {
+			opacity: 1;
+			color: $accent_color;
+			border-bottom-color: transparent;
+		}
 	}
 	.book-link {
 		display: flex;
 		position: relative;
-		width: 223px;
+		width: 171px;
 		flex-shrink: 0;
 		img {
-			max-width: 223px;
+			max-width: 171px;
 			box-shadow: 0 5px 40px 0 rgba(0,0,0,0.3);
+			@include desktop {
+				max-width: 223px;
+			}
 		}
 		&:before {
 			content: '';
 			position: absolute;
 			left: 10px;
 			top: 10px;
-			width: 223px;
+			width: 171px;
 			height: 100%;
 			border: solid 1px $accent_color;
+			@include desktop {
+				width: 223px;
+			}
+		}
+		@include desktop {
+			width: 223px;
 		}
 	}
 	.book-icon {
@@ -618,8 +649,11 @@
 		align-items: flex-start;
 		margin-left: 20px;
 		img {
-			width: 20px;
+			width: 14px;
 			opacity: 0.5;
+			@include desktop {
+				width: 20px;
+			}
 		}
 	}
 	.is-h3-title {
@@ -724,11 +758,26 @@
 
 
 .s-main-partners {
-	margin-bottom: 130px;
+	margin-bottom: 100px;
 	padding-top: 130px;
 	overflow: hidden;
 	@include tablet {
 		margin-bottom: 85px;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 685px;
+		background-image: url(/images/decor-bg-3.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    padding-top: 50px;
+    margin-top: -150px;
+		@include desktop {
+			display: none;
+		}
 	}
 	h6 {
 		text-align: center;
@@ -801,7 +850,7 @@
 	flex-wrap: wrap;
 	width: 100%;
 	overflow: hidden;
-	justify-content: center;
+	justify-content: space-between;
 }
 .slide-leave-active {
 	transition: transform 0.2s ease-in-out;
@@ -993,6 +1042,18 @@
 		z-index: 1;
 		opacity: 0.1;
 		@include tablet {
+			display: none;
+		}
+	}
+	&.s-get-touch-home {
+		background-image: url(/images/decor-bg-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+		@include desktop {
+			background-image: none;
+		}
+		&::before {
 			display: none;
 		}
 	}
