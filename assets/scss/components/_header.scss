@@ -71,6 +71,7 @@
     top: 0;
     z-index: 99;
     position: fixed;
+    @include mt(.12s);
     .header-toolbar {
       box-shadow: 0 0 16px 0 rgba(0,0,0,0.11);
       background-color: #fff;

@@ -17,6 +17,9 @@
                 {{ .Description }}
               </p>
             {{ end }}
+            {{ if .Params.titleLine }}
+              <hr>
+            {{ end }}
             {{ if .Params.readTime }}
               <div class="read-time">
                 <hr>

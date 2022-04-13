@@ -192,6 +192,7 @@
 		width: 33.3333%;
 		@include tablet {
 			width: 100%;
+			margin-bottom: 20px;
 		}
 		* {
 			max-width: 277px;
