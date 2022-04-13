@@ -216,6 +216,8 @@
 
 html {
   font-size: 17px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -377,6 +379,7 @@ a {
   max-height: 32px;
   border: 0;
   border-bottom: 1px solid #9b9b9b;
+  background-color: transparent;
   color: $primary;
   font-size: 17px;
   line-height: 28px;
