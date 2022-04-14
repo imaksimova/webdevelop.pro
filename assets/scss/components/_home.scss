@@ -761,6 +761,9 @@
 	margin-bottom: 100px;
 	padding-top: 130px;
 	overflow: hidden;
+	.container {
+		position: relative;
+	}
 	@include tablet {
 		margin-bottom: 85px;
 	}
@@ -882,6 +885,8 @@
 }
 
 .s-main-bloglist {
+	position: relative;
+	z-index: 1;
 	.bottom-btn {
 		display: flex;
 		align-items: center;
@@ -955,6 +960,7 @@
 		opacity: 0.6;
 		color: $primary;
 		text-transform: uppercase;
+		line-height: 22px;
 	}
 }
 .post_item__details {

@@ -8,6 +8,32 @@
       </div>
     </div>
     <div class="blog-list-items">
+      {{ with .Site.GetPage "/end-war" }}
+        <a href="/end-war/" class="post_item">
+          <div class="post_item__pulish-date">
+            <div class="day">
+              {{ .Date.Day }}
+            </div>
+            <div class="date decorative-heavy">
+              {{ .Date.Month }} {{ .Date.Year }}
+            </div>
+          </div>
+          <div class="mobile decorative-heavy">
+            {{ .Date.Month }} {{ .Date.Day }}, {{ .Date.Year }}
+          </div>
+          <div class="post_item__details">
+            <h4 class="post_name">
+              {{ .Title }}
+            </h4>
+            <p class="post_excerpt">
+              {{ .Description | plainify }}
+            </p>
+          </div>
+          <div class="post_item__image">
+            <img src="/images/top-bg.jpg" alt="Ukraine image">
+          </div>
+        </a>
+      {{ end }}
       {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
         {{ partial "post-item.html" . }}
       {{ end }}
