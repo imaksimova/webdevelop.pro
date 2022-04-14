@@ -33,6 +33,9 @@
       align-items: center;
       flex-wrap: wrap;
       margin-bottom: 0;
+      @include desktop {
+        width: 100%;
+      }
     }
     .form-submit {
       margin-bottom: 30px;
@@ -46,6 +49,9 @@
       border-bottom-left-radius: 2px;
       border-bottom: 0;
       background-color: #fff;
+      @include desktop {
+        width: calc(100% - 70px);
+      }
     }
     .v-btn {
       width: 70px;
@@ -56,7 +62,7 @@
     }
   }
   &__menu {
-    width: 25%;
+    width: 32%;
     padding: 0 15px;
     @include desktop { 
       width: 100%;
