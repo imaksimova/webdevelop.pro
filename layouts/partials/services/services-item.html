@@ -1,11 +1,10 @@
 <div class="service-item">
-  {{ $btnUrl :=  replace .Page.RelPermalink "services" "case-study" }}
   <div class="service-item__image">
     <a href="{{ .Permalink | absURL }}" class="service-item__image-link">
       <img src="{{ .Params.image | absURL }}" alt="{{ .Params.postTitle }}">
     </a>
     {{ if .Params.btn }}
-      <a href="{{ $btnUrl | absURL }}" class="v-btn v-btn--router theme--light accent">
+      <a href="/case-study" class="v-btn v-btn--router theme--light accent">
         Take a look at a case study
       </a>
     {{ end }}
@@ -28,7 +27,7 @@
     </div>
     {{ if .Params.btn }}
       <div class="service-item__btn-bottom">
-        <a href="{{ $btnUrl | absURL }}" class="v-btn v-btn--router theme--light accent">
+        <a href="/case-study" class="v-btn v-btn--router theme--light accent">
           Take a look at a case study
         </a>
       </div>
