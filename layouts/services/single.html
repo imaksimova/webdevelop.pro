@@ -71,9 +71,8 @@
       </div>
     {{ end }}
     {{ if .Params.btn }}
-      {{ $btnUrl :=  replace .Page.RelPermalink "services" "case-study" }}
       <div class="single-service__btn-wrap">
-        <a href="{{ $btnUrl | absURL }}" class="v-btn v-btn--router theme--light accent">
+        <a href="/case-study" class="v-btn v-btn--router theme--light accent">
           Take a look at a case study
         </a>
       </div>
