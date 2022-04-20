@@ -13,7 +13,7 @@ postDescription: >
   fast, scalable and efficient. Webdevelop pro offers end-to-end Machine Learning, 
   Data Science and AI software development to revolutionize your business.
 image: images/services/service-6.svg
-btn: true
+btnUrl: /tags/ai/ml-technologies/
 items:
   - label: NLP
     img: /images/services/srv-single-18.svg

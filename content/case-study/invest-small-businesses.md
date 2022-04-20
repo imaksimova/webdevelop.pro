@@ -9,7 +9,7 @@ description: >
   credit unions, and due diligence companies.</p>
   <p>The main goal was to help local businesses grow and get enough funds to expand and enter new markets. 
   Likewise, the client aimed to build a secure and easy-to-use system for non-accredited investors.</p>
-cases:
+casesItems:
   - label: Expertise
     text: Fintech software, Financial Services, Crowdfunding
   - label: Deliverables
@@ -101,7 +101,8 @@ stepItems:
 tags: [
   "Fintech",
   "CTO as a service",
-  "Crowdfunding platforms"
+  "Crowdfunding platforms",
+  "Building team"
 ]
 ---
 

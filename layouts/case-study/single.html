@@ -34,7 +34,7 @@
       </div>
       <div class="user-case-header__right">
         <div class="content">
-          {{ range .Params.cases }}
+          {{ range .Params.casesItems }}
             <p>
               <strong>{{ .label }}</strong><br>
               {{ .text | safeHTML }}
@@ -156,6 +156,7 @@
         </a>
         <img class="arrow" src="{{ "images/arrow-down.svg" | absURL }}">
       </li>
+      {{ $.Scratch.Delete "path" }}
       {{ range $element := split $url "/" }}
         {{ $.Scratch.Add "path" $element }}
         {{ if ne $element "" }}

@@ -8,7 +8,7 @@ description: Our client was a real estate investment company with a low minimum 
   for a technical cofounder and local developers. After the initial discussion about the 
   timeline and budget limitations, we agreed on using a dedicated remote team and our 
   startup development kit to boost the MVP development.
-cases:
+casesItems:
   - label: Expertise
     text: Agriculture, Fintech software, Real Estate Investments
   - label: Deliverables
@@ -98,7 +98,8 @@ stepItems:
 tags: [
   "Fintech",
   "CTO as a service",
-  "Project Management"
+  "Project Management",
+  "Building team"
 ]
 ---
 

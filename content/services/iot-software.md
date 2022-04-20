@@ -12,7 +12,6 @@ postDescription: >
   the information provided by smart devices, sensors, and controllers. 
   Using various cloud providers we build robust, scalable and secure systems.  
 image: images/services/service-4.svg
-btn: true
 items:
   - label: technical factors
     img: /images/services/srv-single-24.svg

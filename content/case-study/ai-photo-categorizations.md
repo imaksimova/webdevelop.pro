@@ -10,7 +10,7 @@ description: The client daily updates nearly 10 000 positions in the e-commerce 
   categorization and simplification of goods accounting. This was expected to allow 
   for the reduction of expenses and providing a clear competitive advantage. 
   Another task was to develop a reliable price prediction for new products.
-cases:
+casesItems:
   - label: Expertise
     text: AI/ML Software, E-commerce
   - label: Deliverables
@@ -23,7 +23,8 @@ goals: >
 tags: [
   "Computer Vision",
   "AI/ML Technologies",
-  "AI Software"
+  "AI Software",
+  "E-commerce"
 ]
 ---
 

@@ -13,7 +13,7 @@ postDescription: >
   Our dedicated team of professionals can create a product of any level 
   of complexity that fits your requirements. 
 image: images/services/service-5.svg
-btn: true
+btnUrl: /tags/e-commerce/
 items:
   - label: full control
     img: /images/services/srv-single-22.svg

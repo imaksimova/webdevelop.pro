@@ -16,7 +16,7 @@ postDescription: >
   in building blockchain applications and will be happy to help you implement 
   blockchain technology in your business. 
 image: images/services/service-7.svg
-btn: true
+btnUrl: /tags/blockchain/
 items:
   - label: exporing possibilities
     img: /images/services/srv-single-35.svg

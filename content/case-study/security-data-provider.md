@@ -8,7 +8,7 @@ description: The client is a well-established tech company from the San Francisc
   and feature development. The primary business goals were to achieve smooth integration with 
   the current development process and the ability to release new functionality fast and 
   without breaking any old functionality or APIs for existing clients.
-cases:
+casesItems:
   - label: Expertise
     text: Network Security, Sensitive Storage Provider
   - label: Deliverables

@@ -12,7 +12,7 @@ postDescription: >
   designed architecture and optimized development workflow, our team 
   can create an effective product for your business goals. 
 image: images/services/service-3.svg
-btn: true
+btnUrl: /tags/fintech/
 items:
   - label: competitive
     img: /images/services/srv-single-30.svg

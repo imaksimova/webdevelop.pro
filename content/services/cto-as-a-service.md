@@ -15,7 +15,7 @@ postDescription: >
   <li>you don't need a full-time CTO at the moment, but you still need someone to give you advice on technologies</li></ul>
   We can provide a service of consulting CTO on demand for as long as you need it. 
 image: images/services/service-8.svg
-btn: true
+btnUrl: /tags/cto-as-a-service/
 items:
   - label: use correct development strategy
     img: /images/services/srv-single-16.svg

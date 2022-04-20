@@ -3,8 +3,8 @@
     <a href="{{ .Permalink | absURL }}" class="service-item__image-link">
       <img src="{{ .Params.image | absURL }}" alt="{{ .Params.postTitle }}">
     </a>
-    {{ if .Params.btn }}
-      <a href="/case-study" class="v-btn v-btn--router theme--light accent">
+    {{ if .Params.btnUrl }}
+      <a href="{{ .Params.btnUrl | absURL }}" class="v-btn v-btn--router theme--light accent">
         Take a look at a case study
       </a>
     {{ end }}
@@ -25,9 +25,9 @@
         </div>
       {{ end }}
     </div>
-    {{ if .Params.btn }}
+    {{ if .Params.btnUrl }}
       <div class="service-item__btn-bottom">
-        <a href="/case-study" class="v-btn v-btn--router theme--light accent">
+        <a href="{{ .Params.btnUrl | absURL }}" class="v-btn v-btn--router theme--light accent">
           Take a look at a case study
         </a>
       </div>

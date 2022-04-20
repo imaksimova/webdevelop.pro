@@ -9,7 +9,7 @@ description: Our client was a company with an easy-to-use website builder.
   The Client company marketing team decided to tackle solo entrepreneurs, 
   artists and writers as their target customers. They were able to identify 
   customer needs and create a roadmap of required features and functionality of intended web sites.
-cases:
+casesItems:
   - label: Expertise
     text: E-commerce, B2B, Small and Medium Businesses
   - label: Deliverables
@@ -65,7 +65,8 @@ stepItems:
 tags: [
   "E-commerce",
   "CTO as a service",
-  "Project Management"
+  "Project Management",
+  "Building team"
 ]
 ---
 
