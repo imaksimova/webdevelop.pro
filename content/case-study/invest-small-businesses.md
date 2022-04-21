@@ -97,12 +97,15 @@ stepItems:
         text: Publicly launched platform. Press releases on TechCrunch, 
           Business Insider, and other popular websites were published, 
           advertisements placed and more users received.
-
+cases: [
+  "Cto as a Service",
+  "Fintech Software",
+  "Building and Managing Development Team"
+]
 tags: [
   "Fintech",
   "CTO as a service",
-  "Crowdfunding platforms",
-  "Building team"
+  "Crowdfunding platforms"
 ]
 ---
 

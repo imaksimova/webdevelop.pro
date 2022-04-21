@@ -13,7 +13,7 @@ postDescription: >
   range of skills in various technologies and are constantly learning new trends. Webdevelop Pro 
   can assemble a high-performance team exclusively for your product. 
 image: images/services/service-1.svg
-btnUrl: /tags/building-team/
+btnUrl: /cases/building-and-managing-development-team
 items:
   - label: Project research
     img: /images/services/srv-single-1.svg

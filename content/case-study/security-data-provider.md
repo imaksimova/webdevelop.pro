@@ -49,7 +49,10 @@ stepItems:
       - title: Implementation stage
         duration: 10 weeks
         text: Gradual progress in exchanging experience, sharing knowledge and implementing our proposals.
-
+cases: [
+  "E Commerce Software",
+  "Fintech Software"
+]
 tags: [
   "Fintech",
   "E-commerce",

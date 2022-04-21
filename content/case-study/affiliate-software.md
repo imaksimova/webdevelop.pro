@@ -61,12 +61,15 @@ stepItems:
       - title: Platform integration
         duration: 2 weeks
         text: Integration and final tests before putting new solutions into production
-
+cases: [
+  "Building and Managing Development Team",
+  "E Commerce Software",
+  "Cto as a Service"
+]
 tags: [
   "E-commerce",
   "CTO as a service",
-  "Project Management",
-  "Building team"
+  "Project Management"
 ]
 ---
 

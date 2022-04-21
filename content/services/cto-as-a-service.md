@@ -15,7 +15,7 @@ postDescription: >
   <li>you don't need a full-time CTO at the moment, but you still need someone to give you advice on technologies</li></ul>
   We can provide a service of consulting CTO on demand for as long as you need it. 
 image: images/services/service-8.svg
-btnUrl: /tags/cto-as-a-service/
+btnUrl: /cases/cto-as-a-service
 items:
   - label: use correct development strategy
     img: /images/services/srv-single-16.svg
@@ -99,7 +99,7 @@ A CTO solves all kinds of technical matters and makes sure that the development 
 
 <!-- section break -->
 
-## CTO as a Service
+### CTO as a Service
 
 The concept of CTO as a service is still pretty new, but the need in this service is growing.
 CTO as a Service is especially beneficial for small companies and startups. 
@@ -116,5 +116,5 @@ Whether your company is a startup or a mature company, we can help you organize
 the technical side of your business. We naturally take responsibility and 
 we are confident in our ability to make the right choices. We accumulate 
 knowledge from previously completed projects and analyze our performance to improve our skills.
-Feel free to reach out to us and we will provide you a great service.
+Feel free to [reach out to us](/contacts) and we will provide you a great service.
 

@@ -615,6 +615,9 @@
   margin: 0 auto;
   &__img {
     margin: 45px 0;
+    img {
+      width: 100%;
+    }
   }
   &__inner {
     width: 100%;
@@ -640,9 +643,15 @@
     h4 {
       margin-bottom: 20px;
     }
-    ul {
+    ul, ol {
       padding-left: 20px;
       margin-bottom: 25px;
+      color: $body_text;
+      li {
+        img {
+          margin-top: 30px;
+        }
+      }
     }
     img {
       margin-top: 15px;

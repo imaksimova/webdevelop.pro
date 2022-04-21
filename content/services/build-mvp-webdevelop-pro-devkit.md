@@ -133,7 +133,7 @@ development Webdevelop Pro can build an MVP for your needs.
 <!-- section break -->
 
 Over the years, Webdevelop Pro has delivered many MVPs. We've developed a 
-Development kit we use to create custom software products. As an 
+[Development kit](/startup-dev-kit) we use to create custom software products. As an 
 Agile development team, we maintain a steady workflow and meet 
 deadlines on time. Bring us your idea and we will build a robust and scalable MVP in 3-6 months.
 

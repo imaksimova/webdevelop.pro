@@ -16,7 +16,7 @@ postDescription: >
   in building blockchain applications and will be happy to help you implement 
   blockchain technology in your business. 
 image: images/services/service-7.svg
-btnUrl: /tags/blockchain/
+btnUrl: /cases/distributed-network-and-blockchain-development
 items:
   - label: exporing possibilities
     img: /images/services/srv-single-35.svg
@@ -52,7 +52,7 @@ items:
   - label: assets & solutions
     img: /images/services/srv-single-38.svg
     title: Token Solutions Development
-    captionUrl1: /case-studies/decentralized-art-gallery
+    captionUrl1: /case-study/decentralized-art-gallery
     captionText1: case study
     text: >
       Webdevelop pro have experience in both, develop token solutions 

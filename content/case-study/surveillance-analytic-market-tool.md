@@ -25,7 +25,11 @@ goalsItem:
   - text: labeling wallets with identities
   - text: unusual network activity
   - text: movements on target wallets
-
+cases: [
+  "Distributed Network and Blockchain Development",
+  "E Commerce Software",
+  "Fintech Software"
+]
 tags: [
   "Fintech",
   "Blockchain",

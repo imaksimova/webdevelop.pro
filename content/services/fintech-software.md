@@ -12,7 +12,7 @@ postDescription: >
   designed architecture and optimized development workflow, our team 
   can create an effective product for your business goals. 
 image: images/services/service-3.svg
-btnUrl: /tags/fintech/
+btnUrl: /cases/fintech-software
 items:
   - label: competitive
     img: /images/services/srv-single-30.svg
@@ -96,12 +96,14 @@ we create Fintech products that are competitive, robust, reliable, stable and se
 
 ### Our areas of expertise: 
 
-- Payment gateway integration
-- Funds transfer
-- Crowdfunding platforms
-- Mobile Payments
-- Insuretech solutions
-- Stock-trading applications
+<ul class="srv-ul-col">
+<li>Payment gateway integration</li>
+<li>Funds transfer</li>
+<li>Crowdfunding platforms</li>
+<li>Mobile Payments</li>
+<li>Insuretech solutions</li>
+<li>Stock-trading applications</li>
+</ul>
 
 The professional development team of Webdelevop Pro 
 has high standards for our products' quality and performance. 

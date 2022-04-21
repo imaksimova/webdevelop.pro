@@ -62,12 +62,15 @@ stepItems:
           for the limited number of guests. Out team closely monitored user 
           interactions with an application and collected features and 
           bug reports for future improvements.
-
+cases: [
+  "Cto as a Service",
+  "Ai Ml Development",
+  "Building and Managing Development Team"
+]
 tags: [
   "Computer Vision",
   "AI/ML Technologies",
-  "CTO as a service",
-  "Building team"
+  "CTO as a service"
 ]
 ---
 

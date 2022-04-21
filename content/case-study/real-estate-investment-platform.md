@@ -94,12 +94,15 @@ stepItems:
         duration: 4 weeks
         text: Release platform to the public. Publishing google and Facebook 
           advertisements and receiving first investment from real users which come from advertisement.
-
+cases: [
+  "Cto as a Service",
+  "Fintech Software",
+  "Building and Managing Development Team"
+]
 tags: [
   "Fintech",
   "CTO as a service",
-  "Project Management",
-  "Building team"
+  "Project Management"
 ]
 ---
 

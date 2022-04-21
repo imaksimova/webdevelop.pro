@@ -24,12 +24,15 @@ goalsItem:
   - text: User friendly UI
   - text: Collectible digital artwork
   - text: ERC-721 standard
-
+cases: [
+  "Distributed Network and Blockchain Development",
+  "Fintech Software",
+  "Building and Managing Development Team"
+]
 tags: [
   "Fintech",
   "Digital Assets",
   "ERC-721",
-  "Building team",
   "Blockchain"
 ]
 ---

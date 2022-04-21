@@ -20,6 +20,10 @@ casesItems:
       Tensorflow, TensorFlow Hub, <a href="/tags/python">Python</a>, Keras, Google Colab, Google Drive, Django
 goals: >
   <p>The client collected around 150 000 images of goods with proper labels over the number of years. As a result, an extensive database divided into the training and validation sets was created. First of all, we examined existing computer vision solutions for classifying objects by photos. With the client training set, we have improved the object detection and classification algorithm to be noise-resistant to images with more than one object. Our team built a clustering algorithm based on the knowledge and specifics of the customer’s categorization hierarchy. Additionally, we implemented an algorithm persistent to changes in images quality, lighting and visual angle. The category detection pipeline was completely automated and was removed from the manual categorization workflow.</p>
+cases: [
+  "Ai Ml Development",
+  "E Commerce Software"
+]
 tags: [
   "Computer Vision",
   "AI/ML Technologies",
