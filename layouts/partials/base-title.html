@@ -32,7 +32,7 @@
       </div>
     </div>
   </div>
-  {{ if .Description }}
+  {{ if or .Description .Params.titleLine }}
     <div class="square"></div>
   {{ end }}
 </div>

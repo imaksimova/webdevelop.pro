@@ -12,6 +12,9 @@
   flex-wrap: wrap;
   align-items: stretch;
   margin: 168px -15px 0;
+	&.cases-filtered {
+		margin-top: 75px;
+	}
   .case-item {
     margin: 0 15px;
     flex-basis: 360px;
@@ -829,6 +832,9 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		&::before {
+			display: none;
+		}
 		.arrow {
 			transform: rotate(-90deg);
 			opacity: 0.4;

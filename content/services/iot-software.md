@@ -12,7 +12,6 @@ postDescription: >
   the information provided by smart devices, sensors, and controllers. 
   Using various cloud providers we build robust, scalable and secure systems.  
 image: images/services/service-4.svg
-btn: true
 items:
   - label: technical factors
     img: /images/services/srv-single-24.svg
@@ -28,9 +27,9 @@ items:
   - label: key to success
     img: /images/services/srv-single-25.svg
     title: Consider the Protocol
-    captionUrl1: /blog/tag/websocket
+    captionUrl1: /tags/websocket
     captionText1: Websocket
-    captionUrl2: /blog/tag/mqtt
+    captionUrl2: /tags/mqtt
     captionText2: MQTT
     text: >
       Choosing the right protocol is the key to success. Bluetooth, Wi-Fi, serial ports, 
@@ -88,7 +87,7 @@ items:
   - label: multiplatforms
     img: /images/services/srv-single-29.svg
     title: Cross-Platform Deployment
-    captionUrl1: /blog/tag/flutter
+    captionUrl1: /tags/flutter
     captionText1: Flutter
     text: >
       IoT development implies working with various devices that 

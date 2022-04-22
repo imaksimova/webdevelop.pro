@@ -1,13 +1,16 @@
 ---
-date: 2022-03-31T16:08:10+03:00
+date: 2020-04-06
 draft: false
 title: "Decentralized art gallery"
 subTitle: Blockchain, Digital Marketing, Art, Fintech software
-description: Our client was a digital art gallery where you one could buy rare 
+textIntro: >
+  Our client was a digital art gallery where you one could buy rare 
   collectibles from popular artists and resell them later. The client was among 
   the first users of non-fungible or unique tokens on the Ethereum blockchain 
   and his company is even mentioned in the ERC-721 token standard as one of the successful early examples.
-cases:
+description: >
+  The client is a digital art gallery where you can buy rare collectibles from popular artists and resell it later. The client was the first adaptor of non-fungible or unique tokens on the Ethereum blockchain and his company is even mentioned in the ERC-721 token standard as one of the early examples.
+casesItems:
   - label: Expertise
     text: Blockchain, Digital Marketing Art, Fintech software
   - label: Deliverables
@@ -24,11 +27,17 @@ goalsItem:
   - text: User friendly UI
   - text: Collectible digital artwork
   - text: ERC-721 standard
-
+cases: [
+  "Distributed Network and Blockchain Development",
+  "Fintech Software",
+  "Building and Managing Development Team"
+]
 tags: [
   "Fintech",
   "Digital Assets",
-  "ERC-721"
+  "ERC-721",
+  "Blockchain",
+  "Project Management"
 ]
 ---
 

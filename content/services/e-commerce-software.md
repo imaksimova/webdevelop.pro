@@ -1,8 +1,10 @@
 ---
 title: "E-commerce software development"
-date: 2022-03-27
+date: 2020-03-26
 draft: false
-description: "Complete control over business processes and workflows"
+subTitle: Complete control over business processes and workflows
+description: >
+  10 years ago e-commerce software development was mostly focused on simplifying the process of online shopping and building friendly user interfaces to encourage customers to buy more products. Nowadays, it is a huge and complex market containing digital businesses selling products and services all over the world that has irrevocably transformed traditional shopping. Ecommerce software is the driving force behind any online store.
 postTitle: E-commerce Software
 captions: [Optimize Online Business, Manage and Organize Products, Automation of Operations, Expand Customer Base]
 postDescription: >
@@ -12,8 +14,8 @@ postDescription: >
   software and we set high standards for our products performance and reliability. 
   Our dedicated team of professionals can create a product of any level 
   of complexity that fits your requirements. 
-image: images/services/service-5.svg
-btn: true
+image: /images/services/service-5.svg
+btnUrl: /cases/e-commerce-software
 items:
   - label: full control
     img: /images/services/srv-single-22.svg
@@ -45,6 +47,9 @@ items:
       In SaaS-based platforms, patches and newly-released features are 
       updated automatically or with one click. A cost-effective 
       e-commerce solution of your design is a win-win for you and your clients.
+tags: [
+  "E-Commerce"
+]
 ---
 
 ## Ecommerce software

@@ -1,11 +1,13 @@
 ---
-date: 2022-03-31T16:09:15+03:00
+date: 2020-04-06
 draft: false
 title: "Market Surveillance & Analytic"
 subTitle: Network Security, Fintech software, Blockchain
-description: >
+textIntro: >
   A client is a group of people from Standford University with an experience in law and e-commerce industries. When cryptocurrencies ski up from $1000 to $18 000 for bitcoin in about two years, it was a bloom of different startups, companies, and technologies based on blockchain technology. It was also bloom for venture capital and angel investors. While blockchain opens a lot of new opportunities, cryptocurrency markets are global, fragmented, and still widely unregulated.
-cases:
+description: >
+  A client is a group of people from Standford University with experience in law and e-commerce industries. When cryptocurrencies ski up from $1000 to $18 000 for bitcoin in about two years, it was a bloom of different startups, companies, and technologies based on blockchain technology. It also bloomed for venture capital and angel investors.
+casesItems:
   - label: Expertise
     text: Network Security, Fintech software, Blockchain
   - label: Deliverables
@@ -25,11 +27,16 @@ goalsItem:
   - text: labeling wallets with identities
   - text: unusual network activity
   - text: movements on target wallets
-
+cases: [
+  "Distributed Network and Blockchain Development",
+  "E Commerce Software",
+  "Fintech Software"
+]
 tags: [
   "Fintech",
   "Blockchain",
-  "E-commerce"
+  "E-commerce",
+  "Network Security"
 ]
 ---
 

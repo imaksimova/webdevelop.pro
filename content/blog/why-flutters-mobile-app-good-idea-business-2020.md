@@ -1,8 +1,7 @@
 ---
 title: "Why Flutter's mobile app is a good idea for business in 2020"
-description: Our priority at Webdevelop Pro is to partner with small teams for the long haul. 
-  It may sound cliché but truthfully, we’re at our best when we’re helping our partners 
-  grow over the long term, flexibly adapting to new business needs as the team and business scales.
+description: >
+  In times of crisis, companies seek to reduce costs, accelerate market entry and increase online presence through applications. Flutter is recommended as one of the speediest mobile solutions. This emerging technology could improve your mobile app development process as well as reduce costs.
 date: 2020-07-10
 draft: false
 authors: "Vlad Tarasenko"

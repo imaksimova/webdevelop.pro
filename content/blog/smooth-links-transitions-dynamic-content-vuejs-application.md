@@ -35,7 +35,7 @@ function onLinkClick(e) {
 }
 ```
 
-Importing the app’s router, because it is required to push a new route.
+Importing the app’s router, because it is required to push a new route. <br>
 On link click prevent default link behavior, get the path for a new router from link href attribute, and push it to the router
 
 Now let’s create a function that gets an array of links, set proper onclick function, and mark as ready.

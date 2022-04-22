@@ -4,6 +4,7 @@ title         = "Software Development and Consulting Company | Webdevelop Pro"
 # Disqus Comment System
 disqusShortname = "webdevelop-pro"
 [taxonomies]
+  case = "cases"
   author = "authors"
   tag = "tags"
 [markup]

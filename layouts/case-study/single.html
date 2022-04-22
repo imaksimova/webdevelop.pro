@@ -28,13 +28,13 @@
       <div class="user-case-header__left">
         <div class="content">
           <p>
-            {{ .Description | safeHTML }}
+            {{ .Params.textIntro | safeHTML }}
           </p>
         </div>
       </div>
       <div class="user-case-header__right">
         <div class="content">
-          {{ range .Params.cases }}
+          {{ range .Params.casesItems }}
             <p>
               <strong>{{ .label }}</strong><br>
               {{ .text | safeHTML }}
@@ -99,7 +99,7 @@
                         </h4>
                       </div>
                       <div class="duration link-underline">
-                        <p>{{ .duration }}</p>
+                        <p>Duration: {{ .duration }}</p>
                       </div>
                     </div>
                     <div class="description link-underline">
@@ -119,7 +119,7 @@
       </a>
       <div class="navigation-row">
         <div class="navigation-previous">
-          <a href="{{ if .PrevInSection }}{{ .PrevInSection.RelPermalink }}{{ else }}#{{ end }}" class="uppercase-link {{ if not .PrevInSection }}disabled{{ end }}">
+          <a href="{{ if .NextInSection }}{{ .NextInSection.RelPermalink }}{{ else }}#{{ end }}" class="uppercase-link {{ if not .NextInSection }}disabled{{ end }}">
             previous case
           </a>
         </div>
@@ -127,7 +127,7 @@
           <div class="v-btn__content">Free consulatation</div>
         </a>
         <div class="navigation-next">
-          <a href="{{ if .NextInSection }}{{ .NextInSection.RelPermalink }}{{ else }}#{{ end }}" class="uppercase-link {{ if not .NextInSection }}disabled{{ end }}">
+          <a href="{{ if .PrevInSection }}{{ .PrevInSection.RelPermalink }}{{ else }}#{{ end }}" class="uppercase-link {{ if not .PrevInSection }}disabled{{ end }}">
             next case
           </a>
         </div>
@@ -148,27 +148,7 @@
         <img src="{{ "images/web-develop-ilustration.svg" | absURL }}" alt="web-develop">
       </div>
     </div>
-    {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
-    <ul class="breadcrumbs">
-      <li>
-        <a href="/" class="breadcrumbs-item-title router-link-active">
-          <span>Home</span>
-        </a>
-        <img class="arrow" src="{{ "images/arrow-down.svg" | absURL }}">
-      </li>
-      {{ range $element := split $url "/" }}
-        {{ $.Scratch.Add "path" $element }}
-        {{ if ne $element "" }}
-          <li>
-            <a href="/{{ $.Scratch.Get "path" }}" class="breadcrumbs-item-title">
-              <span>{{ humanize (replace . "posts" "blog") }}</span>
-            </a>
-            <img class="arrow" src="{{ "images/arrow-down.svg" | absURL }}">
-            {{ $.Scratch.Add "path" "/" }}
-          </li>
-        {{ end }}
-      {{ end }}
-    </ul> 
+    {{ partial "breadcrumbs.html" . }} 
   </div>
 </section>
 

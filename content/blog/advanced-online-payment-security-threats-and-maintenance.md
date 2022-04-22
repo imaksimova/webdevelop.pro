@@ -91,6 +91,7 @@ In the worst scenario, after some credit cards were confirmed valid by a crimina
 - **Monitor the activity of small orders** – small transactions are used to test the validity of the card and also its limits. Check the beyond-normal spices in graph to spot any unusual activity and stop it.
 - **Behavior Analysis** – bots have their own behavior patterns that are distinct from human being. Utilize machine learning analysis and analyze as many data as possible to separate consumer’s activity from scammers card cracking.
 - **Set up a blacklist** – once you began suspecting an individual in card cracking on your website, it is safer to add them to a blacklist, as they tend to commit crime repetitively.
+
 As a universal solution against various types of fraud, big companies often utilize services of a 3rd party organization that specializes in digital protection. While there might be an overwhelming number of options, let us review a few and understand how they stay on guard of your online security.
 
 #### Sift

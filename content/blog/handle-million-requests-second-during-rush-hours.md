@@ -42,6 +42,7 @@ As for the backend, here is a simple list which will help you to increase applic
 - Make sure you are using database connection pooling
 - Inspect your SQL queries and add caching for them
 - Add caching for whole responses
+
 You will need to keep your cache updated but in a lot of cases, you can improve the situation dramatically.
 
 ## Code and Architecture changed

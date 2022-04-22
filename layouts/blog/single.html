@@ -51,7 +51,7 @@
         <img src="{{ .Params.image }}" alt="{{ .Title }}">
       </div>
       <div class="single-blog-content__inner">
-        {{ .Content }}
+        {{ .Content | safeHTML }}
       </div>
       <div class="bottom-wrap">
         <div class="share">

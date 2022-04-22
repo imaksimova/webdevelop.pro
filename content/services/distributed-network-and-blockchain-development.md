@@ -1,9 +1,11 @@
 ---
 title: "Distributed network and blockchain"
-date: 2022-03-25
+date: 2020-03-26
 draft: false
-description: "We have helped over 20 enterprises achieve success with our training 
-  workshops, prototype design and blockchain proof of concepts."
+subTitle: We have helped over 20 enterprises achieve success with our training 
+  workshops, prototype design and blockchain proof of concepts.
+description: >
+  Blockchain is a cutting edge technology adopted by businesses worldwide. Amongst its top advantages are transparency, efficiency, keeping your data secure, and inalterability of the information stored on a blockchain. Blockchain is a perfect solution for those who don’t want 3rd parties in transactions with their clients. Businesses like art galleries, supply chains, various verification systems, and others could benefit from the transparency of transactions or participants involved. We have experience in building blockchain applications and will be happy to help you implement blockchain technology in your business.
 postTitle: Blockchain Development
 captions: [Decentralized Network, Secure Transactional Records, Transparency, Manage Efficiency]
 postDescription: >
@@ -15,8 +17,8 @@ postDescription: >
   from the transparency of transactions or participants involved. We have experience 
   in building blockchain applications and will be happy to help you implement 
   blockchain technology in your business. 
-image: images/services/service-7.svg
-btn: true
+image: /images/services/service-7.svg
+btnUrl: /cases/distributed-network-and-blockchain-development
 items:
   - label: exporing possibilities
     img: /images/services/srv-single-35.svg
@@ -30,7 +32,7 @@ items:
   - label: solution design
     img: /images/services/srv-single-36.svg
     title: Strategic Blockchain Advisory
-    captionUrl1: /blog/managing-the-risk
+    captionUrl1: /blog/dapp-architecture-real-project
     captionText1: managing the risk
     text: >
       Almost every solution have a few choices use an existing framework or build your own. 
@@ -52,7 +54,7 @@ items:
   - label: assets & solutions
     img: /images/services/srv-single-38.svg
     title: Token Solutions Development
-    captionUrl1: /case-studies/decentralized-art-gallery
+    captionUrl1: /case-study/decentralized-art-gallery
     captionText1: case study
     text: >
       Webdevelop pro have experience in both, develop token solutions 
@@ -81,6 +83,9 @@ items:
       provide seamless technical fixes, update delivery or add additional 
       system integration. This way you can stay focused on the bigger picture 
       while we handle the operation network and ecosystems questions.
+tags: [
+  "Blockchain"
+]
 ---
 
 Harness the expertise of over 10 years of world-class engineers, financial and legal experts, and economic thinkers to help your organization implement the applications of blockchain technology.

@@ -1,11 +1,13 @@
 ---
-date: 2022-04-01T00:19:45+03:00
+date: 2020-04-06
 draft: false
 title: "Artificial dance teacher"
 subTitle: AI/ML Software, Internet of Things (IOT)
-description: >
+textIntro: >
   Our Client is an owner of a large network of entertainment facilities where gym services and other activities for customers are provided. The client decided to explore new lines of business and offered services for people who cannot visit gym regularly as his fitness segment was growing steadily.
-cases:
+description: >
+  The Client has a big chain of entertainment facilities. They provide a lot of gym services and offer different activities and for their customers. Being successful in fitness business, the client decides to explore new areas and offer services for people who cannot visit their gyms regularly.
+casesItems:
   - label: Expertise
     text: AI/ML Software, Internet of things
   - label: Deliverables
@@ -62,11 +64,17 @@ stepItems:
           for the limited number of guests. Out team closely monitored user 
           interactions with an application and collected features and 
           bug reports for future improvements.
-
+cases: [
+  "Cto as a Service",
+  "Ai Ml Development",
+  "Building and Managing Development Team"
+]
 tags: [
   "Computer Vision",
   "AI/ML Technologies",
-  "CTO as a service"
+  "CTO as a service",
+  "Project Management",
+  "Machine Learning"
 ]
 ---
 

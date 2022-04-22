@@ -1,7 +1,32 @@
 {{ define "main" }}
 
 <section class="single-service">
-  {{ partial "base-title.html" . }}
+  <div class="base-header">
+    <div class="container">
+      {{ $title := .Title }}
+      {{ $titleArray := split $title " " }}
+      {{ $titleLeft := index $titleArray 0 }}
+      {{ $titleRight := replace $title $titleLeft "" }}
+      <div class="offset-left">
+        <h1 class="hidden-desktop base-header-mobile">{{ $titleLeft }} {{ $titleRight }}</h1>
+        <div class="base-header-title bottom">
+          <span class="white-color text-uppercase is-h1-title">{{ $titleLeft }}</span>
+          {{ if $titleRight }}
+            <div class="base-header-title__wrap">
+              <div class="in-touch text-uppercase is-h1-title">{{ $titleRight }}</div>
+              {{ if .Params.subTitle }}
+                <hr>
+                <p class="sub-title">
+                  {{ .Params.subTitle }}
+                </p>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    <div class="square"></div>
+  </div>
   <div class="container">
     <div class="content-service-top narrow">
       {{- $sectionDelimiter := "<!-- section break -->" -}}
@@ -70,16 +95,18 @@
         {{ index $rawContentSections 1 | .RenderString }}
       </div>
     {{ end }}
-    {{ if .Params.btn }}
-      {{ $btnUrl :=  replace .Page.RelPermalink "services" "case-study" }}
+    {{ if .Params.btnUrl }}
       <div class="single-service__btn-wrap">
-        <a href="{{ $btnUrl | absURL }}" class="v-btn v-btn--router theme--light accent">
+        <a href="{{ .Params.btnUrl | absURL }}" class="v-btn v-btn--router theme--light accent">
           Take a look at a case study
         </a>
       </div>
     {{ end }}
   </div>
   {{ partial "get-in-touch.html" . }}
+  <div class="container">
+    {{ partial "breadcrumbs.html" . }}
+  </div>
 </section>
 
 {{ end }}

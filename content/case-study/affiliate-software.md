@@ -1,15 +1,18 @@
 ---
-date: 2022-04-01T00:09:32+03:00
+date: 2020-04-06
 draft: false
 title: "Affiliate software development"
 subTitle: E-commerce, B2B, Small and Medium Businesses
-description: Our client was a company with an easy-to-use website builder. 
+textIntro: >
+  Our client was a company with an easy-to-use website builder. 
   As a customer of our Client, one can build a rich, mobile-friendly, 
   full-featured website without an expertise in technologies. 
   The Client company marketing team decided to tackle solo entrepreneurs, 
   artists and writers as their target customers. They were able to identify 
   customer needs and create a roadmap of required features and functionality of intended web sites.
-cases:
+description: >
+  The client is a company with an easy-to-use website builder. As a customer, you can build a rich, mobile-friendly, full-featured website without technologies knowing. The company marketing team decided to aim solo entrepreneurs, artists, writers as their niche auditory. They were able to identify customer needs and create a roadmap of required features and functionality
+casesItems:
   - label: Expertise
     text: E-commerce, B2B, Small and Medium Businesses
   - label: Deliverables
@@ -61,7 +64,11 @@ stepItems:
       - title: Platform integration
         duration: 2 weeks
         text: Integration and final tests before putting new solutions into production
-
+cases: [
+  "Building and Managing Development Team",
+  "E Commerce Software",
+  "Cto as a Service"
+]
 tags: [
   "E-commerce",
   "CTO as a service",

@@ -71,6 +71,19 @@
     strong + strong {
       display: block;
     }
+    a {
+      border-bottom: 1px dotted $accent_color;
+      color: $body_text;
+      &:hover {
+        border-color: transparent;
+        color: $accent_color;
+      }
+    }
+    strong {
+      a {
+        border-bottom: 0;
+      }
+    }
 	}
   ul {
     list-style-type: none;
@@ -84,7 +97,7 @@
         content: "";
         width: 10px;
         height: 10px;
-        background-color: #004fff;
+        background-color: $accent_color;
         position: absolute;
         left: -10px;
         top: 13px;
@@ -114,6 +127,20 @@
     align-items: center;
     .devkit-book {
       margin-bottom: 0;
+      .book-link {
+        width: 223px;
+        img {
+          max-width: 223px;
+        }
+        &:before {
+          width: 223px;
+        }
+      }
+      .book-icon {
+        img {
+          width: 20px;
+        }
+      }
     }
   }
   &__right {

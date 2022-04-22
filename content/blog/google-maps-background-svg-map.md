@@ -173,9 +173,9 @@ export default {
 
 The main properties of mapOptions are mapStyle, position and control.
 
-- position - for this example, I took Google maps to center the coordinates;
-- mapStyle - is an important point to turn off the names of cities, roads, and the entire state markup;
-- control - to disable the ability to zoom in or out the map.
+- **position** - for this example, I took Google maps to center the coordinates;
+- **mapStyle** - is an important point to turn off the names of cities, roads, and the entire state markup;
+- **control** - to disable the ability to zoom in or out the map.
 
 And the last important point for the background map is the styles.
 

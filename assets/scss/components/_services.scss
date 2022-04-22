@@ -30,7 +30,7 @@
     ul {
       padding-left: 20px;
       li {
-        color: $primary;
+        color: $body_text;
       }
     }
 	}
@@ -49,11 +49,14 @@
     animation-name: contentAnimation;
     animation-duration: 0.4s;
     overflow: hidden;
+    color: $body_text;
     a {
       border-bottom: 1px dotted $accent_color;
+      color: $body_text;
       @include mt(0.3s);
       &:hover {
         border-color: transparent;
+        color: $accent_color;
       }
     }
   }
@@ -179,6 +182,7 @@
 }
 
 .single-service {
+  padding-bottom: 55px;
   .base-header {
     margin-bottom: 20px;
   }
@@ -294,6 +298,7 @@
 .content-service-top {
 	margin-bottom: 110px;
 	margin-top: 25px;
+  color: $body_text;
   &.narrow {
     max-width: 750px;
     margin: 0 auto 100px;
@@ -306,8 +311,10 @@
   }
   h2 {
     margin-bottom: 15px;
+    color: $primary;
   }
   h3 {
+    color: $primary;
     margin-top: 65px;
     margin-bottom: 30px;
   }
@@ -321,6 +328,17 @@
     &.column-list-ul {
       max-width: 800px;
       margin: 40px auto 70px auto;
+    }
+  }
+  .srv-ul-col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li {
+      width: calc(50% - 15px);
+      @include tablet {
+        width: 100%;
+      }
     }
   }
 }
@@ -440,8 +458,10 @@
 }
 .content-service-bottom {
 	margin-top: 100px !important;
-  h2 {
+  color: $body_text;
+  h2, h3 {
     margin-bottom: 15px;
+    color: $primary;
   }
   ul {
     list-style-type: none;
@@ -450,6 +470,14 @@
     margin-bottom: 50px;
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+  a {
+    color: $body_text;
+    border-bottom: 1px dotted $accent_color;
+    &:hover {
+      color: $accent_color;
+      border-color: transparent;
     }
   }
 }
