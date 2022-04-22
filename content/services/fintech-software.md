@@ -1,8 +1,10 @@
 ---
 title: "Fintech Software"
-date: 2022-03-29
+date: 2020-03-26
 draft: false
-description: "We know how to help you to improve your business"
+subTitle: We know how to help you to improve your business
+description: >
+  Fintech is a booming industry which is both demanding and highly competitive.  Mobile banking in smartphones, new ways of providing financial services via the Internet, and numerous cryptocurrencies have changed the way we look at the traditional methods of delivering financial services. Here at Webdevelop Pro, we create Fintech products that are competitive, robust, reliable, stable and secure.
 postTitle: Fintech Software
 captions: [Increase Efficiency, Enhance Customer Experience, Automate Business Processes, Improve Security]
 postDescription: >
@@ -11,7 +13,7 @@ postDescription: >
   financial operations better. With a well-selected tech stack, carefully 
   designed architecture and optimized development workflow, our team 
   can create an effective product for your business goals. 
-image: images/services/service-3.svg
+image: /images/services/service-3.svg
 btnUrl: /cases/fintech-software
 items:
   - label: competitive
@@ -86,6 +88,9 @@ items:
       an application’s architecture, we perform 
       automated and manual testing as well as 
       benchmark and unit testing.
+tags: [
+  "Fintech"
+]
 ---
 
 Fintech is a booming industry which is both demanding and highly competitive. 

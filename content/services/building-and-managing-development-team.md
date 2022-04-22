@@ -1,8 +1,10 @@
 ---
 title: "Building and managing a development team"
-date: 2022-03-31
+date: 2020-03-26
 draft: false
-description: "Effective development team means everyone understands business goals, necessary steps and area of responsibility"
+subTitle: Effective development team means everyone understands business goals, necessary steps and area of responsibility
+description: >
+  Many companies choose a dedicated team model to build custom software. Among many benefits of a dedicated development team are reduced project cost, flexibility, and faster time-to-market. This model is especially beneficial for long-term large-scale projects, and that's the kind of projects we're good with. Webdevelop Pro has been designing custom software for over 10 years and delivered plenty of projects.
 postTitle: Development Team
 captions: [Dedicated Team, Great Technical Skills, Results-driven Development, Successful Product]
 postDescription: >
@@ -12,7 +14,7 @@ postDescription: >
   achieved when the dev team is focused solely on one project. Our specialists have a wide 
   range of skills in various technologies and are constantly learning new trends. Webdevelop Pro 
   can assemble a high-performance team exclusively for your product. 
-image: images/services/service-1.svg
+image: /images/services/service-1.svg
 btnUrl: /cases/building-and-managing-development-team
 items:
   - label: Project research
@@ -103,6 +105,10 @@ items:
       throughout the process of product development. We assess the risks we might 
       encounter at the same time as we gather requirements. We also monitor risks 
       at the sprint level with a thorough analysis every 2 weeks.
+tags: [
+  "Project Management",
+  "CTO As A Service"
+]
 ---
 
 Many companies choose a dedicated team model to build custom software. Among many benefits of a 

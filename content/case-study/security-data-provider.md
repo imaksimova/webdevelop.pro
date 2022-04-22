@@ -1,13 +1,13 @@
 ---
-date: 2022-03-31T16:08:25+03:00
+date: 2020-04-06
 draft: false
 title: "Security data provider"
 subTitle: Network Security, Sensitive Storage Provider
-description: The client is a well-established tech company from the San Francisco Bay Area. 
-  After closing a series A round, the client’s company was focused on growth, business expansion, 
-  and feature development. The primary business goals were to achieve smooth integration with 
-  the current development process and the ability to release new functionality fast and 
-  without breaking any old functionality or APIs for existing clients.
+textIntro: >
+  The client is a well-established tech company from the San Francisco Bay Area. 
+  After closing a series A round, the client’s company was focused on growth, business expansion, and feature development. The primary business goals were to achieve smooth integration with the current development process and the ability to release new functionality fast and without breaking any old functionality or APIs for existing clients.
+description: >
+  The client is a well-established tech company from San Fransico Bay. After closing a series A round company has been focused on growth, business expending and feature development. The primary business goals were to archive smooth integration with the current development process and the ability to release new functionality fast and without breaking any old functionality or APIs for old clients.
 casesItems:
   - label: Expertise
     text: Network Security, Sensitive Storage Provider

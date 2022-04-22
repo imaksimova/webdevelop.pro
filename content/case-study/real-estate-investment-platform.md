@@ -1,13 +1,13 @@
 ---
-date: 2022-03-31T16:07:52+03:00
+date: 2020-04-06
 draft: false
 title: "Real estate investment platform"
 subTitle: Agriculture, Fintech software, Real Estate Investments
-description: Our client was a real estate investment company with a low minimum investment. 
-  At the beginning of our partnership, the company only had a founder. The founder was looking 
-  for a technical cofounder and local developers. After the initial discussion about the 
-  timeline and budget limitations, we agreed on using a dedicated remote team and our 
-  startup development kit to boost the MVP development.
+textIntro: >
+  Our client was a real estate investment company with a low minimum investment. 
+  At the beginning of our partnership, the company only had a founder. The founder was looking for a technical cofounder and local developers. After the initial discussion about the timeline and budget limitations, we agreed on using a dedicated remote team and our startup development kit to boost the MVP development.
+description: >
+  The client is a real estate investment company with a low minimum investment. At the beginning of our partnership, the company only had a founder. The founder was looking for a technical cofounder and local developers. After the initial discussion about the timeline and budget limitations, we agreed on using a dedicated remote team and our startup development kit to boost the MVP development.
 casesItems:
   - label: Expertise
     text: Agriculture, Fintech software, Real Estate Investments

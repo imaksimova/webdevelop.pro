@@ -1,14 +1,16 @@
 ---
-date: 2022-03-31T16:08:41+03:00
+date: 2020-04-06
 draft: false
 title: "Invest in small businesses"
 subTitle: Fintech software, Financial Services, Crowdfunding
-description: >
+textIntro: >
   <p>Our client (investment company) decided to run a crowdfunding platform with a focus on 
   small businesses after a long record of working with hedge funds, 
   credit unions, and due diligence companies.</p>
   <p>The main goal was to help local businesses grow and get enough funds to expand and enter new markets. 
   Likewise, the client aimed to build a secure and easy-to-use system for non-accredited investors.</p>
+description: >
+  Having a long history of working with different hedge funds, credit unions, and due diligence companies, the client decided to run a crowdfunding company with a focus on small businesses. The main goal was to help local businesses to grow and get enough funds to expand and get into new markets.
 casesItems:
   - label: Expertise
     text: Fintech software, Financial Services, Crowdfunding

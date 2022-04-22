@@ -1,15 +1,18 @@
 ---
-date: 2022-04-01T00:27:47+03:00
+date: 2020-04-06
 draft: false
 title: "AI for photo categorizations"
 subTitle: AI/ML Software, E-commerce
-description: The client daily updates nearly 10 000 positions in the e-commerce store. 
+textIntro: >
+  The client daily updates nearly 10 000 positions in the e-commerce store. 
   Goods originate from different vendors in different formats. Website administrators 
   spend a substantial amount of time to parse and categorize vendor files. The task was 
   to enhance the administrator panel UX by implementing noise-resistant automatic 
   categorization and simplification of goods accounting. This was expected to allow 
   for the reduction of expenses and providing a clear competitive advantage. 
   Another task was to develop a reliable price prediction for new products.
+description: >
+  The client daily updates about 10 000 positions on the e-commerce store. Goods comes from different vendors in different formats. Website administrators spend a substantial amount of time needed to parse and categorize vendor files. Enhance the administrator panel UX by implementing noise-resistant automatic categorization and simplification of goods accounting would allow to reduce expenses and gives some competitive advantages.
 casesItems:
   - label: Expertise
     text: AI/ML Software, E-commerce
@@ -28,7 +31,8 @@ tags: [
   "Computer Vision",
   "AI/ML Technologies",
   "AI Software",
-  "E-commerce"
+  "E-commerce",
+  "Machine Learning"
 ]
 ---
 
