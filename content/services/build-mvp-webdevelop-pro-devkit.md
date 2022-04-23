@@ -1,6 +1,6 @@
 ---
 title: "Building a minimum viable product"
-date: 2020-03-26
+date: 2020-03-26T21:07:40+03:00
 draft: false
 subTitle: Reliable solution within limited time and resources
 description: >

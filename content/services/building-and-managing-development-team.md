@@ -1,6 +1,6 @@
 ---
 title: "Building and managing a development team"
-date: 2020-03-26
+date: 2020-03-26T21:08:40+03:00
 draft: false
 subTitle: Effective development team means everyone understands business goals, necessary steps and area of responsibility
 description: >
@@ -107,7 +107,8 @@ items:
       at the sprint level with a thorough analysis every 2 weeks.
 tags: [
   "Project Management",
-  "CTO As A Service"
+  "CTO As A Service",
+  "Product Development"
 ]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "E-commerce software development"
-date: 2020-03-26
+date: 2020-03-26T21:04:40+03:00
 draft: false
 subTitle: Complete control over business processes and workflows
 description: >

@@ -1,6 +1,6 @@
 ---
 title: "Cto as a Service"
-date: 2020-03-26
+date: 2020-03-26T21:01:40+03:00
 draft: false
 subTitle: A CTO’s role is very important in any company
 description: >

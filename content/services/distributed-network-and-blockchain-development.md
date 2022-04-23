@@ -1,6 +1,6 @@
 ---
 title: "Distributed network and blockchain"
-date: 2020-03-26
+date: 2020-03-26T21:02:40+03:00
 draft: false
 subTitle: We have helped over 20 enterprises achieve success with our training 
   workshops, prototype design and blockchain proof of concepts.

@@ -102,7 +102,8 @@ cases: [
 tags: [
   "Fintech",
   "CTO as a service",
-  "Project Management"
+  "Project Management",
+  "Crowdfunding Platforms"
 ]
 ---
 
