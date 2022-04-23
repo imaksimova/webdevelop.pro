@@ -37,7 +37,8 @@ tags: [
   "Digital Assets",
   "ERC-721",
   "Blockchain",
-  "Project Management"
+  "Project Management",
+  "Ethereum"
 ]
 ---
 

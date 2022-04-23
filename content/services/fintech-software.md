@@ -1,6 +1,6 @@
 ---
 title: "Fintech Software"
-date: 2020-03-26
+date: 2020-03-26T21:06:40+03:00
 draft: false
 subTitle: We know how to help you to improve your business
 description: >
@@ -89,7 +89,9 @@ items:
       automated and manual testing as well as 
       benchmark and unit testing.
 tags: [
-  "Fintech"
+  "Fintech",
+  "Crowdfunding Platforms",
+  "Mobile Payments"
 ]
 ---
 

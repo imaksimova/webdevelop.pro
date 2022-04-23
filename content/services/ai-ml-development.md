@@ -1,6 +1,6 @@
 ---
 title: "AI/ML development"
-date: 2020-03-26
+date: 2020-03-26T21:03:40+03:00
 draft: false
 subTitle: Driving force for businesses to gain more market share
 description: >
@@ -72,7 +72,8 @@ items:
       we can set algorithms that work with big volumes 
       of data and deliver meaningful information to the end-user.
 tags: [
-  "Machine Learning"
+  "Machine Learning",
+  "AI Software"
 ]
 ---
 
