@@ -84,32 +84,32 @@ disqusShortname = "webdevelop-pro"
     parent = "services"
     weight  = 7
   [[menu.main]]
-    identifier = "resources"
+    identifier = "blog"
     name    = "Resources"
     url     = "/blog"
     weight  = 3
   [[menu.main]]
-    identifier = "company"
+    identifier = "about"
     name    = "Company"
     url     = "/about"
     weight  = 4
   [[menu.main]]
-    identifier = "our-team"
+    identifier = "team"
     name    = "Our Team"
     url     = "/about"
-    parent = "company"
+    parent = "about"
     weight  = 1
   [[menu.main]]
-    identifier = "contact-us"
+    identifier = "contacts"
     name    = "Contact Us"
     url     = "/contacts"
-    parent = "company"
+    parent = "about"
     weight  = 2
   [[menu.main]]
     identifier = "careers"
     name    = "Careers"
     url     = "/careers"
-    parent = "company"
+    parent = "about"
     weight  = 3
   
 

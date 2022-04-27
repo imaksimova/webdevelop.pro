@@ -103,7 +103,8 @@ If you can see that - it’s great. If not double-check your paths. You may reco
 ## Turn on a private server on the first node:
 
 ```
-geth --verbosity 6 --datadir="~/private_network/ethdata" --networkid 928928928 --rpc 127.0.0.1:8545 --rpcapi personal,web3,miner,eth --nodiscover 
+geth --verbosity 6 --datadir="~/private_network/ethdata" --networkid 928928928 --
+rpc 127.0.0.1:8545 --rpcapi personal,web3,miner,eth --nodiscover 
 ```
 
 **- datadir:**<br>
@@ -118,7 +119,8 @@ The controls output information must have for debugging issues.
 In geth output, find out a text:
 
 ```
-RLPx listener up                         self="enode://947afec11dd0b2b531e3806b43a7c3b12202a2f765d5a2da36394d89e49fe795b4aa3bf42612b98c35181925da16797aebad44a2bda8953a23c883772687237d@[]:30303?discport=0" 
+RLPx listener up
+self="enode://947afec11dd0b2b531e3806b43a7c3b12202a2f765d5a2da36394d89e49fe795b4aa3bf42612b98c35181925da16797aebad44a2bda8953a23c883772687237d@[]:30303?discport=0" 
 ```
 
 and save enode address.
@@ -135,7 +137,9 @@ geth init ~/private_network/genesis.json --datadir ~/private_network/ethdata
 ```
 - Run:
 ```
-geth --datadir="~/private_network/ethdata" --networkid 928928928 --rpc 127.0.0.1:8545 --rpcapi personal,web3,miner,eth --nodiscover --bootnodes enode://947afec11dd0b2b531e3806b43a7c3b12202a2f765d5a2da36394d89e49fe795b4aa3bf42612b98c35181925da16797aebad44a2bda8953a23c883772687237d@<first_node_ip>:30303 
+geth --datadir="~/private_network/ethdata" --networkid 928928928 --rpc 
+127.0.0.1:8545 --rpcapi personal,web3,miner,eth --nodiscover --bootnodes 
+enode://947afec11dd0b2b531e3806b43a7c3b12202a2f765d5a2da36394d89e49fe795b4aa3bf42612b98c35181925da16797aebad44a2bda8953a23c883772687237d@<first_node_ip>:30303 
 ```
 You have to use the enode address from the first node. You have to set up
 

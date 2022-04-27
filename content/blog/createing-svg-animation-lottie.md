@@ -151,7 +151,9 @@ Final json file:
 
 you can open standalone [file here](/demo-lottie-svg-animation.html)
 
-{{< embed file="/static/modules/demo-lottie-svg-animation.html" >}}
+<div style="width: 100%; text-align: center; margin: auto">
+  <iframe src="/demo-lottie-svg-animation.html" style="with: 100%; height: 350px; border: 0;"></iframe>
+</div>
 
 Thanks for reading!
 

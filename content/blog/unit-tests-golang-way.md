@@ -112,8 +112,9 @@ func (a *App) login(w http.ResponseWriter, r *http.Request) {
 
 I can see a few problems here:
 
-The app created DB connection in New method;
-SQL query in login function force us to use database.
+- The app created DB connection in New method;
+- SQL query in login function force us to use database.
+
 In order to run a test, we would need:
 
 - Setup the test database, get it up and ready to accept connections;
