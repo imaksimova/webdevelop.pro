@@ -116,7 +116,7 @@ disqusShortname = "webdevelop-pro"
 # Site Params
 [params]
   logo = "images/logo.png"
-  dateFormat = "26 FEB 1994"
+  dateFormat = "02 Jan 2006"
   # Meta data
   description = "Webdevelop Pro is the full-stack software development and consulting company that can drive a project from an early stage idea to a stable business."
   author = "Webdevelop Pro LLC"
