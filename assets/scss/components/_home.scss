@@ -330,6 +330,9 @@
 			justify-content: center;
 			margin-top: 140px;
 		}
+		@include tablet {
+			margin-top: 60px;
+		}
 		.devkit-book {
 			margin-top: 65px;
 			margin-bottom: 0;
@@ -395,7 +398,8 @@
 	left: 0;
 	margin-top: 72px;
 	@include tablet {
-		width: 100%;
+		width: 98%;
+		margin-top: 25px;
 	}
 }
 .approach-home-slider {
@@ -429,6 +433,9 @@
 		cursor: pointer;
 		&:nth-child(1){
 			left: 0;
+			.approach-mark-label {
+				color: $accent_color;
+			}
 		}
 		&:nth-child(2) {
 			left: 50%;
@@ -436,6 +443,11 @@
 		}
 		&:nth-child(3) {
 			right: 0;
+		}
+		&.active {
+			.approach-mark-label {
+				color: $accent_color;
+			}
 		}
 	}
 	.approach-mark-dot {
@@ -462,14 +474,13 @@
 		font-family: $font-heavy;
     font-size: 14px;
     letter-spacing: 2.5px;
-		color: #004fff;
 		left: 50%;
 		top: 100%;
 		transform: translateX(-50%);
 		position: absolute;
 		white-space: nowrap;
 		text-transform: uppercase;
-		@include mobile-xs {
+		@media screen and (max-width: 340px) {
 			font-size: 10px;
 		}
 	}
@@ -795,66 +806,29 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	overflow: hidden;
-	height: 40px;
 	margin: 0 15px 30px;
+	min-width: 75px;
+	max-width: 150px;
+	max-height: 45px;
 	img {
-		width: 100%;
+		max-width: 100%;
+		max-height: 100%;
 		filter: grayscale(100%);
 		filter: grayscale(1);
-		max-height: 40px;
 		&:hover {
 			filter: grayscale(0);
 			opacity: 1;
 		}
 	}
-	&.sift {
-		img {
-			max-height: 45px;
-			max-width: 74px;
-		}
-	}
-	&.google-cloud {
-		img {
-			max-height: 35px;
-			max-width: 220px;
-		}
-	}
-	&.hubspot {
-		img {
-			max-height: 35px;
-			max-width: 120px;
-		}
-	}
-	&.plaid {
-		img {
-			max-height: 45px;
-			max-width: 105px;
-		}
-	}
-	&.dwolla {
-		img {
-			max-width: 155px;
-		}
-	}
-	&.github {
-		img {
-			max-width: 109px;
-			max-height: 20px;
-		}
-	}
 	&.mail-chimp {
-		img {
-			max-width: 155px;
-			max-height: 40px;
-		}
+		max-width: 146px;
+		min-width: 146px;
 	}
 }
 .img-slider {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	overflow: hidden;
 	justify-content: space-between;
 	@include desktop {
 		flex-wrap: wrap;
