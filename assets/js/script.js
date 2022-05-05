@@ -89,21 +89,61 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const buttons = document.querySelectorAll(".v-btn");
+  const selectItemAnim = document.querySelectorAll(".v-list__tile");
 
-  for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("click", function(e) {
-      let x = e.clientX - e.target.getBoundingClientRect().x;
-      let y = e.clientY - e.target.getBoundingClientRect().y;
+  rippleAnimation(buttons);
+  rippleAnimation(selectItemAnim);
 
-      let ripples = document.createElement('span');
-      ripples.style.left = x + 'px';
-      ripples.style.top = y + 'px';
-      buttons[i].appendChild(ripples);
+  function rippleAnimation(el) {
+    for (let i = 0; i < el.length; i++) {
+      el[i].addEventListener("click", function(e) {
+        let x = e.clientX - e.target.getBoundingClientRect().x;
+        let y = e.clientY - e.target.getBoundingClientRect().y;
+  
+        let ripples = document.createElement('span');
+        ripples.style.left = x + 'px';
+        ripples.style.top = y + 'px';
+        el[i].appendChild(ripples);
+  
+        setTimeout(() => {
+          ripples.remove();
+        }, 1000);
+      });
+    }
+  }
 
-      setTimeout(() => {
-        ripples.remove();
-      }, 1000);
+  const select = document.querySelectorAll(".site-select");
+  const selectDropdownItem = document.querySelectorAll(".select-dropdown-item");
+
+  for (let i = 0; i < select.length; i++) {
+    select[i].addEventListener("click", function(e) {
+      select[i].parentElement.classList.add("site-select-active");
+      select[i].querySelector(".v-label").classList.add("active");
     });
   }
+
+  for (let i = 0; i < selectDropdownItem.length; i++) {
+    selectDropdownItem[i].addEventListener("click", function(e) {
+      const selectActive = document.querySelector(".site-select-active");
+      const selectedEl = selectActive.querySelector(".v-select__selection");
+      const selectInput = selectActive.querySelector(".select-input");
+      selectDropdownItem[i].classList.add("selected");
+      selectedEl.innerHTML = selectDropdownItem[i].dataset.text;
+      selectInput.value = selectDropdownItem[i].dataset.text;
+      selectActive.classList.remove("site-select-active");
+    });
+  }
+
+  document.addEventListener("click", function(e) {
+    for (let i = 0; i < select.length; i++) {
+      const selectInput = select[i].querySelector(".select-input");
+      if(!select[i].parentElement.contains(e.target)) {
+        select[i].parentElement.classList.remove("site-select-active");
+        if (!selectInput.value) {
+          select[i].querySelector(".v-label").classList.remove("active");
+        }
+      }
+    }
+  });
 
 });

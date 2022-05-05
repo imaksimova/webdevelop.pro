@@ -33,13 +33,43 @@
         <div class="cube">
           <img src="{{ "images/cube-select.svg" | absURL }}" alt="Icon">
         </div>
-        <div class="v-input upload v-text-field v-select v-input--hide-details theme--light">
-          <div class="v-input__control">
+        <div class="v-input upload v-text-field v-select v-input--hide-details">
+          <div class="v-menu__content select-content select-dropdown">
+            <div class="v-select-list v-card">
+              <div class="v-list">
+                <div>
+                  <a class="v-list__tile v-list__tile--link select-dropdown-item dropdown-item-file" data-value="example-0" data-text="Simple text">
+                    <img src="{{ "images/example-select-0.jpg" | absURL }}" alt="Icon">
+                    Simple text
+                  </a>
+                </div>
+                <div>
+                  <a class="v-list__tile v-list__tile--link select-dropdown-item dropdown-item-file" data-value="example-1" data-text="Table text">
+                    <img src="{{ "images/example-select-1.jpg" | absURL }}" alt="Icon">
+                    Table text
+                  </a>
+                </div>
+                <div>
+                  <a class="v-list__tile v-list__tile--link select-dropdown-item dropdown-item-file" data-value="example-2" data-text="Spanish note">
+                    <img src="{{ "images/example-select-2.jpg" | absURL }}" alt="Icon">
+                    Spanish note
+                  </a>
+                  <a class="v-list__tile v-list__tile--link select-dropdown-item dropdown-item-file" data-value="uploaded" data-text="Upload from computer">
+                    <img src="{{ "images/upload-select.svg" | absURL }}" alt="Icon">
+                    Upload from computer
+                    <input class="input-file recognition-file" type="file" accept="image/*" id="file">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="v-input__control site-select">
             <div class="v-input__slot">
               <div class="v-select__slot">
-                <label class="v-label theme--light">File Uploading</label>
+                <label class="v-label" id="label-file">File Uploading</label>
                 <div class="v-select__selections">
-                  <input aria-label="File Uploading" custom-content-class="uploading-select" readonly="readonly" type="text" autocomplete="on" aria-readonly="false">
+                  <div class="v-select__selection" id="selection-file"></div>
+                  <input aria-label="File Uploading" class="select-input" custom-content-class="uploading-select" readonly="readonly" type="text" autocomplete="on" aria-readonly="false">
                 </div>
               </div>
               <div class="v-menu"></div>
@@ -50,16 +80,36 @@
           </div>
         </div>
         <div class="type">
-          <div class="v-input v-text-field v-select v-input--hide-details theme--light" label="Algorithm" value="doc">
-            <div class="v-input__control">
-              <div class="v-input__slot">
-                <div class="v-select__slot">
-                  <label class="v-label theme--light">Algorithm</label>
-                  <div class="v-select__selections">
-                    <input aria-label="Algorithm" readonly="readonly" type="text" autocomplete="on" aria-readonly="false">
+          <div class="v-input v-text-field v-select v-input--hide-details" label="Algorithm" value="doc">
+            <div class="v-menu__content select-content select-dropdown">
+              <div class="v-select-list v-card">
+                <div class="v-list">
+                  <div>
+                    <a class="v-list__tile v-list__tile--link select-dropdown-item dropdown-item-doc" data-value="text" data-text="Algorithm 1">
+                      <div class="v-list__tile-content">
+                        <div class="v-list__tile-title">Algorithm 1</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <a class="v-list__tile v-list__tile--link select-dropdown-item dropdown-item-doc" data-value="doc" data-text="Algorithm 2">
+                      <div class="v-list__tile-content">
+                        <div class="v-list__tile-title">Algorithm 2</div>
+                      </div>
+                    </a>
                   </div>
                 </div>
-                <div class="v-menu"></div>
+              </div>
+            </div>
+            <div class="v-input__control site-select">
+              <div class="v-input__slot">
+                <div class="v-select__slot">
+                  <label class="v-label" id="label-algorithm">Algorithm</label>
+                  <div class="v-select__selections">
+                    <div class="v-select__selection" id="selection-algorithm"></div>
+                    <input aria-label="Algorithm" class="select-input" readonly="readonly" type="text" autocomplete="on" aria-readonly="false">
+                  </div>
+                </div>
               </div>
             </div>
             <div class="v-input__append-outer">
@@ -68,16 +118,64 @@
           </div>
         </div>
         <div class="language">
-          <div class="v-input v-text-field v-select v-input--hide-details theme--light" label="Language" value="detect">
-            <div class="v-input__control">
-              <div class="v-input__slot">
-                <div class="v-select__slot">
-                  <label class="v-label theme--light">Language</label>
-                  <div class="v-select__selections">
-                    <input aria-label="Language" readonly="readonly" type="text" autocomplete="on" aria-readonly="false">
+          <div class="v-input v-text-field v-select v-input--hide-details" label="Language" value="detect">
+            <div class="v-menu__content select-content select-dropdown">
+              <div class="v-select-list v-card">
+                <div class="v-list">
+                  <div>
+                    <a class="v-list__tile v-list__tile--link select-dropdown-item dropdown-item-lang" data-value="detect" data-text="detect">
+                      <div class="v-list__tile-content">
+                        <div class="v-list__tile-title">detect</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <a class="v-list__tile v-list__tile--link select-dropdown-item dropdown-item-lang" data-value="en" data-text="English">
+                      <div class="v-list__tile-content">
+                        <div class="v-list__tile-title">English</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <a class="v-list__tile v-list__tile--link select-dropdown-item dropdown-item-lang" data-value="es" data-text="Spanish">
+                      <div class="v-list__tile-content">
+                        <div class="v-list__tile-title">Spanish</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <a class="v-list__tile v-list__tile--link select-dropdown-item dropdown-item-lang" data-value="ar" data-text="Arabic">
+                      <div class="v-list__tile-content">
+                        <div class="v-list__tile-title">Arabic</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <a class="v-list__tile v-list__tile--link select-dropdown-item dropdown-item-lang" data-value="ru" data-text="Russian">
+                      <div class="v-list__tile-content">
+                        <div class="v-list__tile-title">Russian</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <a class="v-list__tile v-list__tile--link select-dropdown-item dropdown-item-lang" data-value="zh" data-text="Chinese">
+                      <div class="v-list__tile-content">
+                        <div class="v-list__tile-title">Chinese</div>
+                      </div>
+                    </a>
                   </div>
                 </div>
-                <div class="v-menu"></div>
+              </div>
+            </div>
+            <div class="v-input__control site-select">
+              <div class="v-input__slot">
+                <div class="v-select__slot">
+                  <label class="v-label" id="label-lang">Language</label>
+                  <div class="v-select__selections">
+                    <div class="v-select__selection" id="selection-lang"></div>
+                    <input aria-label="Language" class="select-input" readonly="readonly" type="text" autocomplete="on" aria-readonly="false">
+                  </div>
+                </div>
               </div>
             </div>
             <div class="v-input__append-outer">
@@ -85,18 +183,24 @@
             </div>
           </div>
         </div>
-        <button type="button" class="v-btn theme--light accent">
+        <button type="button" class="v-btn accent recognition-btn">
           Process
         </button>
       </div>
       <div class="text-recognition__content">
-        <img class="default-img-preview" src="{{ "images/default-recognition-image.svg" | absURL }}">
+        <img class="img-preview" src="{{ "images/default-recognition-image.svg" | absURL }}">
+        <div class="img-preview-items">
+          <img class="img-selection-default d-none" src="{{ "images/example-select-0.jpg" | absURL }}">
+          <img class="img-selection-default d-none" src="{{ "images/example-select-1.jpg" | absURL }}">
+          <img class="img-selection-default d-none" src="{{ "images/example-select-2.jpg" | absURL }}">
+          <img class="img-selection-default d-none" src="" id="imagePreview">
+        </div>
         <div class="text-wrap">
-          <div class="v-progress-circular progress v-progress-circular--indeterminate accent--text">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="22.857142857142858 22.857142857142858 45.714285714285715 45.714285714285715" style="transform: rotate(0deg);"><circle fill="transparent" cx="45.714285714285715" cy="45.714285714285715" r="20" stroke-width="5.714285714285714" stroke-dasharray="125.664" stroke-dashoffset="125.66370614359172px" class="v-progress-circular__overlay"></circle></svg>
-            <div class="v-progress-circular__info"></div>
+          <div class="v-progress-circular">
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
           </div>
           <img class="default-text-preview" src="{{ "images/default-text-recognition.svg" | absURL }}">
+          <div class="text-response d-none"></div>
         </div>
       </div>
     </div>
@@ -110,7 +214,7 @@
           <p>Our experts can brief you out on what to keep in mind from the technical side. If you interested, let’s book a short online meeting.</p>
         </div>
         <div class="book-call-small__btn">
-          <a href="{{ "/contacts/" | absURL }}" class="v-btn theme--light accent">
+          <a href="{{ "/contacts/" | absURL }}" class="v-btn accent">
             Book a call
           </a>
         </div>
