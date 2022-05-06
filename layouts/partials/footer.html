@@ -100,6 +100,24 @@
         }
       }
     });
+    
+    approachHomeSlider.on("slideChange", function() {
+      const idx = approachHomeSlider.activeIndex;
+      const solutionItem = document.querySelector(".approach-mark.solution");
+      const productItem = document.querySelector(".approach-mark.product");
+
+      if(idx === 1) {
+        solutionItem.classList.add("active");
+        productItem.classList.remove("active");
+      } else if(idx === 2) {
+        productItem.classList.add("active");
+        solutionItem.classList.add("active");
+      } else {
+        solutionItem.classList.remove("active");
+        productItem.classList.remove("active");
+      }
+    });
+
   </script>
 {{ end }}
 {{ if or ( eq .Page.RelPermalink "/how-we-work/") ( eq .Page.RelPermalink "/careers/")  }}
@@ -144,6 +162,11 @@
       return false;
   });
   </script>
+{{ end }}
+
+{{ if eq .Page.RelPermalink "/handwritten-text-recognition/" }}
+  {{ $recognition := resources.Get "js/text-recognition.js" | minify }}
+  <script src="{{ $recognition.Permalink }}"></script>
 {{ end }}
 
 {{ $hubspot := resources.Get "js/hubspot.js" | minify }}
