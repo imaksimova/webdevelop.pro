@@ -18,11 +18,11 @@ steps:
       from_secret: KUBERNETES_SERVER
     kubernetes_token:
       from_secret: KUBERNETES_TOKEN
-    namespace: webdevelop-dev
-    deployment: devsite
+    namespace: webdevelop-${DRONE_COMMIT_BRANCH}
+    deployment: site-v2
     repo: cr.webdevelop.us/devsite
     tag: ${DRONE_COMMIT_BRANCH}-${DRONE_COMMIT_SHA}
-    container: devsite
+    container: site-v2
 
 - name: notify-slack
   image: plugins/slack
