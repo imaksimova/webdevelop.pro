@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="658px" height="266px" viewBox="0 0 658 266" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>default-text-recognition</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="658" height="266"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="default-text-recognition">
+            <g id="Mask">
+                <g id="path-1-link" fill="#000000" fill-rule="nonzero">
+                    <rect id="path-1" x="0" y="0" width="658" height="266"></rect>
+                </g>
+                <g id="path-1-link" fill="#FFFFFF">
+                    <rect id="path-1" x="0" y="0" width="658" height="266"></rect>
+                </g>
+            </g>
+            <g id="1.-Web-Platform-Clipped">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="path-1"></g>
+                <g id="1.-Web-Platform" opacity="0.5" mask="url(#mask-2)">
+                    <g transform="translate(50.000000, 50.000000)" id="Group">
+                        <g>
+                            <rect id="Rectangle" fill="#D7D7D7" fill-rule="nonzero" x="0" y="0" width="524" height="27" rx="2"></rect>
+                            <rect id="Rectangle-Copy" fill="#D7D7D7" fill-rule="nonzero" x="0" y="69" width="557" height="27" rx="2"></rect>
+                            <rect id="Rectangle-Copy-2" fill="#D7D7D7" fill-rule="nonzero" x="0" y="138" width="430" height="27" rx="2"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

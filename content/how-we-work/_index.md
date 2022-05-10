@@ -1,5 +1,5 @@
 ---
-title: "our development workflow"
+title: "Our development workflow"
 date: 2022-03-25T20:48:46+02:00
 draft: false
 titleLeft: "our"

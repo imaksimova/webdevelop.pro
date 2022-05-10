@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+<div class="end-war">
+  <div class="help-ukraine-top">
+    <div class="container">
+      <div class="help-ukraine-top-text">
+        <h1 class="help-ukraine-top-title">{{ .Title }}</h1>
+        <div class="top-text__wrap">
+          <p class="help-ukraine-title-descr">
+            {{ .Description }}
+          </p>
+          <span class="begin-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="s-text">
+    <div class="container">
+      <div class="s-text__wrap">
+        <div class="s-text__left">
+          {{ .Params.leftDescr | safeHTML }}
+        </div>
+        <div class="s-text__right">
+          {{ .Params.rightDescr | safeHTML }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s-info">
+    <div class="container">
+      <div class="s-info__card">
+        <span class="s-info__quote">!!!</span>
+        <h2 class="s-info__title">{{ .Params.infoTitle }}:</h2>
+        <p class="s-info__text">
+          {{ .Params.infoDescr | safeHTML }}
+        </p>
+      </div>
+      <div class="s-info__bottom">
+        <p class="s-info__bottom-text">
+          {{ .Params.infoTextBottom | safeHTML }}
+        </p>
+        <a href="/help-ukraine" class="s-info__btn v-btn v-btn--large v-btn--router theme--light accent">
+          Help Ukraine Now
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+{{ end }}

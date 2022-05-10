@@ -1,11 +1,19 @@
 ---
 title: "Iot Software"
-date: 2022-03-23T15:54:42+02:00
+date: 2020-03-26T21:05:40+03:00
 draft: false
-titleLeft: "iot"
-titleRight: "software"
-description: "IoT software development is a constantly changing industry. We ensure the reliability and security of our IoT solutions."
-btnUrl: /
+subTitle: IoT software development is a constantly changing industry. We ensure the reliability and security of our IoT solutions.
+description: >
+  IoT is a cutting edge technology impacting various industries like the oil and gas industry, digital manufacturing, energy, agriculture, cryptocurrency, and many others. Companies all over the world invest in the development of new IoT frameworks and products. The Internet of Things development is much more complex and challenging than traditional web development. The IoT software market has high standards for its products and development teams who build them. To build high-quality, scalable, robust, secure and user-friendly solutions a dev team has to bring their finest ideas to the table as well as reorganize their workflow.
+postTitle: IoT Software
+captions: [Сonnect Digital Products, Reshape Your Business, Analyze Big Data, Enhance Internal Operations]
+postDescription: >
+  If you are searching for a development team to implement the latest IoT Technology 
+  trends in your business you can rely on Webdevelop Pro. We have experience in 
+  building applications that collect, share, analyze and predict events based on 
+  the information provided by smart devices, sensors, and controllers. 
+  Using various cloud providers we build robust, scalable and secure systems.  
+image: /images/services/service-4.svg
 items:
   - label: technical factors
     img: /images/services/srv-single-24.svg
@@ -21,9 +29,9 @@ items:
   - label: key to success
     img: /images/services/srv-single-25.svg
     title: Consider the Protocol
-    captionUrl1: /blog/tag/websocket
+    captionUrl1: /tags/websocket
     captionText1: Websocket
-    captionUrl2: /blog/tag/mqtt
+    captionUrl2: /tags/mqtt
     captionText2: MQTT
     text: >
       Choosing the right protocol is the key to success. Bluetooth, Wi-Fi, serial ports, 
@@ -81,7 +89,7 @@ items:
   - label: multiplatforms
     img: /images/services/srv-single-29.svg
     title: Cross-Platform Deployment
-    captionUrl1: /blog/tag/flutter
+    captionUrl1: /tags/flutter
     captionText1: Flutter
     text: >
       IoT development implies working with various devices that 
@@ -91,6 +99,10 @@ items:
       where various protocols and operating systems interact. 
       Webdevelop Pro can build a highly secure custom 
       platform with an easy-to-use and powerful UI for your business.
+tags: [
+  "Big Data",
+  "Connect Digital Products"
+]
 ---
 
 IoT is a cutting edge technology impacting various industries 

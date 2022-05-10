@@ -1,24 +1,29 @@
 <a href="{{ .Permalink | absURL }}" class="post_item">
   <div class="post_item__pulish-date">
+    {{ $dateFormated := .Date.Format "Jan, 02, 2006" }}
+    {{ $newDate := split $dateFormated "," }}
+    {{ $month := index $newDate 0 }}
+    {{ $day := index $newDate 1 }}
+    {{ $year := index $newDate 2 }}
     <div class="day">
-      {{ .Date.Day }}
+      {{ $day }}
     </div>
     <div class="date decorative-heavy">
-      {{ .Date.Month }} {{ .Date.Year }}
+      {{ $month }} {{ $year }}
     </div>
   </div>
   <div class="mobile decorative-heavy">
-    {{ .Date.Month }} {{ .Date.Day }}, {{ .Date.Year }}
+    {{ $month }} {{ $day }}, {{ $year }}
   </div>
   <div class="post_item__details">
     <h4 class="post_name">
       {{ .Title }}
     </h4>
     <p class="post_excerpt">
-      {{ .Description }}
+      {{ .Description | plainify }}
     </p>
   </div>
   <div class="post_item__image">
-    <img src="{{ .Params.image }}" alt="{{ .Title }}">
+    <img src="{{ if .Params.image }}{{ .Params.image }}{{ else }}/images/blog/sharing.png{{ end }}" alt="{{ .Title }}">
   </div>
 </a>

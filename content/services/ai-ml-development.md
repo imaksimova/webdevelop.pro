@@ -1,11 +1,21 @@
 ---
 title: "AI/ML development"
-date: 2022-03-22T13:00:47+02:00
+date: 2020-03-26T21:03:40+03:00
 draft: false
-titleLeft: "AI/ML"
-titleRight: "development"
-description: "Driving force for businesses to gain more market share"
-btnUrl: /
+subTitle: Driving force for businesses to gain more market share
+description: >
+  Nowadays, it’s hard to find an industry that hasn't been modified by Artificial intelligence (AI) and Machine learning (ML). They are the driving force for traditional businesses to gain more market share, increase revenue, improve customer experience, and decrease operating costs. If you want to explore these new technologies to enhance your business or optimize your business processes, we can provide you with production-ready innovative AI/ML solutions.
+postTitle: AI/ML Development
+captions: [AI Software, End-to-end Machine Learning, Data Science, AI/ML Technologies]
+postDescription: >
+  Artificial Intelligence and Machine Learning became extremely popular technologies used 
+  by most advanced tech giants. There are numerous applications for ML to solve such 
+  important business problems as detecting spam, automating data entry, improving product 
+  recommendation system for your customers, and many others. AI-powered software is 
+  fast, scalable and efficient. Webdevelop pro offers end-to-end Machine Learning, 
+  Data Science and AI software development to revolutionize your business.
+image: /images/services/service-6.svg
+btnUrl: /cases/ai-ml-development
 items:
   - label: NLP
     img: /images/services/srv-single-18.svg
@@ -61,6 +71,10 @@ items:
       With the help of tools and libraries for NLP, 
       we can set algorithms that work with big volumes 
       of data and deliver meaningful information to the end-user.
+tags: [
+  "Machine Learning",
+  "AI Software"
+]
 ---
 
 Nowadays, it’s hard to find an industry that hasn't been modified by 

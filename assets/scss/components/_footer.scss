@@ -27,19 +27,30 @@
       margin-bottom: 15px;
     }
     .field-group {
+      position: relative;
+      width: 277px;
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 0;
+      @include desktop {
+        width: 100%;
+      }
+    }
+    .form-submit {
       margin-bottom: 30px;
     }
     .input-control {
       padding: 0 12px;
-      max-height: 48px;
-      height: 48px;
+      max-height: 49px;
+      height: 49px;
       width: 207px;
       border-top-left-radius: 2px;
       border-bottom-left-radius: 2px;
+      border-bottom: 0;
+      background-color: #fff;
       @include desktop {
-        width: 100%;
+        width: calc(100% - 70px);
       }
     }
     .v-btn {
@@ -51,7 +62,7 @@
     }
   }
   &__menu {
-    width: 25%;
+    width: 32%;
     padding: 0 15px;
     @include desktop { 
       width: 100%;
@@ -119,6 +130,9 @@
       opacity: .8;
       font-size: 16px;
       font-family: $font-book;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }

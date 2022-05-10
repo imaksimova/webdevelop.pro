@@ -1,0 +1,21 @@
+{{ define "main"}}
+  <div class="page-not-found">
+    <div class="container">
+      <div class="page-not-found__wrap">
+        <div class="page-not-found__left">
+          <h1 class="is-h2-title">Ooops.. Looks like you got lost</h1>
+          <p class="small-text">
+            Maybe you got a broken link, or maybe you made a misprint in the address bar. 
+            Try to start all over again in the Homepage.
+          </p>
+          <a href="/" class="v-btn v-btn--large v-btn--router theme--light accent">
+            Back to Homepage
+          </a>
+        </div>
+        <div class="page-not-found__right">
+          <img src="{{ "images/illustration-404.svg" | absURL }}">
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}

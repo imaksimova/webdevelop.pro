@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="464px" height="464px" viewBox="0 0 464 464" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>illustration-use correct dev strat copy 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="50.0019796%" x2="100%" y2="50.0019796%" id="linearGradient-1">
+            <stop stop-color="#CFD8DB" offset="0%"></stop>
+            <stop stop-color="#CFD8DB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Service_desktop-Blockchain" transform="translate(-126.000000, -3939.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1400" height="6019"></rect>
+            <g id="Group-10" transform="translate(196.000000, 4026.000000)" fill-rule="nonzero">
+                <g id="illustration-design" transform="translate(0.000000, 19.000000)">
+                    <polygon id="Shape" fill="url(#linearGradient-1)" points="76.9814384 87.1244646 153.981437 42.599072 153.981437 140.873677 76.9814384 185.39907"></polygon>
+                    <polygon id="Path" fill="#F7F7F7" points="1.05368422 43.0470528 75.6991056 0 152.176316 43.0470528 76.157053 87.0100004"></polygon>
+                    <path d="M0.630001642,44.1000033 L76.2300004,88.3226875 L76.2300004,184.800001 L0.630001642,141.553901 L0.630001642,44.1000033 Z" id="Path" stroke="#82A9FF" stroke-width="1.39999998" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.099999964237213,4.899999916553497"></path>
+                    <path d="M0.630001642,44.1000033 L76.2300004,88.3226875 L76.2300004,184.800001 L0.630001642,141.553901 L0.630001642,44.1000033 Z" id="Path" fill="#82A9FF" opacity="0.1"></path>
+                    <path d="M0.630001642,44.1000033 L76.2300004,88.3226875 L76.2300004,184.800001 L0.630001642,141.553901 L0.630001642,44.1000033 Z" id="Path" stroke="#82A9FF" stroke-width="1.39999998" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.099999964237213,4.899999916553497"></path>
+                </g>
+                <g id="Group-7" transform="translate(128.399994, 0.000000)">
+                    <polygon id="Shape" stroke="#FFFFFF" stroke-width="1.18013321" fill="#F7F7F7" stroke-linecap="round" stroke-linejoin="round" points="9.06428966 109.73139 0.0537978629 105.024669 185.916164 -1.33542209e-12 196.015133 2.85220747"></polygon>
+                    <polygon id="Shape" fill="#E6E9ED" points="1.17616273 292.930005 9.06428966 297.423085 9.06428966 109.73139 1.29999995 105.749997"></polygon>
+                    <polygon id="Shape" fill="#F5F7FA" points="9.06428966 109.73139 196.015133 2.85220747 196.015133 190.552163 9.06428966 297.423085"></polygon>
+                </g>
+                <g id="Group-20-Copy-2" transform="translate(192.000000, 95.000000)">
+                    <polygon id="Shape" fill="#E9EFFF" points="45.584093 53.6580352 -5.8226701e-15 27.3478801 47.3728823 1.74680103e-14 92.9569758 26.3134919"></polygon>
+                    <polygon id="Shape" fill="#CBDBFF" points="1.22276072e-13 27.3478801 1.22276072e-13 84.2792527 45.584093 110.589408 45.584093 53.6580352"></polygon>
+                    <polygon id="Shape" fill="#9CBAFB" points="45.584093 53.6580352 92.9569758 26.3134919 92.9569758 83.2448646 45.584093 110.589408"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

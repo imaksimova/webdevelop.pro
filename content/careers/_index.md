@@ -1,5 +1,5 @@
 ---
-title: "Careers"
+title: "Join our team"
 date: 2022-03-24T17:10:53+02:00
 draft: false
 titleLeft: "join"

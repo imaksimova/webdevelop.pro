@@ -4,61 +4,44 @@
       <div class="footer-top__wrap">
         <div class="footer-top__form">
           <h5>Receive latest news:</h5>
-          <form>
-            <div class="field-group">
-              <input type="text" class="input-control" placeholder="Email">
+          <form class="form-submit" id="form-id-2" method="POST">
+            <div class="field-group form-control">
+              <input type="email" name="email" class="contact-from-input input-control" placeholder="Email">
               <button class="v-btn v-btn--small theme--light accent">Send</button>
+              <span class="form-control-error"></span>
             </div>
-            <div class="social-links desktop-social">
-              <a href="https://www.facebook.com/WebdevelopPro/" target="_blank">
-                <img src="{{ "images/facebook-icon.svg" | absURL }}">
-              </a>
-              <a href="https://www.instagram.com/webdevelop.pro/" target="_blank">
-                <img src="{{ "images/instagram-icon.svg" | absURL }}">
-              </a>
-              <a href="https://www.linkedin.com/company/webdevelop-pro/" target="_blank">
-                <img src="{{ "images/linkedin-icon.svg" | absURL }}">
-              </a>
-              <a href="https://github.com/webdevelop-pro" target="_blank">
-                <img src="{{ "images/github-icon.svg" | absURL }}">
-              </a>
-            </div>
+            <div class="general-form-error"></div>
           </form>
+          <div class="social-links desktop-social">
+            {{ range .Site.Params.footer.social.link }}
+              <a href="{{ .url }}" target="_blank">
+                <img src="{{ .img | absURL }}">
+              </a>
+            {{ end }}
+          </div>
         </div>
         <div class="footer-top__menu">
           <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">Resources</a></li>
+            {{ range .Site.Params.footer.menu.item }}
+              <li><a href="{{ .url | absURL }}">{{ .name }}</a></li>
+            {{ end }}
           </ul>
           <div class="social-links mobile-social">
-            <a href="https://www.facebook.com/WebdevelopPro/" target="_blank">
-              <img src="{{ "images/facebook-icon.svg" | absURL }}">
-            </a>
-            <a href="https://www.instagram.com/webdevelop.pro/" target="_blank">
-              <img src="{{ "images/instagram-icon.svg" | absURL }}">
-            </a>
-            <a href="https://www.linkedin.com/company/webdevelop-pro/" target="_blank">
-              <img src="{{ "images/linkedin-icon.svg" | absURL }}">
-            </a>
-            <a href="https://github.com/webdevelop-pro" target="_blank">
-              <img src="{{ "images/github-icon.svg" | absURL }}">
-            </a>
+            {{ range .Site.Params.footer.social.link }}
+              <a href="{{ .url }}" target="_blank">
+                <img src="{{ .img | absURL }}">
+              </a>
+            {{ end }}
           </div>
         </div>
-        <div class="footer-top__contact">
-          <h4>USA</h4>
-          <p class="sub-title">San Francisco</p>
-          <a href="tel:+1 609 733 7724">+1 609 733 7724</a>
-          <a href="mailto:manager@webdevelop.pro">manager@webdevelop.pro</a>
-        </div>
-        <div class="footer-top__contact">
-          <h4>Ukraine</h4>
-          <p class="sub-title">Kyiv</p>
-          <a href="tel:+1 609 733 7724">+38 063 440 5605</a>
-          <a href="mailto:manager@webdevelop.pro">manager@webdevelop.pro</a>
-        </div>
+        {{ range .Site.Params.footer.contactInfo.item }}
+          <div class="footer-top__contact">
+            <h4>{{ .title }}</h4>
+            <p class="sub-title">{{ .city }}</p>
+            <a href="tel:{{ .phone }}">{{ .phone }}</a>
+            <a href="mailto:{{ .email }}">{{ .email }}</a>
+          </div>
+        {{ end }}
       </div>
     </div>
   </div>
@@ -68,3 +51,127 @@
     </div>
   </div>
 </footer>
+
+{{ if eq .Page.RelPermalink "/our-approach/" }}
+  {{ $swiper := resources.Get "js/swiper-bundle.min.js" }}
+  <script src="{{ $swiper.Permalink }}"></script>
+  <script>
+    const approachSlider = new Swiper(".swiper-approach", {
+      slidesPerView: 1,
+      speed: 900,
+      loop: true,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+      }
+    });
+  </script>
+{{ end }}
+
+{{ if .Page.IsHome }}
+  {{ $swiper := resources.Get "js/swiper-bundle.min.js" }}
+  <script src="{{ $swiper.Permalink }}"></script>
+  <script>
+    const approachHomeSlider = new Swiper(".approach-home-slider", {
+      direction: "horizontal",
+      loop: false,
+      freeMode: false,
+      slidesPerView: 1,
+      effect: 'fade',
+      autoHeight: true,
+      fadeEffect: {
+        crossFade: true
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+        dragSize: 16
+      },
+      breakpoints: {
+        767: {
+          autoHeight: false,
+        }
+      }
+    });
+    
+    approachHomeSlider.on("slideChange", function() {
+      const idx = approachHomeSlider.activeIndex;
+      const solutionItem = document.querySelector(".approach-mark.solution");
+      const productItem = document.querySelector(".approach-mark.product");
+
+      if(idx === 1) {
+        solutionItem.classList.add("active");
+        productItem.classList.remove("active");
+      } else if(idx === 2) {
+        productItem.classList.add("active");
+        solutionItem.classList.add("active");
+      } else {
+        solutionItem.classList.remove("active");
+        productItem.classList.remove("active");
+      }
+    });
+
+  </script>
+{{ end }}
+{{ if or ( eq .Page.RelPermalink "/how-we-work/") ( eq .Page.RelPermalink "/careers/")  }}
+  {{ $jquery := resources.Get "js/jquery.min.js" }}
+  <script src="{{ $jquery.Permalink }}"></script>
+  {{ $waypoint := resources.Get "js/jquery.waypoints.min.js" }}
+  <script src="{{ $waypoint.Permalink }}"></script>
+  <script>
+    const wayNavLi = $('.wayp-lists .nav-item');
+    function waypTracked (hash) {
+      wayNavLi.removeClass('active');
+      $.each(wayNavLi, function () {
+        const href = $(this).attr('href').slice(1);
+        if (href === hash) {
+          $(this).addClass('active');
+        }
+      });
+    } 
+    $('.tracked').waypoint(function (direction) {
+      if (direction === 'down') {
+        var hash = $(this)[0].element.id;
+        waypTracked(hash);
+      }
+    },{
+      offset: '15%'
+    });
+    $('.tracked').waypoint(function (direction) {
+      if (direction === 'up') {
+        var hash = $(this)[0].element.id;
+        waypTracked(hash);
+      }
+    },{
+      offset: '-10%'
+    });
+    $('.wayp-lists .nav-item').on('click', function () {
+      const scrollEl = $(this).attr('href');
+      if ($(scrollEl).length != 0) {
+        $('html, body').animate({
+          scrollTop: $(scrollEl).offset().top - 60
+        }, 500);
+      }
+      return false;
+  });
+  </script>
+{{ end }}
+
+{{ if eq .Page.RelPermalink "/handwritten-text-recognition/" }}
+  {{ $recognition := resources.Get "js/text-recognition.js" | minify }}
+  <script src="{{ $recognition.Permalink }}"></script>
+{{ end }}
+
+{{ $hubspot := resources.Get "js/hubspot.js" | minify }}
+<script src="{{ $hubspot.Permalink }}"></script>
+
+{{ $main := resources.Get "js/script.js" | minify }}
+<script src="{{ $main.Permalink }}"></script>
+

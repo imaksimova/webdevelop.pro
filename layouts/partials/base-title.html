@@ -1,22 +1,38 @@
 <div class="base-header">
   <div class="container">
+    {{ $title := .Title }}
+    {{ $titleArray := split $title " " }}
+    {{ $titleLeft := index $titleArray 0 }}
+    {{ $titleRight := replace $title $titleLeft "" }}
     <div class="offset-left">
-      <h1 class="hidden-desktop base-header-mobile">{{ .Params.titleLeft }} {{ .Params.titleRight }}</h1>
+      <h1 class="hidden-desktop base-header-mobile">{{ $titleLeft }} {{ $titleRight }}</h1>
       <div class="base-header-title bottom">
-        <span class="white-color text-uppercase is-h1-title">{{ .Params.titleLeft }}</span>
-        <div class="base-header-title__wrap">
-          <div class="in-touch text-uppercase is-h1-title">{{ .Params.titleRight }}</div>
-          {{ if .Description }}
-            <hr>
-            <p class="sub-title">
-              {{ .Description }}
-            </p>
-          {{ end }}
-        </div>
+        <span class="white-color text-uppercase is-h1-title">{{ $titleLeft }}</span>
+        {{ if $titleRight }}
+          <div class="base-header-title__wrap">
+            <div class="in-touch text-uppercase is-h1-title">{{ $titleRight }}</div>
+            {{ if .Description }}
+              <hr>
+              <p class="sub-title">
+                {{ .Description }}
+              </p>
+            {{ end }}
+            {{ if .Params.titleLine }}
+              <hr>
+            {{ end }}
+            {{ if .Params.readTime }}
+              <div class="read-time">
+                <hr>
+                <span class="read-time-label">Read time ~ </span>
+                <span class="read-time-hour">{{ .Params.readTime }}</span>
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
       </div>
     </div>
   </div>
-  {{ if .Description }}
+  {{ if or .Description .Params.titleLine }}
     <div class="square"></div>
   {{ end }}
 </div>

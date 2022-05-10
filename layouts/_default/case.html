@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<section class="our-cases-list">
+  {{ partial "base-title.html" . }}
+  <div class="container">
+    <div class="cases-items cases-filtered">
+      {{ range .Pages }}
+        <div class="case-item">
+          <h2 class="case-item-title">
+            <a href="{{ .Permalink | absURL }}">
+              {{ .Title }}
+            </a>
+          </h2>
+          <p class="small-text">
+            {{ .Description | plainify | truncate 195 }}
+          </p>
+          <div class="case-item-link">
+            <a href="{{ .Permalink | absURL }}" class="uppercase-link">
+              explore this case
+            </a>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

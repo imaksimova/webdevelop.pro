@@ -8,7 +8,7 @@
 }
 .careers-wrap {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-between;
 }
 
@@ -21,10 +21,23 @@
   @include tablet {
     display: none;
   }
+  .timeline-nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 100px;
+    .nav-item {
+      .nav-el {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .timeline-nav {
   counter-reset: nav-counter;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 120px;
   .nav-item {
     display: block;
     counter-increment: nav-counter;
@@ -35,11 +48,18 @@
     color: #b5b5b6;
     cursor: pointer;
     margin-bottom: 24px;
-    @include mt(0.35s);
+    @include mt(0.2s);
+    .nav-el {
+      opacity: 0;
+      @include mt(0.2s);
+    }
     &:hover {
       color: $accent_color;
       &::before {
         color: $accent_color;
+        opacity: 1;
+      }
+      .nav-el {
         opacity: 1;
       }
     }
@@ -51,7 +71,16 @@
       line-height: 25px;
       font-family: Avenir-Book,sans-serif;
       color: #b5b5b6;
-      @include mt(0.35s);
+      @include mt(0.2s);
+    }
+    &.active {
+      &::before {
+        color: $primary;
+      }
+      .nav-el {
+        opacity: 1;
+        color: $primary;
+      }
     }
   }
 }
@@ -140,9 +169,11 @@
     }
     .affix-top {
       position: sticky;
-      top: 20px;
+      position: -webkit-sticky;
+      top: 130px;
       @include desktop-lg {
         position: relative;
+        top: 0;
       }
     }
     .card {

@@ -24,6 +24,7 @@
 }
 
 .header {
+  display: block;
   height: 56px;
   position: absolute;
   left: 0;
@@ -70,16 +71,11 @@
   &.fixed {
     top: 0;
     z-index: 99;
+    position: fixed;
+    @include mt(.12s);
     .header-toolbar {
       box-shadow: 0 0 16px 0 rgba(0,0,0,0.11);
       background-color: #fff;
-      .logo {
-        img {
-          width: 78px;
-          height: 27px;
-          @include mt(.3s);
-        }
-      }
     }
   }
 }
@@ -139,7 +135,7 @@
     &:nth-child(5) {
       order: 3;
     }
-    &.hovering {
+    &:hover {
       .dropdown-list {
         @include mt(.3s);
         visibility: visible;
@@ -155,10 +151,11 @@
     .dropdown-list {
       position: absolute;
       top: 35px;
-      left: -8px;
+      left: 50%;
+      transform: translateX(-50%);
       display: block;
       padding: 12px 15px;
-      width: 125px;
+      white-space: nowrap;
       background-color: $white;
       box-shadow: 0 0 13px 0 rgba(51,51,51,0.08);
       border-radius: 1px;
@@ -205,6 +202,11 @@
         color: $accent_color;
       }
     }
+    &.active {
+      > a {
+        color: $accent_color;
+      }
+    }
   }
 }
 
@@ -215,15 +217,15 @@
 }
 
 .mobile-menu {
-	position: absolute;
-	top: 65px;
+	position: fixed;
+	margin-top: 17px;
 	right: -100%;
 	background-color: #fbfbfb;
 	width: 188px;
+  height: 100%;
   @include mt(0.3s);
 	padding-bottom: 65px;
 	overflow-y: scroll;
-  display: none;
 	&.is-active {
 		right: 0;
 	}
@@ -257,14 +259,22 @@
 	.bottom-wrap {
 		border-top: 1px solid rgba(215,215,215,0.2);
 		padding: 25px 15px;
+    margin-top: 0;
 		.small-text {
 			text-align: center;
 		}
 		.v-btn {
 			max-width: 160px;
 			margin-top: 15px;
+      padding: 0 15px;
+      width: 100%;
 		}
 	}
+}
+
+.humburger {
+  display: flex;
+  align-items: center;
 }
 
 #menu-toggle {
@@ -272,6 +282,9 @@
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
+  * {
+    @include mt(0.3s);
+  }
 	span {
 		background-color: $primary;
 		border-radius: 1px;

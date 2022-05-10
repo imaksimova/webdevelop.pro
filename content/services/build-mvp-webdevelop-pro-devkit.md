@@ -1,10 +1,19 @@
 ---
 title: "Building a minimum viable product"
-date: 2022-03-23T13:57:43+02:00
+date: 2020-03-26T21:07:40+03:00
 draft: false
-titleLeft: "building"
-titleRight: "a minimum viable product"
-description: "Reliable solution within limited time and resources"
+subTitle: Reliable solution within limited time and resources
+description: >
+  Let's say you have an idea for a software product that you would like to implement but your resources are limited.  The development of a website or an application is an expensive and time-consuming endeavor. What can be done to test this new idea? The answer is to build a minimum viable product or an MVP.
+postTitle: MVP Development
+captions: [Building an MVP, Product Refinement, Customers Feedback, Enhance Features]
+postDescription: >
+  The point of building a minimum viable product or an MVP is to test a product's idea. 
+  This option is especially good for startups as it can reduce financial risks, 
+  evaluate product viability and analyze users' feedback in a shorter time and at a reduced cost. 
+  The data gathered from launching an MVP shows what improvements are required to create a 
+  successful product. With our <a href="/startup-dev-kit">Startup devkit</a>, we can build a robust and scalable MVP in 4-6 months. 
+image: /images/services/service-2.svg
 items:
   - label: goals definition
     img: /images/services/srv-single-8.svg
@@ -96,6 +105,9 @@ items:
       feedback and decide where to go from there. There are 
       many web analytics tools that can help you evaluate 
       your MVP's performance and develop a marketing strategy to improve it.
+tags: [
+  "Product Refinement"
+]
 ---
 
 ## Build an MVP with Webdevelop Pro devkit
@@ -126,7 +138,7 @@ development Webdevelop Pro can build an MVP for your needs.
 <!-- section break -->
 
 Over the years, Webdevelop Pro has delivered many MVPs. We've developed a 
-Development kit we use to create custom software products. As an 
+[Development kit](/startup-dev-kit) we use to create custom software products. As an 
 Agile development team, we maintain a steady workflow and meet 
 deadlines on time. Bring us your idea and we will build a robust and scalable MVP in 3-6 months.
 
