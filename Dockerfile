@@ -1,8 +1,6 @@
 FROM jojomi/hugo:0.80.0
 
-ARG BASE_URL
-
-ENV BASE_URL=$BASE_URL
+ENV BASE_URL="https://dev2.webdevelop.pro/"
 
 COPY . /app
 
