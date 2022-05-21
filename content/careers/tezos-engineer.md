@@ -1,7 +1,7 @@
 ---
 title: "Tezos engineer"
 date: 2022-03-28T20:48:28+03:00
-draft: false
+draft: true
 location: Europe, Fully Remote
 description: Tezos smart contract developer
 ---
