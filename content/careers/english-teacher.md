@@ -5,6 +5,7 @@ draft: false
 label: English Teacher
 location: "100% Remote"
 description: English Teacher
+country: USA
 ---
 
 #### Role:

@@ -6,33 +6,33 @@
     <div class="careers-wrap">
       <div class="careers-left-sidebar">
         <nav class="timeline-nav wayp-lists">
-          <a href="#item-1" class="nav-item active">
-            <span class="nav-el">USA</span>
-          </a>
-          <a href="#item-2" class="nav-item">
-            <span class="nav-el">EUROPE</span>
-          </a>
-          <a href="#item-3" class="nav-item">
-            <span class="nav-el">WORLDWIDE</span>
-          </a>
+          {{ $counter := 0 }}
+          {{ range .Params.careersCountry }}
+            {{ $counter = add $counter 1 }}
+            <a href="#item-{{ $counter }}" class="nav-item {{ if eq $counter 1 }}active{{ end }}">
+              <span class="nav-el">{{ . }}</span>
+            </a>
+          {{ end }}
         </nav>
       </div>
       <div class="careers-content">
         {{ $counter := 0 }}
-        {{ range .Params.items }}
+        {{ $pages := .Pages }}
+        {{ range .Params.careersCountry }}
           {{ $counter = add $counter 1 }}
           <div id="item-{{ $counter }}" class="careers-card-list tracked">
-            <h2 class="is-h2-title">{{ .title }}</h2>
+            <h2 class="is-h2-title">{{ . }}</h2>
             <div class="layout stretch row wrap">
-              {{ range .cardItems }}
+              {{ range where $pages "Params.country" . }}
                 <div class="card">
-                  <div class="card-name decorative-heavy">{{ .name }}</div>
-                  <a href="{{ .itemUrl | absURL }}">
-                    <div class="card-title is-h4-title">{{ .title }}</div>
+                  <div class="card-name decorative-heavy">{{ .Title }}</div>
+                  <a href="{{ .Permalink | absURL }}">
+                    <div class="card-title is-h4-title">{{ .Description }}</div>
                   </a>
-                  <p>{{ .text }}</p>
+                  {{ $content := .Content | plainify | truncate 84 }}
+                  <p>{{ replace (replace (replace $content "About us" "") "The Role:" "") "Role:" "" }}</p>
                   <div class="btn-row">
-                    <a href="{{ .itemUrl  | absURL }}" class="v-btn v-btn--block v-btn--large theme--light accent">
+                    <a href="{{ .Permalink  | absURL }}" class="v-btn v-btn--block v-btn--large theme--light accent">
                       <div class="v-btn__content">Apply now</div>
                     </a>
                   </div>

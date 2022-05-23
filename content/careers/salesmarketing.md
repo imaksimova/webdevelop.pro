@@ -5,6 +5,7 @@ draft: false
 label: management
 location: Kyiv, Ukraine, Remote
 description: Head of Marketing
+country: EUROPE
 ---
 
 **Role:** Generating new leads, closing deal and increase total amount of customers. 
