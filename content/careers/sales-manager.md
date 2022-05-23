@@ -5,6 +5,7 @@ draft: false
 label: management
 location: "San Francisco, USA"
 description: Sales Development Representative
+country: USA
 ---
 
 **Role:** You will be the first point of contact for our future clients, starting with 

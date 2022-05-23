@@ -4,6 +4,7 @@ date: 2022-03-28T23:17:14+03:00
 draft: false
 location: Remote
 description: DevOps Engineer for Fintech products
+country: EUROPE
 ---
 
 ### The Role:

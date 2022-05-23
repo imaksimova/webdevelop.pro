@@ -4,6 +4,7 @@ date: 2022-03-28T23:00:10+03:00
 draft: false
 location: Europe, 100% Remote
 description: QA Lead
+country: EUROPE
 ---
 
 **Role:** We are building connection between big banks and blockchain DeFi. 

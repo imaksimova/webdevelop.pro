@@ -4,6 +4,7 @@ date: 2022-03-28T20:54:16+03:00
 draft: false
 location: Remote
 description: Creative content manager
+country: EUROPE
 ---
 
 #### The Role:
