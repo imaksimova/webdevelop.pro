@@ -4,6 +4,7 @@ date: 2022-03-28T20:48:28+03:00
 draft: true
 location: Europe, Fully Remote
 description: Tezos smart contract developer
+country: EUROPE
 ---
 
 **Role:** We are looking for a Tezos smart contract developer to 

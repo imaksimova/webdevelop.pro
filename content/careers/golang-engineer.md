@@ -4,6 +4,7 @@ date: 2022-03-28T23:13:18+03:00
 draft: false
 location: Europe, Fully Remote
 description: Backend engineer
+country: EUROPE
 ---
 
 **Role:** We are looking for a Go Developer responsible for create new restful 

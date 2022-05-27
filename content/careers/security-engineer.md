@@ -5,9 +5,10 @@ draft: false
 label: security engineer
 location: Europe, 100% Remote
 description: Cloud security engineer
+country: EUROPE
 ---
 
-**Role:** * 3+ years as a Security Engineer, 8+ years industry experience
+**Role:** 3+ years as a Security Engineer, 8+ years industry experience
 
 - You have demonstrable software security experience
 - Comprehensive understanding of application-level vulnerability 

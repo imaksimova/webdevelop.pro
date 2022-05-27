@@ -5,6 +5,7 @@ draft: false
 label: technical writer
 location: Europe, 100% Remote
 description: Technical Writer
+country: EUROPE
 ---
 
 WebdevelopPRO is a fintech software development company that help 
