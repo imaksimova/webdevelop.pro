@@ -1,7 +1,7 @@
 ---
 title: "HR manager"
 date: 2022-03-28T21:00:49+03:00
-draft: false
+draft: true
 location: Europe, Fully Remote
 description: HR manager
 country: EUROPE
