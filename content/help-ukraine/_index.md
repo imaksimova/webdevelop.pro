@@ -21,6 +21,13 @@ secondSection:
     The Ukrainian army needs funds to fight the aggressor! <br>Please donate 
     "Come Back Alive" and "Razom" foundations, or check the direct options to donate to the army.
   items:
+    - title: Armed Forces of Ukraine
+      label: direct fundraising account
+      text: >
+        The National Bank of Ukraine has opened a special fundraising account to support the Armed Forces of Ukraine.
+      paymentOptions: [WIRE, Credit Card, Google/Apple Pay]
+      btnUrl: https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi
+
     - title: Come Back Alive
       label: charity foundation
       text: >
@@ -28,19 +35,12 @@ secondSection:
       paymentOptions: [WIRE, Credit Card, Bitcoin, Ethereum]
       btnUrl: https://savelife.in.ua/en/donate/
     
-    - title: Razom
-      label: public organization
+    - title: Serhiy Prytula Foundation
+      label: Charity foundation
       text: >
-        Razom is a 501(c)(3) non-profit organization in New York City, NY, which was created to provide urgent help and support in face of an extreme and unforeseen situation in Ukraine. Donations and gifts are deductible to the full extent allowable under IRS regulations. The foundation has opened <a href="https://onedrive.live.com/view.aspx?resid=B0264747CBB7E393!15717&amp;ithint=file%2cxlsx&amp;authkey=!AB26WbOgj7BiNnk" target="_blank">reporting.</a>
-      paymentOptions: [WIRE, Paypal, Credit Card, Paper Check, Bitcoin, Ethereum]
-      btnUrl: https://razomforukraine.org/donate/
-    
-    - title: Armed Forces of Ukraine
-      label: direct fundraising account
-      text: >
-        The National Bank of Ukraine has opened a special fundraising account to support the Armed Forces of Ukraine.
-      paymentOptions: [WIRE, Credit Card, Google/Apple Pay]
-      btnUrl: https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi
+        Serhiy Prytula has been helping the Ukrainian Army as a private volunteer since Russia occupied Crimea and Donbas in 2014. After Russia launched a full-scale invasion, the Foundation joined the Army supply movement, covering the needs of both the Armed Forces fighters and members of Territorial Defense units.
+      paymentOptions: [SWIFT, Credit Card, Paypal, Bitcoin, Ethereum]
+      btnUrl: https://prytulafoundation.org/en/home/support_page
 
 thirdSection:
   title: Help Ukraine with your voice

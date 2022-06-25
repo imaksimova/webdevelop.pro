@@ -4,37 +4,46 @@
   <div class="container">
     <div class="site-blog-list-wrap">
       <div class="posts-main">
-        <a href="/blog/digitalizing-businesses-which-made-through-covid-19-outbreak" class="post_item post-large">
-          <div class="post_item__inner">
-            <div class="post_bg" style="background-image: url(/images/blog/1.jpg);"></div>
-            <div class="post_details">
-              <div class="decorative-heavy date-mobile">May 29, 2020</div>
-              <h2>Digitalizing businesses which made in through COVID-19 outbreak</h2>
-              <div class="post_details__info">
-                <div class="excerpt">During this crisis, life has changed for everyone - the way we live, communicate with each other, use transport and how we do business. Many businesses made it through the outbreak, and the digitalization could help them.</div>
-                <div class="decorative-heavy date">May 29, 2020</div>
+        {{ with .Site.GetPage "/blog/digitalizing-businesses-which-made-through-covid-19-outbreak.md" }}
+          {{ $formatedDate := .Date.Format "Jan 02, 2006" }}
+          <a href="{{ .Permalink | absURL }}" class="post_item post-large">
+            <div class="post_item__inner">
+              <div class="post_bg" style="background-image: url({{ if .Params.image }}{{ .Params.image }}{{ else }}/images/blog/sharing.png{{ end }});"></div>
+              <div class="post_details">
+                <div class="decorative-heavy date-mobile">{{ $formatedDate }}</div>
+                <h2>{{ .Title }}</h2>
+                <div class="post_details__info">
+                  <div class="excerpt">{{ .Description | plainify }}</div>
+                  <div class="decorative-heavy date">{{ $formatedDate }}</div>
+                </div>
               </div>
             </div>
-          </div>
-        </a>
-        <a href="/blog/google-maps-background-svg-map" class="post_item post-small">
-          <div class="post_item__inner">
-            <div class="post_bg" style="background-image: url(/images/blog/2.jpg);"></div>
-            <div class="post_details">
-              <div class="decorative-heavy date">May 04, 2020</div>
-              <h4>Google maps as background for SVG map</h4>
+          </a>
+        {{ end }}
+        {{ with .Site.GetPage "/blog/google-maps-background-svg-map.md" }}
+          {{ $formatedDate := .Date.Format "Jan 02, 2006" }}
+          <a href="{{ .Permalink | absURL }}" class="post_item post-small">
+            <div class="post_item__inner">
+              <div class="post_bg" style="background-image: url({{ if .Params.image }}{{ .Params.image }}{{ else }}/images/blog/sharing.png{{ end }});"></div>
+              <div class="post_details">
+                <div class="decorative-heavy date">{{ $formatedDate }}</div>
+                <h4>{{ .Title }}</h4>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="/blog/3-things-helped-me-get-web-design-world" class="post_item post-small">
-          <div class="post_item__inner">
-            <div class="post_bg" style="background-image: url(/images/blog/3.jpg);"></div>
-            <div class="post_details">
-              <div class="decorative-heavy date">April 20, 2020</div>
-              <h4>3 Things That Helped Me Get Into Web Design World</h4>
+          </a>
+        {{ end }}
+        {{ with .Site.GetPage "/blog/3-things-helped-me-get-web-design-world.md" }}
+          {{ $formatedDate := .Date.Format "Jan 02, 2006" }}
+          <a href="{{ .Permalink | absURL }}" class="post_item post-small">
+            <div class="post_item__inner">
+              <div class="post_bg" style="background-image: url({{ if .Params.image }}{{ .Params.image }}{{ else }}/images/blog/sharing.png{{ end }});"></div>
+              <div class="post_details">
+                <div class="decorative-heavy date">{{ $formatedDate }}</div>
+                <h4>{{ .Title }}</h4>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        {{ end }}
       </div>
       <div class="filter-articles">
         <h4 class="filter-title">Article Filter:</h4>
