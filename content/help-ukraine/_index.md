@@ -40,7 +40,7 @@ secondSection:
       text: >
         Serhiy Prytula has been helping the Ukrainian Army as a private volunteer since Russia occupied Crimea and Donbas in 2014. After Russia launched a full-scale invasion, the Foundation joined the Army supply movement, covering the needs of both the Armed Forces fighters and members of Territorial Defense units.
       paymentOptions: [SWIFT, Credit Card, Paypal, Bitcoin, Ethereum]
-      btnUrl: https://prytulafoundation.org/en/home/support_page#Patreon
+      btnUrl: https://prytulafoundation.org/en/home/support_page
 
 thirdSection:
   title: Help Ukraine with your voice
