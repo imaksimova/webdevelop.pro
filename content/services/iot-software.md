@@ -18,7 +18,7 @@ items:
   - label: technical factors
     img: /images/services/srv-single-24.svg
     title: Select an Operating System
-    caption: [Linux, FreeRTOS, Nucleus RTOS, BalenaOS, TinyOS, Bare Metal]
+    caption: [ZephyrProject, FreeRTOS, Nucleus RTOS, BalenaOS, TinyOS, Bare Metal]
     text: >
       Before starting the development process, several technical factors should be considered. 
       Unlike traditional computer systems, IoT devices are far less powerful and 
