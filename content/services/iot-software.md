@@ -33,6 +33,10 @@ items:
     captionText1: Websocket
     captionUrl2: /tags/mqtt
     captionText2: MQTT
+    captionUrl3: /tags/bluetooth
+    captionText3: Bluetooth
+    captionUrl4: /tags/nfc
+    captionText3: NFC
     text: >
       Choosing the right protocol is the key to success. Bluetooth, Wi-Fi, serial ports, 
       Zigbee, and others have different energy profiles, advantages, and disadvantages. 
