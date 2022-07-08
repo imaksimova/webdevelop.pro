@@ -1,5 +1,5 @@
 ---
-title: "Russian invasion of ukraine"
+title: "Russian invasion of Ukraine"
 date: 2022-02-24
 draft: false
 description: At 4:00 am local time, Russia began a full-scale invasion of Ukraine. This is the big war in Europe.
