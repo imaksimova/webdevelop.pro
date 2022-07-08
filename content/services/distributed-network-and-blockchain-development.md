@@ -23,7 +23,9 @@ items:
   - label: exporing possibilities
     img: /images/services/srv-single-35.svg
     title: Education and Use Case Development
-    caption: [Explore And Research, Goals And Limitations]
+    captions:
+      - text: Explore And Research
+      - text: Goals And Limitations
     text: >
       At first, we will explore your business goals, requirements and existing limitations. 
       We will make sure to turn possibilities into real concepts and give you correct 
@@ -32,8 +34,9 @@ items:
   - label: solution design
     img: /images/services/srv-single-36.svg
     title: Strategic Blockchain Advisory
-    captionUrl1: /blog/dapp-architecture-real-project
-    captionText1: managing the risk
+    captions:
+      - text: managing the risk
+        url: /blog/dapp-architecture-real-project
     text: >
       Almost every solution have a few choices use an existing framework or build your own. 
       We always start with gaining insight from business model prototyping, use our 
@@ -43,7 +46,9 @@ items:
   - label: build & implementation
     img: /images/services/srv-single-37.svg
     title: Development of Solutions
-    caption: [Business Goals, MVP Development]
+    captions:
+      - text: Business Goals
+      - text: MVP Development
     text: >
       We always trying to avoid complex implementation management. 
       Once we found a right approach next step to build 
@@ -54,8 +59,9 @@ items:
   - label: assets & solutions
     img: /images/services/srv-single-38.svg
     title: Token Solutions Development
-    captionUrl1: /case-study/decentralized-art-gallery
-    captionText1: case study
+    captions:
+      - text: case study
+        url: /case-study/decentralized-art-gallery
     text: >
       Webdevelop pro have experience in both, develop token solutions 
       based on existing tokens that unlock new business models or 
@@ -65,8 +71,9 @@ items:
   - label: security
     img: /images/services/srv-single-39.svg
     title: Security and audit
-    captionUrl1: /blog/best-security-practices
-    captionText1: security practices
+    captions:
+      - text: security practices
+        url: /blog/best-security-practices
     text: >
       Security is a foundation of our development process. We check every software add-ons, 
       browser plugin to eliminate any spy or malware. Our security team will 
@@ -76,7 +83,9 @@ items:
   - label: ecosystem management
     img: /images/services/srv-single-40.svg
     title: Solution Deployment and Customer Success
-    caption: [Customers Feedback, Building A Product]
+    captions:
+      - text: Customers Feedback
+      - text: Building A Product
     text: >
       Archiving technical goals is only a first step. Webdevelop pro knows 
       how not just develop solution but also hear customers feedback and 

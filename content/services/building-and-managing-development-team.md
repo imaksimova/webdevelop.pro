@@ -20,7 +20,9 @@ items:
   - label: Project research
     img: /images/services/srv-single-1.svg
     title: Understanding requirements
-    caption: [Initial Requirements, Pre-Screening]
+    captions:
+      - text: Initial Requirements
+      - text: Pre-Screening
     text: >
       Before putting a development team together, we need to gather all the information about the project. 
       A dedicated development team is built according to the project requirements. 
@@ -29,7 +31,11 @@ items:
   - label: Screening and pre-selection
     img: /images/services/srv-single-2.svg
     title: We spread the word and approach the developers with the necessary skills
-    caption: [Technical Expertise, Professional Background, Personal Qualities, Teamwork Experience]
+    captions:
+      - text: Technical Expertise
+      - text: Professional Background
+      - text: Personal Qualities
+      - text: Teamwork Experience
     text: >
       We are looking for professionals who are passionate about what they do and who are specialists 
       in their respective areas of expertise. We need our candidates to be team players eager to be 
@@ -39,7 +45,9 @@ items:
   - label: Tech assignment
     img: /images/services/srv-single-3.svg
     title: We put candidates’ technical skills, speed, and quality of work to a test.
-    caption: [Time Management, High-Performance]
+    captions:
+      - text: Time Management
+      - text: High-Performance
     text: >
       The candidates have to prove the level of the skills they claim to have mastered. 
       We give them a thoroughly prepared tech assignment designed according to the project’s 
@@ -50,7 +58,9 @@ items:
   - label: Personality traits
     img: /images/services/srv-single-4.svg
     title: We want to hire people who are passionate about what they do
-    caption: [Culture Fit, Aspire To Grow]
+    captions:
+      - text: Culture Fit
+      - text: Aspire To Grow
     text: >
       It's no doubt that having great technical skills is essential, 
       but that's not all that we expect from our candidates. 
@@ -61,7 +71,9 @@ items:
   - label: Final interview
     img: /images/services/srv-single-5.svg
     title: It is our responsibility to assemble a team of professionals
-    caption: [Top Notch Engineers, Managing Risks]
+    captions:
+      - text: Top Notch Engineers
+      - text: Managing Risks
     text: >
       Now that we have filled in all the gaps and gathered all the information we go through 
       it very carefully to select the best candidates. We talk to the candidates again 
@@ -74,7 +86,11 @@ items:
   - label: How we manage a development team
     img: /images/services/srv-single-6.svg
     title: Our work doesn't stop once we've assembled the team.
-    caption: [Set Clear Goals, Work Progress Reports, Analyze The Performance, Check The Results]
+    captions:
+      - text: Set Clear Goals
+      - text: Work Progress Reports
+      - text: Analyze The Performance
+      - text: Check The Results
     text: >
       We monitor the process of product development from requirements gathering to launch. 
       Over the years we've learned the best practices to effectively manage a dedicated 
@@ -84,7 +100,9 @@ items:
   - label: Transparency and flexibility
     img: /images/services/srv-single-2.svg
     title: Transparency and flexibility are our core values.
-    caption: [Resolve Blockers, Realistic Plans]
+    captions:
+      - text: Resolve Blockers
+      - text: Realistic Plans
     text: >
       Daily meetings, sprint planning, sprint reviews, and systematic reports are standard 
       procedures that we follow at all times. A group channel for clients and everyone 
@@ -98,7 +116,9 @@ items:
   - label: Risk management and pricing
     img: /images/services/srv-single-7.svg
     title: High-quality software development requires effective risk management
-    caption: [High-Quality Software, Managing Risks]
+    captions:
+      - text: High-Quality Software
+      - text: Managing Risks
     text: >
       Managing risks is our top priority. We believe that using Agile methodology 
       provides us with means to identify, prioritize, manage, and control risks 

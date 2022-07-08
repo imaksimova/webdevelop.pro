@@ -18,7 +18,13 @@ items:
   - label: technical factors
     img: /images/services/srv-single-24.svg
     title: Select an Operating System
-    caption: [ZephyrProject, FreeRTOS, Nucleus RTOS, BalenaOS, TinyOS, Bare Metal]
+    captions:
+      - text: ZephyrProject
+      - text: FreeRTOS
+      - text: Nucleus RTOS
+      - text: BalenaOS
+      - text: TinyOS
+      - text: Bare Metal
     text: >
       Before starting the development process, several technical factors should be considered. 
       Unlike traditional computer systems, IoT devices are far less powerful and 
@@ -29,14 +35,13 @@ items:
   - label: key to success
     img: /images/services/srv-single-25.svg
     title: Consider the Protocol
-    captionUrl1: /tags/websocket
-    captionText1: Websocket
-    captionUrl2: /tags/mqtt
-    captionText2: MQTT
-    captionUrl3: /tags/bluetooth
-    captionText3: Bluetooth
-    captionUrl4: /tags/nfc
-    captionText3: NFC
+    captions:
+      - text: Websocket
+        url: /tags/websocket
+      - text: MQTT
+        url: /tags/mqtt
+      - text: Bluetooth
+      - text: NFC
     text: >
       Choosing the right protocol is the key to success. Bluetooth, Wi-Fi, serial ports, 
       Zigbee, and others have different energy profiles, advantages, and disadvantages. 
@@ -48,7 +53,15 @@ items:
   - label: do not reinvent the wheel
     img: /images/services/srv-single-26.svg
     title: The Right IoT platform
-    caption: [Clouds Ecosystem, Security, Scalability, Supported Protocols, Vendor Lock-In, Hidden Fees, Limitations, Usability And UI]
+    captions:
+      - text: Clouds Ecosystem
+      - text: Security
+      - text: Scalability
+      - text: Supported Protocols
+      - text: Vendor Lock-In
+      - text: Hidden Fees
+      - text: Limitations
+      - text: Usability And UI
     text: >
       Projects with requirements so complicated that it makes sense to develop a 
       platform from scratch are rare. In 95% of all cases, there is no need to 
@@ -64,7 +77,9 @@ items:
   - label: quality is priority
     img: /images/services/srv-single-27.svg
     title: Development speed shouldn’t be preferred over products' quality
-    caption: [High Security Standards, Automatic And Manual Tests]
+    captions:
+      - text: High Security Standards
+      - text: Automatic And Manual Tests
     text: >
       IoT software development is a constantly changing industry. 
       Software developers have tough deadlines to meet along with 
@@ -78,7 +93,9 @@ items:
   - label: simple and understandable
     img: /images/services/srv-single-28.svg
     title: A User-Friendly Design
-    caption: [Simple Yet Powerfull UI, Focus On End-User]
+    captions:
+      - text: Simple Yet Powerfull UI
+      - text: Focus On End-User
     text: >
       We believe that every IoT product should be design-driven 
       and have a simple yet powerful UI. An end-user is not interested 
@@ -93,8 +110,9 @@ items:
   - label: multiplatforms
     img: /images/services/srv-single-29.svg
     title: Cross-Platform Deployment
-    captionUrl1: /tags/flutter
-    captionText1: Flutter
+    captions:
+      - text: Flutter
+        url: /tags/flutter
     text: >
       IoT development implies working with various devices that 
       have different architectures, protocols and operations 

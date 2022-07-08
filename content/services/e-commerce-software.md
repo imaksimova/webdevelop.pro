@@ -20,7 +20,10 @@ items:
   - label: full control
     img: /images/services/srv-single-22.svg
     title: On-premise e-commerce software
-    caption: [Bespoke Solution, Full Controll, Custom 3rd Party Integrations]
+    captions:
+      - text: Bespoke Solution
+      - text: Full Controll
+      - text: Custom 3rd Party Integrations
     text: >
       On-premise software is a popular solution that gives 
       full control to the business owner. It can be installed 
@@ -35,7 +38,9 @@ items:
   - label: build once use everywhere
     img: /images/services/srv-single-23.svg
     title: SaaS-based e-commerce platforms
-    caption: [RESTfull API, B2B Solutions]
+    captions:
+      - text: RESTfull API
+      - text: B2B Solutions
     text: >
       Software as a Service has been a very popular trend for the last 5-7 
       years as more and more businesses use SaaS to run their operations. 
