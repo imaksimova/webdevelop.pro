@@ -22,7 +22,10 @@ items:
   - label: use correct development strategy
     img: /images/services/srv-single-16.svg
     title: A CTO’s role in a company
-    caption: [Use Correct Tech Stack, Speed Up Development, Building A Team]
+    captions:
+      - text: Use Correct Tech Stack
+      - text: Speed Up Development
+      - text: Building A Team
     text: >
       So, does your company require a full-time CTO? It depends on what your company does. 
       If your business is deeply connected with software development the answer is definitely yes. 
@@ -36,7 +39,10 @@ items:
   - label: strengthen the business
     img: /images/services/srv-single-17.svg
     title: Efficient use of technology
-    caption: [Managing Risks, Architecure Decisions, Development Roadmap]
+    captions:
+      - text: Managing Risks
+      - text: Architecure Decisions
+      - text: Development Roadmap
     text: >
       The use of cutting edge technologies might be a huge advantage for a company, 
       but it can also have a negative effect. Imagine a scenario where an in-house 

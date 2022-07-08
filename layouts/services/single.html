@@ -64,24 +64,18 @@
             </p>
           </div>
           <div class="item-content-bottom">
-            {{ range .caption }}
-              <div class="caption-element is-uppercase-link">
-                <h5>{{ . }}</h5>
-              </div>
-            {{ end }}
-            {{ if .captionText1 }}
-              <div class="caption-element is-uppercase-link is-link">
-                <a href="{{ .captionUrl1 | absURL }}">
-                  {{ .captionText1 }}
-                </a>
-              </div>
-            {{ end }}
-            {{ if .captionUrl2 }}
-              <div class="caption-element is-uppercase-link is-link">
-                <a href="{{ .captionUrl2 | absURL }}">
-                  {{ .captionText2 }}
-                </a>
-              </div>
+            {{ range .captions }}
+              {{ if .url }}
+                <div class="caption-element is-uppercase-link is-link">
+                  <a href="{{ .url | absURL }}">
+                    {{ .text }}
+                  </a>
+                </div>
+              {{ else }}
+                <div class="caption-element">
+                  <h5>{{ .text }}</h5>
+                </div>
+              {{ end }}
             {{ end }}
           </div>
         </div>

@@ -43,10 +43,18 @@
                 {{ .text }}
               </p>
               <div class="item-bottom">
-                {{ range .caption }}
-                  <div class="caption-element">
-                    <h5>{{ . }}</h5>
-                  </div>
+                {{ range .captions }}
+                  {{ if .url }}
+                    <div class="caption-element is-uppercase-link is-link">
+                      <a href="{{ .url | absURL }}">
+                        {{ .text }}
+                      </a>
+                    </div>
+                  {{ else }}
+                    <div class="caption-element">
+                      <h5>{{ .text }}</h5>
+                    </div>
+                  {{ end }}
                 {{ end }}
               </div>
             </div>

@@ -8,7 +8,11 @@ items:
   - label: "01"
     title: It all starts with an idea
     img: images/how-we-work/illustration-1.svg
-    caption: [Concept Discussion, Project milestones, Research Planning, Next steps]
+    captions:
+      - text: Concept Discussion
+      - text: Project milestones
+      - text: Research Planning
+      - text: Next steps
     text: Every great project starts with an idea. Maybe you’ve been thinking 
       about it for a long time, or maybe this idea just leaped into your mind.  
       A good idea is worth sharing. Write it down on a paper, discuss it with your staff. 
@@ -18,7 +22,11 @@ items:
   - label: "02"
     title: Project planning
     img: images/how-we-work/illustration-2.svg
-    caption: [Defining Technology Stack, Budget Estimate, Resource Allocation, ETA for MVP]
+    captions:
+      - text: Defining Technology Stack
+      - text: Budget Estimate
+      - text: Resource Allocation
+      - text: ETA for MVP
     text: The more complex the idea is the more thorough implementation it requires. 
       We've been in the software development field for quite some time now, 
       and we've gained mastery in selecting suitable technologies and methods 
@@ -29,7 +37,11 @@ items:
   - label: "03"
     title: Putting a team together
     img: images/how-we-work/illustration-3.svg
-    caption: [UX/UI Designers, DevOps Engineers, Frontend and Backend Devs, Quality Assurance Engineers]
+    captions:
+      - text: UX/UI Designers
+      - text: DevOps Engineers
+      - text: Frontend and Backend Devs
+      - text: Quality Assurance Engineers
     text: To create a product you need a team. The team should be built in 
       accordance with the plan of implementation and methods of realization. 
       A group of most talented developers won’t become a great team without 
@@ -39,7 +51,11 @@ items:
   - label: "04"
     title: Product prototype
     img: images/how-we-work/illustration-4.svg
-    caption: [First Feedback, Proof of Concept, Product Presentation, Broad Perspective]
+    captions:
+      - text: First Feedback
+      - text: Proof of Concept
+      - text: Product Presentation
+      - text: Broad Perspective
     text: The prototyping process is a vital stage in product development. 
       The data gathered at this point shows us if any improvements 
       are required to continue our work in the right direction. 
@@ -49,7 +65,11 @@ items:
   - label: "05"
     title: Launching an MVP
     img: images/how-we-work/illustration-5.svg
-    caption: [Stable Core, Scalable MVP, Fail-Fast Succeed Sooner, Adjusting the goals]
+    captions:
+      - text: Stable Core
+      - text: Scalable MVP
+      - text: Fail-Fast Succeed Sooner
+      - text: Adjusting the goals
     text: We have over 10 years of experience in software development, 
       during this time we have successfully delivered plenty of projects. 
       We’re aware of technical risks that may occur when creating an MVP, 
@@ -58,7 +78,11 @@ items:
   - label: "06"
     title: Building a Product
     img: images/how-we-work/illustration-6.svg
-    caption: [Fine-tuning the Team, Updating Roadmap, Adjusting the Milestones, Product Development]
+    captions:
+      - text: Fine-tuning the Team
+      - text: Updating Roadmap
+      - text: Adjusting the Milestones
+      - text: Product Development
     text: Now that we have gathered all the feedback and 
       data necessary, comes the final stage of the product 
       development. At this stage, some team adjustments 
@@ -69,7 +93,11 @@ items:
   - label: "07"
     title: "Development Process: Flexibility and Transparency"
     img: images/how-we-work/illustration-7.svg
-    caption: [Clear Workflow, Meeting Customer Needs, Open Communication, Team Availability]
+    captions:
+      - text: Clear Workflow
+      - text: Meeting Customer Needs
+      - text: Open Communication
+      - text: Team Availability
     text: We never choose speed over quality. We pay close attention 
       to details and we always keep the channel of communication 
       with our customers open. The key values of our approach 
