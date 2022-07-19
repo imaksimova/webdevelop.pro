@@ -1,10 +1,10 @@
 ---
 title: "CI/CD to release high-quality products at speed"
 subTitle: "Many software companies today are using Continuous Integration and Continuous Delivery (CI/CD) to release high-quality products at speed"
-description: "CI/CD to release high-quality products at speed"
+description: "Nowadays many companies about to use or already using Continuous Integration (CI) and Continuous Delivery (CD) to release high-quality products at speed. Stability and reliability of the platform is a foundation for any technical product or service. The CI/CD pipeline approach provide you more control over what should and what should not be deployed."
 date: 2022-07-19
 draft: false
-authors: "Vladyslav Tarasenko"
+authors: "vlad tarasenko"
 image: https://user-images.githubusercontent.com/704096/179827430-6759d4e3-d4e9-4145-8cbf-b2266d17575f.png
 tags: [
   "DevOps",
