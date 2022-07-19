@@ -18,7 +18,9 @@ items:
   - label: goals definition
     img: /images/services/srv-single-8.svg
     title: Understanding the idea
-    caption: [Brainstorming, General Discussion]
+    captions:
+      - text: Brainstorming
+      - text: General Discussion
     text: >
       We want to understand your idea in as much detail as possible. 
       Is it a product or a service? What are its goals? Who is your 
@@ -28,7 +30,9 @@ items:
   - label: successful product
     img: /images/services/srv-single-9.svg
     title: Research
-    caption: [Technical Recommendations, Estimates Of Time And Budget]
+    captions:
+      - text: Technical Recommendations
+      - text: Estimates Of Time And Budget
     text: >
       The competition in the software development industry is very high. 
       To create a successful product you should know your potential customers, 
@@ -38,7 +42,9 @@ items:
   - label: resource management
     img: /images/services/srv-single-10.svg
     title: Planning
-    caption: [Setting Requirements, Understanding Of Limitations]
+    captions:
+      - text: Setting Requirements
+      - text: Understanding Of Limitations
     text: >
       Now that the idea of the product is clear, we create an MVP development plan. 
       We describe how everything is going to work. How exactly a user is going to 
@@ -48,7 +54,9 @@ items:
   - label: design
     img: /images/services/srv-single-11.svg
     title: User interface
-    caption: [Thoughtfull Process, Design Driven Development]
+    captions:
+      - text: Thoughtfull Process
+      - text: Design Driven Development
     text: >
       We need to visualize each step of a user's interaction with the product. 
       Our purpose is to create a simple and easy-to-use application. 
@@ -62,7 +70,10 @@ items:
   - label: early sample
     img: /images/services/srv-single-12.svg
     title: Prototype
-    caption: [Test Driven Development, Finds Problems Early, Release Quickly]
+    captions:
+      - text: Test Driven Development
+      - text: Finds Problems Early
+      - text: Release Quickly
     text: >
       We start by creating a prototype. A prototype is a graphic 
       presentation of the product that is necessary for developers 
@@ -73,7 +84,13 @@ items:
   - label: a-team
     img: /images/services/srv-single-13.svg
     title: A well-balanced development team
-    caption: [Team Leader, UI/UX Designer, Front-End Developer, Back-End Developer, DevOps Engineer, QA Engineer]
+    captions:
+      - text: Team Leader
+      - text: UI/UX Designer
+      - text: Front-End Developer
+      - text: Back-End Developer
+      - text: DevOps Engineer
+      - text: QA Engineer
     text: >
       Assembling development teams has always been a passion of Webdevelop Pro. 
       We believe that the best result is achieved by a well-balanced 
@@ -83,7 +100,11 @@ items:
   - label: foundation
     img: /images/services/srv-single-14.svg
     title: Building an MVP
-    caption: [Scrum Development Process, Proper Planning, Proper Testing, Effective Team]
+    captions:
+      - text: Scrum Development Process
+      - text: Proper Planning
+      - text: Proper Testing
+      - text: Effective Team
     text: >
       In our experience, UX/UI design is the foundation of a good MVP. 
       We keep it simple and develop only key features. A front-end engineer's 
@@ -99,7 +120,9 @@ items:
   - label: building a product
     img: /images/services/srv-single-15.svg
     title: What's next?
-    caption: [Data Driven Design, Product Evolution]
+    captions:
+      - text: Data Driven Design
+      - text: Product Evolution
     text: >
       All that is left is to launch the MVP, monitor users' 
       feedback and decide where to go from there. There are 

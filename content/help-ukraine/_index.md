@@ -1,5 +1,5 @@
 ---
-title: "ways to help ukraine"
+title: "Ways to Help Ukraine"
 subTitle: Ukraine is the Shield of Europe. We believe that a threat to freedom anywhere is a threat to freedom everywhere. 
 date: 2022-04-01T14:51:40+03:00
 draft: false

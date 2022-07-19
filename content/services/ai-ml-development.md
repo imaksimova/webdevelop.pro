@@ -20,7 +20,11 @@ items:
   - label: NLP
     img: /images/services/srv-single-18.svg
     title: Chatbot Development
-    caption: [Text Recognition, Business Process Optimization, Intelligent Chatbot, Increase User Experience]
+    captions:
+      - text: Text Recognition
+      - text: Business Process Optimization
+      - text: Intelligent Chatbot
+      - text: Increase User Experience
     text: >
       Today, NLP plays a huge part in chatbot development. 
       NLP technology enables chatbots to understand voice 
@@ -35,7 +39,11 @@ items:
   - label: intuitive smart devices
     img: /images/services/srv-single-19.svg
     title: Data-driven Internet of Things
-    caption: [Internet Of Things, Analyze Data, Machine Learning, Artificial Intelligence]
+    captions:
+      - text: Internet Of Things
+      - text: Analyze Data
+      - text: Machine Learning
+      - text: Artificial Intelligence
     text: >
       The use of IoT technology presents endless opportunities for business growth and improvement. 
       ML and AI help to make the most of large volumes of IoT data and transform it 
@@ -46,7 +54,10 @@ items:
   - label: identify objects
     img: /images/services/srv-single-20.svg
     title: Video and Image Processing
-    caption: [Video Stream Analyze, Machine Vision, Image Recognition]
+    captions:
+      - text: Video Stream Analyze
+      - text: Machine Vision
+      - text: Image Recognition
     text: >
       AI can easily identify an object in an image or a video file and 
       many applications of image processing like, for example, 
@@ -59,7 +70,10 @@ items:
   - label: speech recognition
     img: /images/services/srv-single-21.svg
     title: Natural Language Processing
-    caption: [End To End Machine Learning, NLP, Voice Recognition]
+    captions:
+      - text: End To End Machine Learning
+      - text: NLP
+      - text: Voice Recognition
     text: >
       NLP is a field of artificial intelligence. Natural 
       language processing is the ability of a software 

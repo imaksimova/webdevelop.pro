@@ -19,10 +19,11 @@ items:
   - label: competitive
     img: /images/services/srv-single-30.svg
     title: Fintech is a highly competitive and demanding industry
-    captionUrl1: /case-study/invest-small-businesses
-    captionText1: crowdfunding case study
-    captionUrl2: /case-study/real-estate-investment-platform
-    captionText2: realestate case study
+    captions:
+      - text: crowdfunding case study
+        url: /case-study/invest-small-businesses
+      - text: realestate case study
+        url: /case-study/real-estate-investment-platform
     text: >
       To succeed you need a revolutionary business 
       idea and readiness to challenge traditional 
@@ -36,7 +37,11 @@ items:
   - label: robust
     img: /images/services/srv-single-31.svg
     title: A robust system should be able to encompass all points of failure
-    caption: [Great Technical Skills, Robust Architecture, Test Automatization, Test Driven Development]
+    captions:
+      - text: Great Technical Skills
+      - text: Robust Architecture
+      - text: Test Automatization
+      - text: Test Driven Development
     text: >
       To build robust Fintech applications means facing a lot of technical 
       challenges, and designing a robust architecture is one of them. 
@@ -51,7 +56,9 @@ items:
   - label: reliable
     img: /images/services/srv-single-32.svg
     title: We set high standards to bring you high-quality reliable software
-    caption: [High Development Standards, Results-Driven Development]
+    captions:
+      - text: High Development Standards
+      - text: Results-Driven Development
     text: >
       To be beneficial for both business and users a product is required to be reliable. 
       It is expected to work all the time regardless of the issues 
@@ -63,10 +70,11 @@ items:
   - label: secure
     img: /images/services/srv-single-33.svg
     title: We strive to incorporate security into every product that we create
-    captionUrl1: /blog/best-security-practices
-    captionText1: best security practices
-    captionUrl2: /case-study/security-data-provider
-    captionText2: security storage case
+    captions:
+      - text: best security practices
+        url: /blog/best-security-practices
+      - text: security storage case
+        url: /case-study/security-data-provider
     text: >
       Choosing simple and fast solutions over security is not our way. 
       We have worked with many projects that required a high level 
@@ -78,7 +86,11 @@ items:
   - label: stable
     img: /images/services/srv-single-34.svg
     title: We ensure product stability even when third-party providers aren't working properly
-    caption: [Best Python Practices, Best Golang Practices, Infrastructure As A Code, Benchmark Testing]
+    captions:
+      - text: Best Python Practices
+      - text: Best Golang Practices
+      - text: Infrastructure As A Code
+      - text: Benchmark Testing
     text: >
       To run smoothly an application relies on a codebase, 
       infrastructure, and third-party providers. Application 
