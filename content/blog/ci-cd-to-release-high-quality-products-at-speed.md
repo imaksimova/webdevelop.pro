@@ -1,6 +1,6 @@
 ---
 title: "CI/CD to release high-quality products at speed"
-subTitle: "Many software companies today are using Continuous Integration and Continuous Delivery (CI/CD) to release high-quality products at speed."
+subTitle: "Many software companies today are using Continuous Integration and Continuous Delivery (CI/CD) to release high-quality products at speed"
 description: "CI/CD to release high-quality products at speed"
 date: 2022-07-19
 draft: false
@@ -12,7 +12,7 @@ tags: [
 ]
 ---
 
-## Many software companies today are using Continuous Integration and Continuous Delivery (CI/CD) to release high-quality products at speed.
+## Many software companies today are using Continuous Integration and Continuous Delivery (CI/CD) to release high-quality products at speed
 
 Nowadays many companies about to use or already using Continuous Integration (CI) and Continuous Delivery (CD) to release high-quality products at speed. Stability and reliability of the platform is a foundation for any technical product or service. The CI/CD pipeline approach provide you more control over what should and what should not be deployed.  But building a CI/CD pipeline can be a challenge. But by using right  automation strategy and tools you can save a lot of time and resources.
 
@@ -59,7 +59,7 @@ Best CI/CD practice embodies Agile methodologies. Let’s have a quick overview 
 ### Role of Automation Testing in CI/CD
 
 In order to test functionality effectively we need to run tests on every build. From time and resource perspective its not possible manually to test every build. Automation enables meaningful and effective way to test new changes and usually auto tests are the core component on CI/CD pipeline. 
- It gives an ability of an early bugs detection. And as result, the product that goes out to the release stage will be more accurate and bug-free. All this will only be possible with the automation of test suites.
+It gives an ability of an early bugs detection. And as result, the product that goes out to the release stage will be more accurate and bug-free. All this will only be possible with the automation of test suites.
  
 In nutshell test automation offers the following pros:
 - Reduces manual efforts when the same test must be run repetitively. This saves both time, resources and as result QA can be focused on more important tasks
@@ -70,7 +70,7 @@ Bear in mind that automated tests in the CI/CD pipeline can use real browsers an
 
 
 ### How to build correct Automation Tests to fit in CI/CD pipelines? 
-Its good to split tests on subtests and to have multiple automated test suites built for different purposes.   Following are some testing types and where they fit into the CI/CD pipelines:
+Its good to split tests on subtests and to have multiple automated test suites built for different purposes. Following are some testing types and where they fit into the CI/CD pipelines:
 -  Unit Tests: Many teams follow the [Test Driven Development (TDD) approach](https://www.browserstack.com/guide/what-is-test-driven-development). Unit tests are written by the developers and run as a part of the build phase.
 - Integration Tests: After every commit is built and deployed onto the development environment, these tests are run to check if the newly added module/changes work well together. Some organizations have a dedicated environment to run integration tests.
 - Regression Tests: Regression tests are run once nightly to ensure that the newly added changes do not impact the existing code. This helps make sure the day’s work is all good and gives feedback if any changes are necessary.
