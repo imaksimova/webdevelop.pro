@@ -1,3 +1,4 @@
+---
 title: "Simple short Best HTML Practice"
 subTitle: "Best HTML Practice"
 description: "Examples from my own experience with HTML practices"
@@ -9,6 +10,7 @@ tags: [
   "HTML",
   "Best Practice"
 ]
+---
 
 How often have you written something without realizing that the code you wrote might not be perfect?
 This often happens to me and I strive to improve my practical skills. In the article, I will try to give examples from my own experience.
