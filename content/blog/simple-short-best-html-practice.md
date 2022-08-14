@@ -34,7 +34,7 @@ This often happens to me and I strive to improve my practical skills. In the art
 </html>
 ```
 Make sure correct use of the **HTML5** semantic elements. Use the **header** and **footer** elements to define the top and bottom of a page, but also can define the top and bottom of an article or section.
-Use the **nav** element for major blocks of links to allow assistive technologies to quickly and easily navigate through the site. The **nav** element can be used around unordered lists, **ul**, or around a block of content referring to multiple links. You can use the **aria-label** property to identify different navigation areas.
+Use the **nav** element for major blocks of links to allow assistive technologies to quickly and easily navigate through the site. The **nav** element can be used around unordered lists, `ul`, or around a block of content referring to multiple links. You can use the **aria-label** property to identify different navigation areas.
 Use the **main** tag to define the main content of the page and **aside** to define anything related to the main content.
 
 **Use appropriate containers tags** (**div** vs **section** vs **article**) You will benefit a lot from understanding when to use Section vs Article vs Div in Html. Understanding when to use these tags has a great impact on your site and you should avoid using div tags everywhere. HTML5 is full of semantic tags.
@@ -45,8 +45,8 @@ Use the **main** tag to define the main content of the page and **aside** to
 
 ## Content
 
-Use the correct levels for headings, from the most important as an **h1** down through **h6** and do not skip heading levels. Each page should have a heading level 1, **h1**, that represents the most important idea on the page. Any sub-headings should be an **h2**, sub-sections can then be divided into **h3s** and on down to **h6** s based on the nested structure.
-**Avoid SIBU tags** - The SIBU tags are **<s/>, <i/>, <b/>** and **<u/>** tags which are for style purposes only, they are not semantic tags at all and anything they do can be accomplished with CSS alone or other semantic tags. USE **<strong/>** instead of **<b/>**, **<em/>** instead of **<i/>**, `text-decoration: underline` instead of **<u/>**, `text-decoration: line-through` instead of **<s/>**
+Use the correct levels for headings, from the most important as an `h1` down through `h6` and do not skip heading levels. Each page should have a heading level 1, `h1`, that represents the most important idea on the page. Any sub-headings should be an `h2`, sub-sections can then be divided into `h3s` and on down to `h6` s based on the nested structure.
+**Avoid SIBU tags** - The SIBU tags are `<s/>, <i/>, <b/> and <u/>` tags which are for style purposes only, they are not semantic tags at all and anything they do can be accomplished with CSS alone or other semantic tags. USE `<strong/>` instead of `<b/>, <em/>` instead of `<i/>`, `text-decoration: underline` instead of `<u/>`, `text-decoration: line-through` instead of `<s/>`
 
 Use an **alt** attribute on images if the image is important to the content, such as information to understanding or interacting with something. Otherwise, if an image is decorative and adds no value to the content, the attribute can be declared **alt=""** and it will not be read by assistive technologies.
 
